@@ -13,4 +13,13 @@ class Action extends Model
         "action",
         "point",
     ];
+
+    public function showActions()
+    {
+        return view ("home", [
+            "actions" => Action::all(),
+        ]);
+    }
+
+
 }
