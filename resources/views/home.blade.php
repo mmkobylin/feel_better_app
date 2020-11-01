@@ -5,5 +5,5 @@
     }}@endsection
 
     @section("content")
-        @include("partials/home")
+        @include("partials/intro")
     @endsection
