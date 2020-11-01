@@ -9,7 +9,10 @@
                 For that go to <a class="navbar" href="/lightbringer">LIGHTBRINGER</a>
             </p>
         
-            <h3 id="subtitle1" style="display: block">Tell me more!</h3>
+            <h3 id="subtitle1"> 
+            <span id=span1 style="display: block">Tell me more! </span>
+            <span id=span2 style="display: none">Got it, thanks! </span>
+            </h3>
             <p id='paragraph1' style="display: none">
             Let's say you have been in a dark place. Might be for a week. Might be for a month, or you really don't know for how long.
             But it has been attrocious. You have eaten all takeaway. Or opposite, nearly nothing at all. You don't remember when you washed your hair. The house is a mess. You still are not exactly energetic, but the reality had come knocking on the door. <br>
