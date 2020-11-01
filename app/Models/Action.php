@@ -19,8 +19,9 @@ class Action extends Model
         return Action::all();
     }
 
-    // public function randomiser()
-    // {
-    //     $nameOfAction = Action::all();
-    // }
+    public function randomiser()
+    {
+        $nameOfAction = Action::all()->random(1)->pluck('action')->toArray()[0];
+        return $nameOfAction;
+    }
 }

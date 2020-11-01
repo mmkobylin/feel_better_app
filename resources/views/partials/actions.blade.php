@@ -1,8 +1,8 @@
 <p>Actions</p>
 
-     @foreach (App\Models\Action::all()->take(1) as $action ) 
+     @foreach (App\Models\Action::all()->take(3) as $action ) 
 
-        <label class="container">{{$action->index()}}</label>
+        <label>{{$action->randomiser()}}</label><br>
 
     @endforeach
 
