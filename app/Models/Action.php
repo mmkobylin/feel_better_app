@@ -14,12 +14,8 @@ class Action extends Model
         "point",
     ];
 
-    public function showActions()
+    public function index()
     {
-        return view ("home", [
-            "actions" => Action::all(),
-        ]);
+        return $nameOfAction = Action::all();
     }
-
-
 }
