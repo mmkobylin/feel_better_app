@@ -16,6 +16,11 @@ class Action extends Model
 
     public function index()
     {
-        return $nameOfAction = Action::all();
+        return Action::all();
     }
+
+    // public function randomiser()
+    // {
+    //     $nameOfAction = Action::all();
+    // }
 }
