@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     subtitle1.addEventListener('click', () => {
         
         paragraph1.style.display = visible? 'block' : 'none'
+        visible = !visible
 
     })
 
-    visible = !visible
 
 });
