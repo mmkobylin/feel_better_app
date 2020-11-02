@@ -17,11 +17,43 @@
 </section>
 
 <section>
-    {{-- here goes the form --}}
-    <button id="subtitle1"> 
-        <span id=span1 style="display: block">Submit!</span>
+    {{-- creating the form --}}
+    <form class="form-control" method="POST" action="heavylifter">
+    
+        <h4>Did you...<h4>
+         <label class="container">done some self care?
+            <input type="checkbox" name="self-love" value="1"/>
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">help others?
+            <input type="checkbox" name="help" value="1"/>
+            <span class="checkmark"></span>
+        </label> 
+       
+        <label class="container">eaten healthier?
+            <input type="checkbox" name="food" value="1"/>
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="container">gave yourself fair chance to have decent sleep?
+            <input type="checkbox" name="sleep" value="1"/>
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">stayed sober?
+            <input type="checkbox" name="sober" value="1"/>
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">exercised?
+            <input type="checkbox" name="exercise" value="1"/>
+            <span class="checkmark"></span>
+        </label>
+        {{-- here goes the form --}}
+        <input class="button" id="subtitle1 span1" style="display: block" 
+            type="submit" name="formSubmit" value="Submit">
+
         <span id=span2 style="display: none">Well done!</span>
-    </button>
+    </form>
     <p id='paragraph1' style="display: none">
     {{-- Here go the results --}}
     if statement
