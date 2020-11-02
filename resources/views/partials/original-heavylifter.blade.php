@@ -5,12 +5,11 @@
     </h3>
     <div id="paragraph2" style="display: none"> 
         <p> Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
-            This is what I created a <a class="navbar-brand" href="/heavylifter">HEAVYLIFTER</a> for. <br><br>
+            This is what I created a <a class="nav" href="/heavylifter">HEAVYLIFTER</a> for.
             I created a list of checking boxes, that you might tick, and get the score you had after each day. 
             It is ok if some of them don't apply. This is your journey.</p>
             <h4> Not for you? </h4>
-            <p>
-            But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the action3 prep in the world! This does not seem to match my needs at all! <br>
+            <p> But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the action3 prep in the world! This does not seem to match my needs at all! <br>
             Well worry not, with thought of you and adventures spirits, I had created a questionare:
             <br><a class="nav" href="/heavy-custom">Pick your own adventure?!</a>
             <br>Please use it and have fun, who am I to tell you how to live your life?
@@ -22,7 +21,7 @@
     {{-- creating the form --}}
     <form class="form-control" method="POST" action="heavylifter">
     
-        <h4>Did you...<h4>
+        <h3>Did you...<h3>
 
         {{-- I am using fieldset for group of related elements in the form  --}}
             <fieldset class="card-body" >
@@ -89,11 +88,11 @@
                     }
                 ?> 
             </section>
-            <section>
+            <aside>
                 @php 
                     if (isset($_POST['formSubmit']) && $total === 0)  {
                         echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
                     }
                 @endphp
-            </section>
+            </aside>
 
