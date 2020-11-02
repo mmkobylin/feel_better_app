@@ -21,7 +21,20 @@ class Action extends Model
 
     public function randomiser()
     {
-        $nameOfAction = Action::all()->random(1)->pluck('action')->toArray()[0];
-        return $nameOfAction;
+        $action1 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
+
+        if ( $action1 === $action2) {
+            $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        } elseif ($action1 === $action3) 
+        {
+            $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        }
+
+        $arrayOfActions = [$action1, $action2, $action3];
+
+        echo implode($arrayOfActions);
+
     }
 }

@@ -18,18 +18,18 @@
 
 <section id="paragraph2" style="display: none">
 
-    <form class="form-control" method="POST" action="lightbringer"
-    <?php if (!isset($_POST['formSubmit'])) { ?> hidden <?php } ?>>
-        {{-- Cross-Site Request Forgery Token --}}
+    <form class="form-control" method="POST" action="lightbringer">        {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
-        @foreach (App\Models\Action::all()->take(3) as $action ) 
-
+        @foreach (App\Models\Action::all()->take(1) as $action ) 
+       
+            
             <label class="container">{{$action->randomiser()}}
-                <input type="checkbox" name="action1" value="1">
+                <input type="checkbox" name="action" value="1">
                 <span class="checkmark"></span>
             </label>
-                <br>
+            <br>
+
         @endforeach
         
             <button class="button" id="subtitle1" style="display: block" 
@@ -44,11 +44,16 @@
 
 <?php 
     $total = (
-            +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-            +(isset($_POST["action2"]) ? ($_POST["action1"]): 0) +
-            +(isset($_POST["action3"]) ? ($_POST["action1"]): 0)
-        );
+            +(isset($_POST["action"]) ? ($_POST["action"]): 0));
 ?>
+
+<section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+{{-- Here go the results --}}
+    <?php
+        echo "The total amount of points for the day is... " . $total . "!"; 
+        {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action1"]) + ($_POST["action1"]) : NULL;  --}}
+    ?>
+</section>   
 
 <aside>
     @php 
