@@ -12,7 +12,7 @@
             <p>
             But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the action3 prep in the world! This does not seem to match my needs at all! <br>
             Well worry not, with thought of you and adventures spirits, I had created a questionare:
-            <br><a class="nav-home" id="hideaway" href="/heavy-custom">Pick your own adventure?!</a>
+            <br><a class="nav" href="/heavy-custom">Pick your own adventure?!</a>
             <br>Please use it and have fun, who am I to tell you how to live your life?
         </p>
     </div>
@@ -25,7 +25,7 @@
         <h4>Did you...<h4>
 
         {{-- I am using fieldset for group of related elements in the form  --}}
-            <fieldset class="card-body">
+            <fieldset class="card-body" >
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
                     <label class="container">done some self care?
@@ -60,28 +60,32 @@
                     type="submit" name="formSubmit" value="Submit">Submit!</button>
                 </fieldset>
             </form>
-    <section id="span2">
-    {{-- Here go the results --}}
-        <?php
 
-            $total = (
-                +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-                +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
-                +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
-                +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
-                +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
-                +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
-            );
-            echo "The total amount of points for the day is... " . $total . "!"; 
-            {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
-            ?> <br> <?php 
-            if($total === 0 ) {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            } elseif ($total <= 2 ) {
-                echo "That's a good progress. Keep going!";
-            } else {
-                echo "Amazing job! Look at you go!";
-            }
-        ?> 
-    </section>
+             <?php
+
+                $total = (
+                    +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
+                    +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
+                    +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
+                    +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
+                    +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
+                    +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
+                );         
+            ?>
+                    
+            <section id="span2" <?php if ($total === 0){ ?> hidden <?php } ?>>
+            {{-- Here go the results --}}
+                <?php
+                    echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
+                    {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
+                    ?> <br> <?php 
+                    if($total === 0 ) {
+                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+                    } elseif ($total <= 2 ) {
+                        echo "That's a good progress. Keep going!";
+                    } else {
+                        echo "Amazing job! Look at you go!";
+                    }
+                ?> 
+            </section>
 
