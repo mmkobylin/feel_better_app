@@ -20,7 +20,7 @@
     <body>
         <header>
             {{-- this is where the header goes --}}
-            @include("partials/header")
+            {{-- @include("partials/header") --}}
         </header>
         
         <main class="content">
@@ -30,7 +30,7 @@
 
         <footer>
             {{-- this is where the header would go --}}
-            {{-- @include("partials/footer") --}}
+            @include("partials/home-nav")
         </footer>
 
     </body>
