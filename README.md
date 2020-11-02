@@ -13,9 +13,10 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 
 ## In Progress
 
-- setting up a navigation 
+- adding tick boxes to lightbringer 
 - basic form for heavylifer
 
 ## Next Steps: 
 
 - creating customised form for heavylifter 
+- setting up a navigation 
