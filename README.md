@@ -9,9 +9,13 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 
 - created an database of helpful suggestions
 - make it appear in correct way
+- welcome page and toggling working
+
+## In progress
+
+- setting up a navigation 
+- basic form for heavylifer
 
 ## Next Steps: 
 
-- creating welcome page
-- creating link to actions
 - creating form for heavylifter 
