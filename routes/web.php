@@ -31,7 +31,7 @@ Route::get('/heavylifter', function () {
 });
 
 Route::post('/heavylifter', function () {
-    return view('heavylifter-basic');
+    return redirect('results');
 });
 
 
