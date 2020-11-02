@@ -11,14 +11,15 @@
     <p>If you click 'Show suggestions' it will show couple feel-good ideas. When you are done, just tick the boxes and submit the form!</p>
 </section>
 
-<h3 id="subtitle2"> 
+<h3 id="subtitle2" > 
     <span id=span3 style="display: block">Show me suggestions! </span>
     <span id=span4 style="display: none">Try some of these!</span>
 </h3>
 
 <section id="paragraph2" style="display: none">
 
-    <form class="form-control" method="POST" action="lightbringer">
+    <form class="form-control" method="POST" action="lightbringer"
+    <?php if (!isset($_POST['formSubmit'])) { ?> hidden <?php } ?>>
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
@@ -31,10 +32,11 @@
                 <br>
         @endforeach
         
-        <button class="button" id="subtitle1" style="display: block" 
-        type="submit" name="formSubmit" value="Submit">Submit!</button>
-
+            <button class="button" id="subtitle1" style="display: block" 
+            type="submit" name="formSubmit" value="Submit">Submit!</button>
+        </fieldset>
     </form>
+
 
     <p>Wanna try something different? Just refresh the page and try again!</p>
 
