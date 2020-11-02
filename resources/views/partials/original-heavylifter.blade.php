@@ -10,7 +10,7 @@
             It is ok if some of them don't apply. This is your journey.</p>
             <h4> Not for you? </h4>
             <p>
-            But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the food prep in the world! This does not seem to match my needs at all! <br>
+            But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the action3 prep in the world! This does not seem to match my needs at all! <br>
             Well worry not, with thought of you and adventures spirits, I had created a questionare:
             <br><a class="nav-home" id="hideaway" href="/heavy-custom">Pick your own adventure?!</a>
             <br>Please use it and have fun, who am I to tell you how to live your life?
@@ -29,30 +29,30 @@
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
                     <label class="container">done some self care?
-                        <input type="checkbox" name="self-love" value="1"/>
+                        <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
-                    <label class="container">help others?
-                        <input type="checkbox" name="help" value="1"/>
+                    <label class="container">helped others?
+                        <input type="checkbox" name="action2" value="1"/>
                         <span class="checkmark"></span>
                     </label> 
                 
                     <label class="container">eaten healthier?
-                        <input type="checkbox" name="food" value="1"/>
+                        <input type="checkbox" name="action3" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <label class="container">gave yourself fair chance to have decent sleep?
-                        <input type="checkbox" name="sleep" value="1"/>
+                        <input type="checkbox" name="action4" value="1"/>
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">stayed sober?
-                        <input type="checkbox" name="sober" value="1"/>
+                        <input type="checkbox" name="action5" value="1"/>
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">exercised?
-                        <input type="checkbox" name="exercise" value="1"/>
+                        <input type="checkbox" name="action6" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
@@ -65,15 +65,15 @@
         <?php
 
             $total = (
-                +(isset($_POST["self-love"]) ? ($_POST["self-love"]): 0) + 
-                +(isset($_POST["help"]) ? ($_POST["help"]): 0) +
-                +(isset($_POST["food"]) ? ($_POST["food"]): 0) +
-                +(isset($_POST["exercise"]) ? ($_POST["exercise"]): 0) +
-                +(isset($_POST["sleep"]) ? ($_POST["sober"]): 0) +
-                +(isset($_POST["sleep"]) ? ($_POST["sleep"]): 0)
+                +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
+                +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
+                +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
+                +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
+                +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
+                +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
             );
             echo "The total amount of points for the day is... " . $total . "!"; 
-            {{-- isset($_POST["formSubmit"]) ? print ($_POST["self-love"]) + ($_POST["help"]) + ($_POST["food"]) + ($_POST["exercise"]) + ($_POST["sober"]) + ($_POST["sleep"])) : NULL;  --}}
+            {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
             ?> <br> <?php 
             if($total === 0 ) {
                 echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";

@@ -25,13 +25,16 @@ Route::post('/lightbringer', function () {
     return view('lightbringer');
 });
 
+Route::get('/results', function () {
+    return view('results');
+});
 
 Route::get('/heavylifter', function () {
     return view('heavylifter-basic');
 });
 
 Route::post('/heavylifter', function () {
-    return redirect('results');
+    return view('heavylifter-basic');
 });
 
 
