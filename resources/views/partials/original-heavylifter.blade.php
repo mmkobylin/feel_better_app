@@ -73,19 +73,27 @@
                 );         
             ?>
                     
-            <section id="span2" <?php if ($total === 0){ ?> hidden <?php } ?>>
+            <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
                     {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
+                    
                     ?> <br> <?php 
-                    if($total === 0 ) {
-                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-                    } elseif ($total <= 2 ) {
-                        echo "That's a good progress. Keep going!";
-                    } else {
+                    if($total > 0 && $total < 2 ) {
+                        echo "Well done, every little step counts!";
+                    } elseif ($total >= 2 && $total < 4 ) {
+                        echo "That's an excellent progress. Keep going!";
+                    } elseif ($total > 4 ) {
                         echo "Amazing job! Look at you go!";
                     }
                 ?> 
+            </section>
+            <section>
+                @php 
+                    if (isset($_POST['formSubmit']) && $total === 0)  {
+                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+                    }
+                @endphp
             </section>
 
