@@ -17,13 +17,42 @@
 </h3>
 
 <section id="paragraph2" style="display: none">
-    @foreach (App\Models\Action::all()->take(3) as $action ) 
 
-        <label>{{$action->randomiser()}}</label><br>
+    <form class="form-control" method="POST" action="lightbringer">
+        {{-- Cross-Site Request Forgery Token --}}
+        @csrf
 
-    @endforeach
+        @foreach (App\Models\Action::all()->take(3) as $action ) 
 
-    <p>Don't like these ideas? Just refresh the page and try again!</p>
+            <label class="container">{{$action->randomiser()}}
+                <input type="checkbox" name="action1" value="1">
+                <span class="checkmark"></span>
+            </label>
+                <br>
+        @endforeach
+        
+        <button class="button" id="subtitle1" style="display: block" 
+        type="submit" name="formSubmit" value="Submit">Submit!</button>
+
+    </form>
+
+    <p>Wanna try something different? Just refresh the page and try again!</p>
 
 </section>
+
+<?php 
+    $total = (
+            +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
+            +(isset($_POST["action2"]) ? ($_POST["action1"]): 0) +
+            +(isset($_POST["action3"]) ? ($_POST["action1"]): 0)
+        );
+?>
+
+<aside>
+    @php 
+        if (isset($_POST['formSubmit']) && $total === 0)  {
+            echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+        }
+    @endphp
+</aside>
 
