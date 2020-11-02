@@ -5,14 +5,14 @@
     <h2>How does it help?</h2>
 
         <section>
-            <p>My first goal with this app is to try my best to help anyone in a dark place. (cause I've been there). <br>
+            <h3>My first goal with this app is to try my best to help anyone in a dark place. (cause I've been there). <br>
                 For that go to <a class="navbar" href="/lightbringer">LIGHTBRINGER</a>
-            </p>
+            </h3>
         
-            <h3 id="subtitle1"> 
+            <h4 id="subtitle1"> 
             <span id=span1 style="display: block">Tell me more! </span>
             <span id=span2 style="display: none">Got it, thanks! </span>
-            </h3>
+            </h4>
             <p id='paragraph1' style="display: none">
             Let's say you have been in a dark place. Might be for a week. Might be for a month, or you really don't know for how long.
             But it has been attrocious. You have eaten all takeaway. Or opposite, nearly nothing at all. You don't remember when you washed your hair. The house is a mess. You still are not exactly energetic, but the reality had come knocking on the door. <br>
@@ -22,14 +22,14 @@
 
         <section>
 
-            <p> My second goal is to help people to step up their game after they got better! Now when you might want to stretch yourself little further.<br>
+            <h3> My second goal is to help people to step up their game after they got better! Now when you might want to stretch yourself little further.<br>
                 <br>For that go to <a class="navbar" href="/heavylifter">HEAVYLIFTER</a>.
-            </p>
+            </h3>
 
-            <h3 id="subtitle2"> 
+            <h4 id="subtitle2"> 
                 <span id=span3 style="display: block">Tell me more! </span>
                 <span id=span4 style="display: none">Got it, thanks! </span>
-            </h3>
+            </h4>
             <p id="paragraph2" style="display: none">
                 Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
                 This is what I created a <a class="navbar" href="/heavylifter">HEAVYLIFTER</a> for. <br>
