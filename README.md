@@ -11,11 +11,11 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 - make it appear in correct way
 - welcome page and toggling working
 
-## In progress
+## In Progress
 
 - setting up a navigation 
 - basic form for heavylifer
 
 ## Next Steps: 
 
-- creating form for heavylifter 
+- creating customised form for heavylifter 

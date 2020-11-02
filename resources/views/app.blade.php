@@ -20,7 +20,7 @@
     <body>
         <header>
             {{-- this is where the header goes --}}
-            {{-- @include("partials/header") --}}
+            @include("partials/header")
         </header>
         
         <main class="content">
