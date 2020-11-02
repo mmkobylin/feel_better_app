@@ -24,3 +24,21 @@ Route::get('/lightbringer', function () {
 Route::post('/lightbringer', function () {
     return view('lightbringer');
 });
+
+
+Route::get('/heavylifter', function () {
+    return view('heavylifter-basic');
+});
+
+Route::post('/heavylifter', function () {
+    return view('heavylifter-basic');
+});
+
+
+Route::get('/heavy-custom', function () {
+    return view('heavylifter-form');
+});
+
+Route::post('/heavy-custom', function () {
+    return view('heavylifter-form');
+});
