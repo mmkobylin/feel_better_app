@@ -26,7 +26,10 @@
                 <br>For that go to <a class="navbar" href="/heavylifter">HEAVYLIFTER</a>.
             </p>
 
-            <h3 id="subtitle2" style="display: block">Tell me more!</h3>
+            <h3 id="subtitle2"> 
+                <span id=span3 style="display: block">Tell me more! </span>
+                <span id=span4 style="display: none">Got it, thanks! </span>
+            </h3>
             <p id="paragraph2" style="display: none">
                 Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
                 This is what I created a <a class="navbar" href="/heavylifter">HEAVYLIFTER</a> for. <br>
