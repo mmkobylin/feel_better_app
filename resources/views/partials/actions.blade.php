@@ -16,14 +16,14 @@
     <span id=span4 style="display: none">Try some of these!</span>
 </h3>
 
-<section id style="display: none">
+<section id="paragraph2" style="display: none">
     @foreach (App\Models\Action::all()->take(3) as $action ) 
 
         <label>{{$action->randomiser()}}</label><br>
 
     @endforeach
 
-    <p>Don't like the ideas? Just refresh the page and try again!</p>
+    <p>Don't like these ideas? Just refresh the page and try again!</p>
 
 </section>
 
