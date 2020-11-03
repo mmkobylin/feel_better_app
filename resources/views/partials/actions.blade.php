@@ -22,8 +22,9 @@
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
+        {{-- accessing Actions --}}
         @foreach (App\Models\Action::all()->take(1) as $action ) 
-            
+            {{-- taking first value from uniqueCollection--}}
             <label class="container">{{$action->randomiser()[0]}}
                 <input type="checkbox" name="action1" value="1">
                 <span class="checkmark"></span>
@@ -52,6 +53,7 @@
 
 </section>
 
+{{-- $total counts the points --}}
 <?php 
     $total = (
                     +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
@@ -60,12 +62,15 @@
 ?>
 
 <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-{{-- Here go the results --}}
+    {{-- total displays --}}
     <?php
         echo "The total amount of points for the day is... " . $total . "!"; 
         {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) : NULL;  --}}
     ?> 
     <br>
+    
+    {{-- different message displaying depending on the total amount --}}
+
     <?php
         if($total > 0 && $total < 2 ) {
             echo "Well done, every little step counts!";

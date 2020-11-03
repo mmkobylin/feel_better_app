@@ -5,6 +5,9 @@
     }}@endsection
 
     @section("content")
+        
+        @include("partials/title")
+
         @include("partials/original-heavylifter")
     
     @endsection

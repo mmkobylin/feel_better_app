@@ -30,11 +30,12 @@ class Action extends Model
         //making sure each action is different 
         if ($action1 === $action2) {
             $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        } elseif ($action1 === $action3 || $action2 === $action3) {
+        } 
+        elseif ($action1 === $action3 || $action2 === $action3) {
             $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
         }
         
-        //collecting each action in an array, so one can access each value in the array
+        //collecting each action in an array, so one can access each value in it
         $uniqueCollection = array($action1, $action2, $action3);
         return $uniqueCollection;
 
