@@ -33,9 +33,11 @@ class Action extends Model
             $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
         }
 
-        $arrayCollection = array($action1, $action2, $action3);
+        $collection = array($action1, $action2, $action3);
 
-        return $arrayCollection;
+        $uniqueCollection = array_unique($collection);
+
+        return $uniqueCollection;
 
     }
 
