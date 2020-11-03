@@ -9,7 +9,7 @@
             I created a list of checking boxes, that you might tick, and get the score you had after each day. 
             It is ok if some of them don't apply. This is your journey.</p>
             <h4> Not for you? </h4>
-            <p> But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the action3 prep in the world! This does not seem to match my needs at all! <br>
+            <p> But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the food prep in the world! This does not seem to match my needs at all! <br>
             Well worry not, with thought of you and adventures spirits, I had created a questionare:
             <br><a class="nav" href="/heavy-custom">Pick your own adventure?!</a>
             <br>Please use it and have fun, who am I to tell you how to live your life?

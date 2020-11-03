@@ -12,14 +12,14 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 - welcome page and toggling working
 - navigation
 - form for heavylifter displaying correctly
+- adding tick boxes to lightbringer; making random suggestions displaying uniquely and properly. 
+
 
 ## In Progress
 
-- adding tick boxes to lightbringer 
-- basic form for heavylifer
+- adding titles, subtitles and pictures
 
 ## Next Steps: 
 
 - creating customised form for heavylifter 
-- createing headers 
-- adding pictures
+
