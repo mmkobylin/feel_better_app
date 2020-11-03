@@ -61,7 +61,7 @@
             </form>
 
              <?php
-
+                //collecting all the points
                 $total = (
                     +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
                     +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
@@ -71,14 +71,15 @@
                     +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
                 );         
             ?>
-                    
+            {{-- hide if it form is not posted --}}
             <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
                     {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
                     
-                    ?> <br> <?php 
+                    ?> <br> <?php
+                    //-- comment showing with results --}}
                     if($total > 0 && $total < 2 ) {
                         echo "Well done, every little step counts!";
                     } elseif ($total >= 2 && $total < 4 ) {
@@ -88,6 +89,7 @@
                     }
                 ?> 
             </section>
+            {{-- if no action submitted - shows encouraging message --}}
             <aside>
                 @php 
                     if (isset($_POST['formSubmit']) && $total === 0)  {

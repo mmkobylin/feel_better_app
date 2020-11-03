@@ -18,8 +18,10 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 ## In Progress
 
 - adding titles, subtitles and pictures
+- commenting code
 
 ## Next Steps: 
 
 - creating customised form for heavylifter 
+- 404 page 
 

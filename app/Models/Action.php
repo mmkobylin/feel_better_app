@@ -19,24 +19,23 @@ class Action extends Model
         return Action::all();
     }
 
+    // function to pick 3 random actions 
     public function randomiser()
     {   
+        //picking 3 actions
         $action1 = Action::all()->random(1)->pluck('action')->toArray()[0];
         $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
         $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
 
-        if (!isset($action2) || $action1 === $action2) {
+        //making sure each action is different 
+        if ($action1 === $action2) {
             $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        } 
-        
-        if (!isset($action3) || $action1 === $action3 || $action2 === $action3) {
+        } elseif ($action1 === $action3 || $action2 === $action3) {
             $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
         }
-
-        $collection = array($action1, $action2, $action3);
-
-        $uniqueCollection = array_unique($collection);
-
+        
+        //collecting each action in an array, so one can access each value in the array
+        $uniqueCollection = array($action1, $action2, $action3);
         return $uniqueCollection;
 
     }
