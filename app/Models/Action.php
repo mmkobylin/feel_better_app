@@ -21,16 +21,25 @@ class Action extends Model
 
     public function randomiser()
     {   
-        $action1 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        if (!isset($action2) || $action1 === $action2) {
-            $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        } 
+        $action1 = Action::all()->random(1)->pluck('action');
+        $action2 = Action::all()->random(1)->pluck('action');
+        $action3 = Action::all()->random(1)->pluck('action');
+
+
+        $input = array($action1, $action2, $action3);
+        $result = serialize(array_unique($input));
+        // if (!isset($action2) || $action1 === $action2) {
+        //     $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        // } 
         
-        if (!isset($action3) || $action1 === $action3 || $action2 === $action3) {
-            $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        }
+        // if (!isset($action3) || $action1 === $action3 || $action2 === $action3) {
+        //     $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
+        // }
 
-        return $action1 . $action2 . $action3;
+        // $array = array($action1, $action2, $action3);
 
+        return $result;
     }
+
+
 }
