@@ -42,6 +42,10 @@ Route::get('/heavy-custom', function () {
     return view('heavylifter-form');
 });
 
-Route::post('/heavy-custom', function () {
+Route::get('/customised-heavylifter', function () {
+    return view('form-results');
+});
+
+Route::post('/welcome.php', function () {
     return view('heavylifter-form');
 });

@@ -1,3 +1,18 @@
+<?php error_reporting (E_ALL ^ E_NOTICE);
+
+    //declare an empty array for variables
+    $allActions = [];
+
+     //declare variables that I get from GET method
+    $action1=$_GET['name1'];
+    $action2=$_GET['name2'];
+    $action3=$_GET['name3'];
+    $action4=$_GET['name4']; 
+    $action5=$_GET['name5'];
+    $action6=$_GET['name6'];
+    
+?>
+
 <section>
     <h3 id="subtitle2"> 
         <span id=span3 style="display: block">Tell me more! </span>
@@ -19,46 +34,21 @@
 
 <section>
     {{-- creating the form --}}
-    <form class="form-control" method="GET" action="heavy-custom">  
+    <form action="customised-heavylifter" method="get">
+
         {{-- using fieldset for group of related elements in the form  --}}
-        <fieldset class="card-body">
-        {{-- Cross-Site Request Forgery Token --}}
-            @csrf
-            <section>
-            {{-- this is  where we collect the Action's names--}}
-                <div class="input-field">
-                    <label>Action 1:</label><br>
-                    {{-- this is where I declare name and type and make sure name length is sensible --}}
-                    <input type="text" name="action1" maxlength="40" required>
-                </div>
-                
-                <div class="input-field">
-                    <label>Action 2:</label><br>
-                    <input type="text" name="action2" maxlength="40" required>
-                </div>
+        <fieldset>
 
-                <div class="input-field">
-                    <label>Action 3:</label><br>
-                    <input type="text" name="action3" maxlength="40" required>
-                </div>
-                
-                <div class="input-field">
-                    <label>Action 4:</label><br>
-                    <input type="text" name="action4" maxlength="40" required>
-                </div>
+            <label> Action 1: <input type="text" name="action1"><br></label>
+            <label> Action 2: <input type="text" name="action2"><br></label>
+            <label> Action 3: <input type="text" name="action3"><br></label>
+            <label> Action 4: <input type="text" name="action4"><br></label>
+            <label> Action 5: <input type="text" name="action5"><br></label>
+            <label> Action 6: <input type="text" name="action6"><br></label>
 
-                <div class="input-field">
-                    <label>Action 5:</label><br>
-                    <input type="text" name="action5" maxlength="40" required>
-                </div>
-
-                <div class="input-field">
-                    <label>Action 6:</label><br>
-                    <input type="text" name="action6" maxlength="40" required>
-                </div>
-
-            </section>   
-            {{-- pressing this button collects the data --}}
-            <button class="button" type="submit">Ready?</button>
+            <input type="submit">
         </fieldset>
-    </form>
+
+    </form> 
+
+</section>
