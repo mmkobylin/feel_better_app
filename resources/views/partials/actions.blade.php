@@ -25,17 +25,17 @@
         @foreach (App\Models\Action::all()->take(1) as $action ) 
             
             <label class="container">{{$action->randomiser()[0]}}
-                <input type="checkbox" name="action" value="1">
+                <input type="checkbox" name="action1" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
              <label class="container">{{$action->randomiser()[1]}}
-                <input type="checkbox" name="action" value="1">
+                <input type="checkbox" name="action2" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
              <label class="container">{{$action->randomiser()[2]}}
-                <input type="checkbox" name="action" value="1">
+                <input type="checkbox" name="action3" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
@@ -54,14 +54,26 @@
 
 <?php 
     $total = (
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0));
+                    +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
+                    +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
+                    +(isset($_POST["action3"]) ? ($_POST["action3"]): 0));
 ?>
 
 <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
 {{-- Here go the results --}}
     <?php
         echo "The total amount of points for the day is... " . $total . "!"; 
-        {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action1"]) + ($_POST["action1"]) : NULL;  --}}
+        {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) : NULL;  --}}
+    ?> 
+    <br>
+    <?php
+        if($total > 0 && $total < 2 ) {
+            echo "Well done, every little step counts!";
+        } elseif ($total = 2 && $total < 4 ) {
+            echo "That's an excellent progress. Keep going!";
+        } elseif ($total > 2 ) {
+            echo "Amazing job! Look at you go!";
+        }
     ?>
 </section>   
 
