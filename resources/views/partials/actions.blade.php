@@ -18,13 +18,23 @@
 
 <section id="paragraph2" style="display: none">
 
-    <form class="form-control" method="POST" action="lightbringer">        {{-- Cross-Site Request Forgery Token --}}
+    <form class="form-control" method="POST" action="lightbringer">        
+        {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
         @foreach (App\Models\Action::all()->take(1) as $action ) 
-       
             
-            <label class="container">{{$action->randomiser()}}
+            <label class="container">{{$action->randomiser()[0]}}
+                <input type="checkbox" name="action" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+             <label class="container">{{$action->randomiser()[1]}}
+                <input type="checkbox" name="action" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+             <label class="container">{{$action->randomiser()[2]}}
                 <input type="checkbox" name="action" value="1">
                 <span class="checkmark"></span>
             </label>
