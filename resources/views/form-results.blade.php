@@ -5,10 +5,17 @@
     }}@endsection
 
     @section("content")
-  <p>      
-        Welcome <br>
-        Your email address is:
+        <p>      
+                Welcome <br>
 
-</p>
+                @foreach (App\Models\Heavylifter::all()->take(1) as $ideas ) 
+
+                    <label class="container">{{$ideas->index()}}
+
+                @endforeach
+
+        </p>
+
+
     @endsection
 
