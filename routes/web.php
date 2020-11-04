@@ -37,15 +37,14 @@ Route::post('/heavylifter', function () {
     return view('heavylifter-basic');
 });
 
-
 Route::get('/heavy-custom', function () {
     return view('heavylifter-form');
 });
 
-Route::get('/customised-heavylifter', function () {
-    return view('form-results');
-});
+// Route::get('/customised-heavylifter', function () {
+//     return view('form-results');
+// });
 
-Route::post('/customised-heavylifter', function () {
-    return view('form-results');
+Route::put('/customised-heavylifter', function () {
+    return redirect('form-results');
 });
