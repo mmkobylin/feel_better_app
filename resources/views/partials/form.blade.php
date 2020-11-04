@@ -12,8 +12,34 @@
     $action6=$_GET['name6'];
 
     //this is where I collect the variables
-    collect(array_push($allActions, $action1, $action2, $action3, $action4, $action5, $action6));
     
+    if (empty($action1) !== true ) {
+        collect(array_push($allActions, $action1));
+    } 
+    
+    if (empty($action2) !== true ) {
+        collect(array_push($allActions, $action2));
+    } 
+    
+    if (empty($action3) !== true ) {
+        collect(array_push($allActions, $action3));
+    } 
+    
+    if (empty($action4) !== true ) {
+        collect(array_push($allActions, $action4));
+    } 
+    
+    if (empty($action5) !== true ) {
+        collect(array_push($allActions, $action5));
+    } 
+    
+    if (empty($action6) !== true ) {
+        collect(array_push($allActions, $action6));
+    } 
+    
+    echo '<pre>'; print_r($allActions); echo '</pre>';
+
+    //the values are def. pushed into the array
 ?>
 
 <section>
@@ -30,70 +56,86 @@
         </p>
         <h4 id="subtitle1"> Not for you? </h4>
         <p>But what if you have no idea what will make you better? For these tried-and-true methods head
-            <br><a class="nav" href="/heavylifter">HERE</a>, where I put few ideas supported by research. 
+            <br><a class="nav" href="/heavylifter">HERE</a>, where I put a few ideas supported by research. 
         </p>
     </div>
 </section>
 
 <section>
     {{-- creating the form --}}
-     {{-- display if the list is empty. --}}
         <form class="form-control" method="GET" action="heavy-custom"
-        <?php if (empty($allActions) === false){ ?> hidden <?php } ?>>  
+        {{-- display if the list is empty. --}}
+        <?php if (empty($allActions) !== true){ ?> hidden <?php } ?>
+        >
 
         {{ csrf_field() }}
 
         {{-- using fieldset for group of related elements in the form  --}}
         <fieldset>
 
-            <label> Action 1: <input type="text" name="action1"><br></label>
-            <label> Action 2: <input type="text" name="action2"><br></label>
-            <label> Action 3: <input type="text" name="action3"><br></label>
-            <label> Action 4: <input type="text" name="action4"><br></label>
-            <label> Action 5: <input type="text" name="action5"><br></label>
-            <label> Action 6: <input type="text" name="action6"><br></label>
+            <label> Action 1: </label> <br>
+            <input type="text" name="name1" required><br>
+            <label> Action 2: </label> <br>
+            <input type="text" name="name2" required><br>
+            <label> Action 3: </label> <br>
+            <input type="text" name="name3"><br>
+            <label> Action 4: </label> <br>
+            <input type="text" name="name4"><br>
+            <label> Action 5: </label> <br>
+            <input type="text" name="name5"><br>
+            <label> Action 6: </label> <br>
+            <input type="text" name="name6"><br>
 
             <input type="submit">
         </fieldset>
-
     </form> 
 
-    <form class="form-control" method="POST" action="customised-heavylifter">
+    <form class="form-control" method="POST" action="customised-heavylifter"
+        <?php if (empty($allActions) === true){ ?> hidden <?php } ?>
+>
         {{ csrf_field() }}
         <fieldset>
+            
             <label class="container">
-            <?php echo $_GET["action1"]; ?>
+            <?php echo $allActions[0]; ?>
                 <input type="checkbox" name="action1" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
 
             <label class="container">
-            <?php echo $_GET["action2"]; ?>
+            <?php echo $allActions[1]; ?>
+                <input type="checkbox" name="action2" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            
+            <label class="container">
+            <?php echo $allActions[2]; ?>
                 <input type="checkbox" name="action2" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
 
             <label class="container">
-            <?php echo $_GET["action3"]; ?>
-                <input type="checkbox" name="action3" value="1">
+            <?php echo $allActions[3]; ?>
+                <input type="checkbox" name="action2" value="1">
                 <span class="checkmark"></span>
             </label>
             <br>
+
             <label class="container">
-            <?php echo $_GET["action4"]; ?>
-                <input type="checkbox" name="action4" value="1">
+                <?php echo $allActions[4]; ?>
+                <input type="checkbox" name="action5" value="1"
+                <?php if ($allActions[4] === NULL || empty($allActions[4] === true)) { ?> hidden <?php } ?>>
                 <span class="checkmark"></span>
             </label>
             <br>
-            <label class="container"><?php echo $_GET["action5"]; ?>
-                <input type="checkbox" name="action5" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-            <label class="container" ><?php echo $_GET["action6"]; ?>
-                <input type="checkbox" name="action6" value="1">
+
+            <label class="container">
+                <?php echo $allActions[5]; ?>
+                <input type="checkbox" name="action6" value="1"
+                <?php if ($allActions[4] === NULL || empty($allActions[5] === true)) { ?> hidden <?php } ?>>
                 <span class="checkmark"></span>
             </label>
             <br>
