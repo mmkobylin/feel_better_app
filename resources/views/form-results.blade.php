@@ -6,11 +6,11 @@
 
     @section("content")
         <form class="form-control" method="POST" action="customised-heavylifter">
+            {{ csrf_field() }}
             <fieldset>
                 <label class="container">
                 <?php echo $_GET["action1"]; ?>
-                    <input type="checkbox" name="action1" value="1"
-                >
+                    <input type="checkbox" name="action1" value="1">
                     <span class="checkmark"></span>
                 </label>
                 <br>

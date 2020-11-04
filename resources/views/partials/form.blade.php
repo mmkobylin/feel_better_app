@@ -34,7 +34,8 @@
 
 <section>
     {{-- creating the form --}}
-    <form action="customised-heavylifter" method="get">
+    <form action="heavy-custom" method="get">
+        {{ csrf_field() }}
 
         {{-- using fieldset for group of related elements in the form  --}}
         <fieldset>
@@ -50,5 +51,50 @@
         </fieldset>
 
     </form> 
+
+    <form class="form-control" method="POST" action="customised-heavylifter">
+        {{ csrf_field() }}
+        <fieldset>
+            <label class="container">
+            <?php echo $_GET["action1"]; ?>
+                <input type="checkbox" name="action1" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+
+            <label class="container">
+            <?php echo $_GET["action2"]; ?>
+                <input type="checkbox" name="action2" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+
+            <label class="container">
+            <?php echo $_GET["action3"]; ?>
+                <input type="checkbox" name="action3" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">
+            <?php echo $_GET["action4"]; ?>
+                <input type="checkbox" name="action4" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container"><?php echo $_GET["action5"]; ?>
+                <input type="checkbox" name="action5" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container"><?php echo $_GET["action6"]; ?>
+                <input type="checkbox" name="action6" value="1">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            
+            <input type="submit">
+
+        </fieldset>
+    </form>  
 
 </section>
