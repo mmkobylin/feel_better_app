@@ -10,6 +10,9 @@
     $action4=$_GET['name4']; 
     $action5=$_GET['name5'];
     $action6=$_GET['name6'];
+
+    //this is where I collect the variables
+    collect(array_push($allActions, $action1, $action2, $action3, $action4, $action5, $action6));
     
 ?>
 
@@ -34,7 +37,10 @@
 
 <section>
     {{-- creating the form --}}
-    <form action="heavy-custom" method="get">
+     {{-- display if the list is empty. --}}
+        <form class="form-control" method="GET" action="heavy-custom"
+        <?php if (empty($allActions) === false){ ?> hidden <?php } ?>>  
+
         {{ csrf_field() }}
 
         {{-- using fieldset for group of related elements in the form  --}}
@@ -86,7 +92,7 @@
                 <span class="checkmark"></span>
             </label>
             <br>
-            <label class="container"><?php echo $_GET["action6"]; ?>
+            <label class="container" ><?php echo $_GET["action6"]; ?>
                 <input type="checkbox" name="action6" value="1">
                 <span class="checkmark"></span>
             </label>
@@ -96,5 +102,4 @@
 
         </fieldset>
     </form>  
-
 </section>
