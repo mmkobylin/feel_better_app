@@ -36,8 +36,6 @@
     if (empty($action6) !== true ) {
         collect(array_push($allActions, $action6));
     } 
-    
-    echo '<pre>'; print_r($allActions); echo '</pre>';
 
     //the values are def. pushed into the array
 ?>
@@ -95,50 +93,15 @@
 >
         {{ csrf_field() }}
         <fieldset>
-            
-            <label class="container">
-            <?php echo $allActions[0]; ?>
+            <?php 
+                foreach ($allActions as $value) { ?> 
+                <label class="container"> 
+                
                 <input type="checkbox" name="action1" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <label class="container">
-            <?php echo $allActions[1]; ?>
-                <input type="checkbox" name="action2" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-            
-            <label class="container">
-            <?php echo $allActions[2]; ?>
-                <input type="checkbox" name="action2" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <label class="container">
-            <?php echo $allActions[3]; ?>
-                <input type="checkbox" name="action2" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <label class="container">
-                <?php echo $allActions[4]; ?>
-                <input type="checkbox" name="action5" value="1"
-                <?php if ($allActions[4] === NULL || empty($allActions[4] === true)) { ?> hidden <?php } ?>>
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <label class="container">
-                <?php echo $allActions[5]; ?>
-                <input type="checkbox" name="action6" value="1"
-                <?php if ($allActions[4] === NULL || empty($allActions[5] === true)) { ?> hidden <?php } ?>>
-                <span class="checkmark"></span>
-            </label>
-            <br>
+                    <span class="checkmark"></span>
+                    <?php echo "$value <br>"; ?> 
+                </label>
+            <?php } ?>
             
             <input type="submit">
 
