@@ -7,7 +7,8 @@
     @section("content")
 
         @foreach (App\Models\Action::all() AS $action)
-        <h4>{{ $action->action}}</h5>
+        <h4>{{ $action->action}} </h4>
+        <h5>{{$action->randomiser2()[0]}}</h5>
         @endforeach
 
         @include("partials/title")

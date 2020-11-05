@@ -19,26 +19,21 @@ class Action extends Model
         return Action::all();
     }
 
-    // function to pick 3 random actions 
-    public function randomiser()
-    {   
-        //picking 3 actions
-        $action1 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
-
-        //making sure each action is different 
-        if ($action1 === $action2) {
+    public function randomiser2() { 
+        do {
+            //need an empty array: 
+            $collectActions = [];
+            //create variables: 
+            $action1 = Action::all()->random(1)->pluck('action')->toArray()[0];
             $action2 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        } 
-        elseif ($action1 === $action3 || $action2 === $action3) {
-            $action3 = Action::all()->random(1)->pluck('action')->toArray()[0];
-        }
-        
-        //collecting each action in an array, so one can access each value in it
-        $uniqueCollection = array($action1, $action2, $action3);
-        return $uniqueCollection;
-
+            $action3 = Action::all()->random(1)->pluck('action')->toArray()[0]; 
+            //push variables into the collection: 
+            $collectActions = array($action1, $action2, $action3);
+            //check how many unique items in the array
+            $x = (count(array_unique($collectActions)));
+            //if it is smaller than 3, keep running the function 
+        } while ($x < 3);
+        return $collectActions;
     }
 
 
