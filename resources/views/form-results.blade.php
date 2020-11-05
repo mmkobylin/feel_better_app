@@ -8,9 +8,11 @@
         <p>      
                 Welcome <br>
 
-                @foreach (App\Models\Heavylifter::all()->take(1) as $ideas ) 
+                {{-- @foreach (App\Models\Heavylifter::all()->take(1) as $ideas )  --}}
 
-                    <label class="container">{{$ideas->index()}}
+                    <h1>Hello World</h1>
+                    
+                    {{-- <label class="container">{{$ideas->index()}} --}}
 
                 @endforeach
 
