@@ -13,15 +13,20 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 - navigation
 - form for heavylifter displaying correctly
 - adding tick boxes to lightbringer; making random suggestions displaying uniquely and properly. 
+- adding titles, subtitles and pictures
 
 
 ## In Progress
 
-- adding titles, subtitles and pictures
 - commenting code
+- finishing customised form for heavylifter 
+
+## Current Issues:
+- creating the form that saves the values to the database; 
+- making sure that the response comes back with the correct data
 
 ## Next Steps: 
 
-- creating customised form for heavylifter 
 - 404 page 
+- appling css and sass
 
