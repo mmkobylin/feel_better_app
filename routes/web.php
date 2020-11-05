@@ -13,35 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', "Heavylifters@show");
 
-Route::get('/lightbringer', function () {
-    return view('lightbringer');
-});
+//getting suggetions for lightbringer
+Route::get('/lightbringer', "lightbringer@show");
 
-Route::post('/lightbringer', function () {
-    return view('lightbringer');
-});
+//returning
+Route::post('/lightbringer', "lightbringer@show");
 
-Route::get('/results', function () {
-    return view('results');
-});
+Route::get('/heavylifter', "heavylifter@show_basic");
+Route::post('/heavylifter', "heavylifter@show_basic");
 
-Route::get('/heavylifter', function () {
-    return view('heavylifter-basic');
-});
-
-Route::post('/heavylifter', function () {
-    return view('heavylifter-basic');
-});
+Route::get('/heavylifter', "heavylifter-form@create");//initial form view
+Route::post('/heavylifter', "heavylifter-form@createPost");//submission
 
 
-Route::get('/heavy-custom', function () {
-    return view('heavylifter-form');
-});
-
-Route::post('/heavy-custom', function () {
-    return view('heavylifter-form');
-});
+Route::get('/customised-heavylifter', "heavylifter-form@index");
+// Route::put('/customised-heavylifter', function () {
+//     return redirect('form-results');
+// });
