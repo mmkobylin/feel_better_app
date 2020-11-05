@@ -25,7 +25,7 @@
         {{-- accessing Actions --}}
         @foreach (App\Models\Action::all()->take(1) as $action ) 
             {{-- taking first value from uniqueCollection--}}
-            <label class="container">{{$action->randomiser()[0]}}
+            <label class="container">{{$action1 = $action->randomiser()[0]}}
                 <input type="checkbox" name="action1" value="1">
                 <span class="checkmark"></span>
             </label>
