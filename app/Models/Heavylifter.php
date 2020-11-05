@@ -18,8 +18,20 @@ class Heavylifter extends Model
         'idea6',
     ];
 
-    public function index()
-    {
-        return Heavylifter::all();
-    }
+    // public function index()
+    // {
+    //     return Heavylifter::all();
+    // }
+
+    // public function create(){
+    //     return view("heavylifter-form");
+    // }
+
+    // public function createPost($request)
+    // {
+    //     $data = $request->all();
+    //     $heavylifter = Heavylifter::create($data);
+
+    //     return redirect("/");
+    // }
 }
