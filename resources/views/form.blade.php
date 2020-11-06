@@ -8,6 +8,6 @@
 
         @include("partials/title")
 
-        @include("partials/form-results")
+        @include("partials/form")
     
     @endsection

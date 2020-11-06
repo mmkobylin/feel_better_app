@@ -19,5 +19,4 @@ class Actions extends Controller
         return view('lightbringer');
     }
 
-
 }

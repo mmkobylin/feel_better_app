@@ -22,7 +22,7 @@ class Heavylifters extends Controller
 
     public function create()
     {
-        return 'it works';
+        return view('form');
     }
 
     public function createNew($request)
