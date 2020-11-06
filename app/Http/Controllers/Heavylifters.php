@@ -43,8 +43,10 @@ class Heavylifters extends Controller
        echo $request->idea4;
        echo $request->idea5;
        echo $request->idea6;
+    }
 
-
+    public function results(){
+        return view('results');
     }
 
     

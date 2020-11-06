@@ -20,4 +20,10 @@ class Heavylifter extends Model
         "idea6",
     ];
 
+    public function checklist() { 
+    
+        $ideas = Heavylifter::end();
+
+    return $ideas;
+}
 }

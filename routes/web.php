@@ -39,4 +39,6 @@ Route::post('/form',
 
 Route::get('/all',
  'App\Http\Controllers\Heavylifters@index');
+ Route::get('/results',
+ 'App\Http\Controllers\Heavylifters@results');
 
