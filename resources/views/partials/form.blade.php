@@ -20,6 +20,6 @@
             <label> Action 6: </label> <br>
             <input type="text" name="idea6"><br>
 
-            <input type="submit">
+            <button type="submit">Submit</button>
         </fieldset>
     </form> 

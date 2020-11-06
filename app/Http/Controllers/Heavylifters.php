@@ -23,9 +23,14 @@ class Heavylifters extends Controller
         return view('heavylifter-basic')
     }
 
-    public function create(){
-        return view("form");
+    public function create()
+    {
+        return 'it works';
     }
+
+    // public function create(){
+    //     return view("form");
+    // }
 
     public function createPost($request)
     {
