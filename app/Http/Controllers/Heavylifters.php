@@ -9,16 +9,17 @@ use App\Models\Heavylifter;
 //set up methods via controller
 class Heavylifters extends Controller
 {
-
+    //showing main page
     public function show() {
         return view('home')
     }
 
-    
+    //showing more info
     public function info() {
         return view('info')
     }
 
+    //
     public function index()
     {
         return Heavylifter::all();           

@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//bad; but it is working. 
-Route::get('/', function () {
-    return view('home');
-});
+// main route
+Route::get('/',  'App\Http\Controllers\Actions@home');
+
+//new and only real way to make routes in laravel 8.0
+Route::get('/info', 'App\Http\Controllers\Actions@info');
 
 //get:route name ; function returns VIEW; 
-Route::get('/lightbringer', function () {
-    return view('lightbringer');
-});
+Route::get('/lightbringer', 'App\Http\Controllers\Actions@lightbringer');
+Route::post('/lightbringer', 'App\Http\Controllers\Actions@lightbringer');
