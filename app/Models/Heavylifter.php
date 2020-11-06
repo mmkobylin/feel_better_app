@@ -9,6 +9,8 @@ class Heavylifter extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         "idea1",
         "idea2",

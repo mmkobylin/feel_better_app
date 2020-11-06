@@ -28,5 +28,14 @@ class Heavylifters extends Controller
     public function createNew(Request $request)
     {
        print_r($request->input());
+       $heavylifter = new Heavylifter;
+       $heavylifter->idea1 = $request->idea1;
+       $heavylifter->idea2 = $request->idea2;
+       $heavylifter->idea3 = $request->idea3;
+       $heavylifter->idea4 = $request->idea4;
+       $heavylifter->idea5 = $request->idea5;
+       $heavylifter->idea6 = $request->idea6;
+       echo $heavylifter->save();
+
     }
 }

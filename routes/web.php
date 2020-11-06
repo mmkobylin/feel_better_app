@@ -32,6 +32,7 @@ Route::post('/heavylifter',
 
  Route::get('/form',
  'App\Http\Controllers\Heavylifters@create');
+ 
 Route::post('/form',
  'App\Http\Controllers\Heavylifters@createNew');
 
