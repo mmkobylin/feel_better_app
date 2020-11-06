@@ -14,6 +14,11 @@ class Heavylifters extends Controller
         return view('home')
     }
 
+    
+    public function info() {
+        return view('info')
+    }
+
     public function index()
     {
         return Heavylifter::all();           
