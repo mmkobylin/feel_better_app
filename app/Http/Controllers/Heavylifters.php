@@ -10,30 +10,21 @@ use App\Models\Heavylifter;
 class Heavylifters extends Controller
 {
     //showing main page
-    public function show() {
-        return view('home')
-    }
 
-    //showing more info
-    public function info() {
-        return view('info')
-    }
-
-    //
     public function index()
     {
         return Heavylifter::all();           
     }
 
     public function show_basic() {
-        return view('heavylifter-basic')
+        return view('heavylifter-basic');
     }
 
     public function create(){
         return view("form");
     }
 
-    public function createPost($request)
+    public function createNew($request)
     {
         $data = $request->all();
         $heavylifter = Heavylifter::create($data);

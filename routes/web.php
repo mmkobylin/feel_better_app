@@ -20,5 +20,19 @@ Route::get('/',  'App\Http\Controllers\Actions@home');
 Route::get('/info', 'App\Http\Controllers\Actions@info');
 
 //get:route name ; function returns VIEW; 
-Route::get('/lightbringer', 'App\Http\Controllers\Actions@lightbringer');
-Route::post('/lightbringer', 'App\Http\Controllers\Actions@lightbringer');
+Route::get('/lightbringer',
+ 'App\Http\Controllers\Actions@lightbringer');
+Route::post('/lightbringer',
+ 'App\Http\Controllers\Actions@lightbringer');
+
+Route::get('/heavylifter',
+ 'App\Http\Controllers\Heavylifters@show_basic');
+Route::post('/heavylifter',
+ 'App\Http\Controllers\Heavylifters@show_basic');
+
+ Route::get('/form',
+ 'App\Http\Controllers\Heavylifters@create');
+Route::post('/submit',
+ 'App\Http\Controllers\Heavylifters@createPost');
+
+
