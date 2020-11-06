@@ -33,7 +33,7 @@ Route::post('/heavylifter',
  Route::get('/form',
  'App\Http\Controllers\Heavylifters@create');
 
-Route::post('/form',
+Route::get('/form',
  'App\Http\Controllers\Heavylifters@createNew');
 
 
@@ -42,3 +42,5 @@ Route::get('/all',
  Route::get('/results',
  'App\Http\Controllers\Heavylifters@results');
 
+ Route::post('/results',
+ 'App\Http\Controllers\Heavylifters@results');
