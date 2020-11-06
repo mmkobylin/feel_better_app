@@ -11,7 +11,7 @@
             <h4> Not for you? </h4>
             <p> But what if you are thinking... nah, this sounds good, but I know I feel good only when I sleep 4 hours and do all the food prep in the world! This does not seem to match my needs at all! <br>
             Well worry not, with thought of you and adventures spirits, I had created a questionare:
-            <br><a class="nav" href="/heavy-custom">Pick your own adventure?!</a>
+            <br><a class="nav" href="/form">Pick your own adventure?!</a>
             <br>Please use it and have fun, who am I to tell you how to live your life?
         </p>
     </div>
