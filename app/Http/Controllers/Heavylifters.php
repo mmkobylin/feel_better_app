@@ -25,9 +25,8 @@ class Heavylifters extends Controller
         return view('form');
     }
 
-    public function createNew($request)
+    public function createNew(Request $request)
     {
-        $data = $request->all();
-        $heavylifter = Heavylifter::create($data);
+       print_r($request->input());
     }
 }
