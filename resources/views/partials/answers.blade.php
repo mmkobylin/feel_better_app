@@ -2,16 +2,14 @@
 <section>
     {{-- creating the form --}}
     <form class="form-control" method="POST" action="results">
+    {{-- I am using fieldset for group of related elements in the form  --}}
+            <fieldset class="card-body" >
+            
+            @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
+            
+            <section <?php if ($idea->pluck('idea1')->last() === NULL ){ ?> hidden <?php } ?>>
 
-        <section>
-
-            <h3>Did you...<h3>
-
-            {{-- I am using fieldset for group of related elements in the form  --}}
-                <fieldset class="card-body" >
-                
-                @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
-
+                <h3>Did you...<h3>
                 {{-- Cross-Site Request Forgery Token --}}
                     @csrf
                         <label class="container"
@@ -96,7 +94,7 @@
             ?>
             {{-- hide if it form is not posted --}}
             <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-            {{-- Here go the results --}}
+            {{-- commenting results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total . "!"; 
                     ?> <br> <?php 
@@ -109,11 +107,6 @@
                     } elseif ($total > 4 ) {
                         echo "Amazing job! Look at you go!";
                     }
-                    ?> <br>
-
-                    
-            {{-- if no action submitted - shows encouraging message --}}
-    
-    
-        </section>
+                    ?> <br>    
+            </section>
 
