@@ -7,7 +7,7 @@
         <title>Feel Better</title>
 
         {{-- styles --}}
-        <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url('sass/app.scss') }}" />
         {{-- js link --}}
         <script defer type="text/javascript" src="{{ url('js/jquery.js') }}"></script>        
         <!-- Fonts -->

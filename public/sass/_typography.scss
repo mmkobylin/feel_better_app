@@ -1,0 +1,14 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+
+    background: rgb(53,34,195);
+    background: linear-gradient(0deg, rgba(53,34,195,1) 0%, rgba(229,42,212,1) 74%, rgba(45,196,253,1) 100%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
