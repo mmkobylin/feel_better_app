@@ -17,21 +17,28 @@ $last = last($array); --}}
 
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
-                    <label class="container">{{$idea->pluck('idea1')->last()}}
+                    <label class="container"
+                    <?php if ($idea->pluck('idea1')->last() === NULL ){ ?> hidden <?php } ?>>
+                    {{$idea->pluck('idea1')->last()}}
+                    
                         <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
 
-                    <label class="container">{{$idea->pluck('idea2')->last()}}
+                    <label class="container"
+                    <?php if ($idea->pluck('idea2')->last() === NULL ){ ?> hidden <?php } ?>>   
+                    {{$idea->pluck('idea2')->last()}}
                         <input type="checkbox" name="action2" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea3')->last()}}
+                    <label class="container"
+                    <?php if ($idea->pluck('idea3')->last() === NULL ){ ?> hidden <?php } ?>>    
+                    {{$idea->pluck('idea3')->last()}}
                         <input type="checkbox" name="action3" value="1"/>
                         <span class="checkmark"></span>
                         
@@ -39,14 +46,18 @@ $last = last($array); --}}
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea4')->last()}}
+                    <label class="container"
+                    <?php if ($idea->pluck('idea4')->last() === NULL ){ ?> hidden <?php } ?>>  
+                    {{$idea->pluck('idea4')->last()}}
                         <input type="checkbox" name="action4" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea5')->last()}}
+                    <label class="container"
+                    <?php if ($idea->pluck('idea5')->last() === NULL ){ ?> hidden <?php } ?>>
+                    {{$idea->pluck('idea5')->last()}}                    
                         <input type="checkbox" name="action5" value="1"/>
                         <span class="checkmark"></span>
                     </label>
@@ -54,7 +65,7 @@ $last = last($array); --}}
                     <br><br>
                     
                     <label class="container"
-                    {{-- <?php if (){ ?> hidden <?php } ?>     --}}
+                    <?php if ($idea->pluck('idea6')->last() === NULL ){ ?> hidden <?php } ?>    
                     >{{$idea->pluck('idea6')->last()}}
                         <input type="checkbox" name="action6" value="1"/>
                         <span class="checkmark"></span>
