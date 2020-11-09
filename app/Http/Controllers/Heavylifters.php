@@ -72,7 +72,7 @@ class Heavylifters extends Controller
            collect(array_push($allActions, $action6));
        } 
     //    return $allActions;
-        return $allActions;
+        return view('results');
     }
 
     public function answers(Request $request)

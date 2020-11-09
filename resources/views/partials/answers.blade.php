@@ -1,46 +1,29 @@
 <h1>We've got here</h2>
 <section>
     {{-- creating the form --}}
-    <form class="form-control" method="POST" action="heavylifter">
+    <form class="form-control" method="POST" action="results">
     
         <h3>Did you...<h3>
 
         {{-- I am using fieldset for group of related elements in the form  --}}
             <fieldset class="card-body" >
+            
+            @foreach (App\Models\Heavylifter::all()->take(1) as $idea1 ) 
+
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
-                    <label class="container">{{$action1}}
+                    <label class="container">{{$idea1->pluck('idea1')->toArray()[0]}}
                         <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
-                    <label class="container">{{$action2}}
-                        <input type="checkbox" name="action2" value="1"/>
-                        <span class="checkmark"></span>
-                    </label> 
-                
-                    <label class="container">{{$action3}}
-                        <input type="checkbox" name="action3" value="1"/>
-                        <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container">{{$action4}}
-                        <input type="checkbox" name="action4" value="1"/>
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">{{$action5}}
-                        <input type="checkbox" name="action5" value="1"/>
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">{{$action6}}
-                        <input type="checkbox" name="action6" value="1"/>
-                        <span class="checkmark"></span>
-                    </label>
 
                     <button class="button" id="subtitle1" style="display: block" 
                     type="submit" name="formSubmit" value="Submit">Submit!</button>
                 </fieldset>
             </form>
+            
+            @endforeach
 
              <?php
                 //collecting all the points
