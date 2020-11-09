@@ -27,20 +27,23 @@ Route::post('/lightbringer',
 
 Route::get('/heavylifter',
  'App\Http\Controllers\Heavylifters@show_basic');
+
 Route::post('/heavylifter',
  'App\Http\Controllers\Heavylifters@show_basic');
 
  Route::get('/form',
  'App\Http\Controllers\Heavylifters@create');
 
-Route::get('/form',
+Route::post('/form',
  'App\Http\Controllers\Heavylifters@createNew');
-
 
 Route::get('/all',
  'App\Http\Controllers\Heavylifters@index');
+
  Route::get('/results',
  'App\Http\Controllers\Heavylifters@results');
 
- Route::post('/results',
+//  creating the POST for this route
+
+ Route::post('/results-final',
  'App\Http\Controllers\Heavylifters@results');

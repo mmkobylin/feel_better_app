@@ -7,7 +7,7 @@
     @section("content")
 
         {{-- @include("partials/title") --}}
-        {{-- @include("partials/images") --}}
+        @include("partials/form")
         @include("partials/results")
         {{-- @include("partials/links") --}}
 

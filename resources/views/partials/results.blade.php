@@ -57,7 +57,7 @@
         <fieldset>
 
             <label> Action 1: </label> <br>
-            <input type="text" name="idea1"><br>
+            <input type="text" name="idea1" required ><br>
             <label> Action 2: </label> <br>
             <input type="text" name="idea2"><br>
             <label> Action 3: </label> <br>
@@ -72,8 +72,8 @@
             <button type="submit">Submit</button>
         </fieldset>
     </form> 
-    {{-- might need another action --}}
-    <form class="form-control" method="POST" action="results"
+    {{-- POST avalible thought here, and connects right to final screen --}}
+    <form class="form-control" method="POST" action="results-final"
         <?php if (empty($allActions) === true){ ?> hidden <?php } ?>>
         <h2>Let's see how well you've done!</h2>
         {{ csrf_field() }}

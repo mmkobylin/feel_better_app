@@ -15,7 +15,7 @@ class CreateHeavyliftersTable extends Migration
     {
         Schema::create('heavylifters', function (Blueprint $table) {
             $table->id();
-            $table->text('idea1');
+            $table->text('idea1')->nullable();
             $table->text('idea2')->nullable();
             $table->text('idea3')->nullable();
             $table->text('idea4')->nullable();
