@@ -8,25 +8,25 @@
         {{-- I am using fieldset for group of related elements in the form  --}}
             <fieldset class="card-body" >
             
-            @foreach (App\Models\Heavylifter::all()->take(1) as $idea1 ) 
+            @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
 
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
-                    <label class="container">{{$idea1->pluck('idea1')}}
+                    <label class="container">{{$idea->pluck('idea1')}}
                         <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
 
-                    <label class="container">{{$idea1->pluck('idea2')}}
+                    <label class="container">{{$idea->pluck('idea2')}}
                         <input type="checkbox" name="action2" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea1->pluck('idea3')}}
+                    <label class="container">{{$idea->pluck('idea3')}}
                         <input type="checkbox" name="action3" value="1"/>
                         <span class="checkmark"></span>
                         
@@ -34,21 +34,21 @@
 
                     <br><br>
                     
-                    <label class="container">{{$idea1->pluck('idea4')}}
+                    <label class="container">{{$idea->pluck('idea4')}}
                         <input type="checkbox" name="action4" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea1->pluck('idea5')}}
+                    <label class="container">{{$idea->pluck('idea5')}}
                         <input type="checkbox" name="action5" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea1->pluck('idea6')}}
+                    <label class="container" if <?php $idea}}>{{$idea1->pluck('idea6')}}
                         <input type="checkbox" name="action6" value="1"/>
                         <span class="checkmark"></span>
                     </label>
