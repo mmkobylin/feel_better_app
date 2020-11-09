@@ -41,7 +41,7 @@ class Heavylifters extends Controller
 
     public function answers(Request $request)
     {
-        return view('results-final');
+        return view('final-results');
     }
     
 }
