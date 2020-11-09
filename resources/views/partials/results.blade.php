@@ -73,7 +73,7 @@
         </fieldset>
     </form> 
     {{-- POST avalible thought here, and connects right to final screen --}}
-    <form class="form-control" method="POST" action="results-final"
+    <form class="form-control" method="POST" action="results"
         <?php if (empty($allActions) === true){ ?> hidden <?php } ?>>
         <h2>Let's see how well you've done!</h2>
         {{ csrf_field() }}

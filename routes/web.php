@@ -34,16 +34,21 @@ Route::post('/heavylifter',
  Route::get('/form',
  'App\Http\Controllers\Heavylifters@create');
 
-Route::post('/form',
- 'App\Http\Controllers\Heavylifters@createNew');
+// //this is what is coming back after form submits;
+// Route::post('/results',
+//  'App\Http\Controllers\Heavylifters@createNew');
 
-Route::get('/all',
- 'App\Http\Controllers\Heavylifters@index');
+// Route::get('/all',
+//  'App\Http\Controllers\Heavylifters@index');
 
- Route::get('/results',
- 'App\Http\Controllers\Heavylifters@results');
+// //  creating the POST for this route
 
-//  creating the POST for this route
+//  Route::post('/results-final',
+//  'App\Http\Controllers\Heavylifters@results');
 
- Route::post('/results-final',
- 'App\Http\Controllers\Heavylifters@results');
+Route::get('/results',
+'App\Http\Controllers\Heavylifters@createNew');
+
+Route::post('/results',
+'App\Http\Controllers\Heavylifters@createNew');
+

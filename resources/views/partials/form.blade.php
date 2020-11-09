@@ -1,4 +1,4 @@
-    <form class="form-control" method="POST" action="form">
+    <form class="form-control" method="POST" action="results">
         {{ csrf_field() }}
 
         <h2>Here is a form for your ideas! </h2>
