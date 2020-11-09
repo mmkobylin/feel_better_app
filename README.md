@@ -7,21 +7,19 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 
 ## Rececntly Achieved:
 
-- created an database of helpful suggestions
-- make it appear in correct way
-- welcome page and toggling working
-- navigation
 - form for heavylifter displaying correctly
 - adding tick boxes to lightbringer; making random suggestions displaying uniquely and properly. 
-
+- customised form submitting and displaying correctly;
+- checkboxes working and submission messages displaying.
 
 ## In Progress
 
-- adding titles, subtitles and pictures
+- adding SASS
 - commenting code
 
 ## Next Steps: 
 
-- creating customised form for heavylifter 
+- creating 'how are you' item - where person can say how they are feeling now
+- adding private journaling section
 - 404 page 
 
