@@ -69,10 +69,7 @@
                         <br><br>
         
                         <button class="button" id="subtitle1" style="display: block" 
-                        type="submit" name="formSubmit" value="Submit">
-                        <span id=span3 style="display: block">Submit! </span>
-                        <span id=span4 style="display: none">Submitted!</span>
-                        </button>
+                        type="submit" name="formSubmit" value="Submit">Submit!</button>
                     </fieldset>
                 </form>
                 
