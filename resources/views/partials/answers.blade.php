@@ -48,7 +48,7 @@
 
                     <br><br>
                     
-                    <label class="container" if <?php $idea}}>{{$idea1->pluck('idea6')}}
+                    <label class="container">{{$idea->pluck('idea6')}}
                         <input type="checkbox" name="action6" value="1"/>
                         <span class="checkmark"></span>
                     </label>
