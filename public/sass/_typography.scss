@@ -1,3 +1,4 @@
+//things applicable to all items: 
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,3 +13,30 @@ body {
     margin: 0;
     text-align: center;
 }
+
+p {
+    font-family: var(--base-font-color);
+    margin:0.5rem;
+    padding:1rem;
+    color: var(--base-font-color);
+    font-family: var(--font-primary);
+}
+
+.links {
+    font-family: var(--font-secondary); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--font-color-second);
+    font-family: var(--font-primary);
+};
+
+
+
+@media only screen and (min-width: 500px) {
+    p {
+        line-height: 1.7rem;
+        padding:4rem;
+        
+    }
+};

@@ -1,0 +1,24 @@
+a {
+    color: var(--background-secondary);
+}
+
+a:active, a:hover {
+    color: var(--font-color-link);
+    font-weight: bold;
+    text-decoration: none;
+
+}   
+
+.link {
+    color: var(--font-color-link);
+    font-family: var(--font-color-secondary);
+    text-decoration: none;
+}
+
+link:active, link:hover {
+    color: var(--font-color-secondary);
+    font-weight: bold;
+    /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
+    -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
+    box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
+} 

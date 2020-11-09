@@ -8,12 +8,13 @@
 
         {{-- styles --}}
         <link rel="stylesheet" type="text/css" href="{{ url('sass/app.scss') }}" />
+
         {{-- js link --}}
+
         <script defer type="text/javascript" src="{{ url('js/jquery.js') }}"></script>        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt&family=Salsa&display=swap" rel="stylesheet">       
-      
 
     </head>
 
