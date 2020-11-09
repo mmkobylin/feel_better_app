@@ -42,36 +42,6 @@
 ?>
 
 <section>
-    {{-- creating the form --}}
-
-    <form class="form-control" method="get" action="results"
-    {{-- display if the list is empty. --}}
-
-    <?php if (empty($allActions) !== true){ ?> hidden <?php } ?>>
-        {{ csrf_field() }}
-
-        <h2>Here is a form for your ideas! </h2>
-
-        {{-- using fieldset for group of related elements in the form  --}}
-
-        <fieldset>
-
-            <label> Action 1: </label> <br>
-            <input type="text" name="idea1" required ><br>
-            <label> Action 2: </label> <br>
-            <input type="text" name="idea2"><br>
-            <label> Action 3: </label> <br>
-            <input type="text" name="idea3"><br>
-            <label> Action 4: </label> <br>
-            <input type="text" name="idea4"><br>
-            <label> Action 5: </label> <br>
-            <input type="text" name="idea5"><br>
-            <label> Action 6: </label> <br>
-            <input type="text" name="idea6"><br>
-
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form> 
     {{-- POST avalible thought here, and connects right to final screen --}}
     <form class="form-control" method="POST" action="results"
         <?php if (empty($allActions) === true){ ?> hidden <?php } ?>>
@@ -82,7 +52,7 @@
                 foreach ($allActions as $value) { ?> 
                 <label class="container"> 
                 
-                <input type="checkbox" name="action" value="1">
+                <input type="checkbox" name="answer" value="1">
                     <span class="checkmark"></span>
                     <?php echo "$value <br>"; ?> 
                 </label>
@@ -95,12 +65,12 @@
     <?php
         //collecting all the points
         $total = (
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0) + 
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0) +
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0) +
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0) +
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0) +
-            +(isset($_POST["action"]) ? ($_POST["action"]): 0)
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0) + 
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0) +
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0) +
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0) +
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0) +
+            +(isset($_POST["answer"]) ? ($_POST["answer"]): 0)
         );         
     ?>
     {{-- hide if it form is not posted --}}
@@ -112,7 +82,10 @@
             
             ?> <br> <?php
             //-- comment showing with results --}}
-            if($total > 0 && $total < 2 ) {
+            if ($total = 0 ){
+                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+            }
+            elseif ($total > 0 && $total < 2 ) {
                 echo "Well done, every little step counts!";
             } elseif ($total >= 2 && $total < 4 ) {
                 echo "That's an excellent progress. Keep going!";

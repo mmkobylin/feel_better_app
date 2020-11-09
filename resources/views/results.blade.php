@@ -8,7 +8,7 @@
 
         {{-- @include("partials/title") --}}
         {{-- @include("partials/form") --}}
-        @include("partials/results")
+        <h2>Are we here?</h2>
         {{-- @include("partials/links") --}}
 
     @endsection

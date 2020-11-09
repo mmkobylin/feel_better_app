@@ -71,14 +71,15 @@ class Heavylifters extends Controller
        if (empty($action6) !== true ) {
            collect(array_push($allActions, $action6));
        } 
-       return $allActions;
-        // return view('results');
+    //    return $allActions;
+        return $allActions;
     }
 
     public function answers(Request $request)
     {
 
-        return view('results');
+        // return $allActions;
+        view('info');
     }
     
 }
