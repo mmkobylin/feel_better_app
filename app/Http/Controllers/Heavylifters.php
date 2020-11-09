@@ -36,48 +36,49 @@ class Heavylifters extends Controller
         $heavylifter->idea6 = $request->idea6;
         $heavylifter->save();
 
-        return view('results');
+        $allActions = [];
+
+        //declare variables that I get from GET method
+       $action1= $request->idea1;
+       $action2= $request->idea2;
+       $action3= $request->idea3;
+       $action4= $request->idea4; 
+       $action5= $request->idea5;
+       $action6= $request->idea6;
+   
+       //this is where I collect the variables
+       
+       if (empty($action1) !== true ) {
+           collect(array_push($allActions, $action1));
+       } 
+       
+       if (empty($action2) !== true ) {
+           collect(array_push($allActions, $action2));
+       } 
+       
+       if (empty($action3) !== true ) {
+           collect(array_push($allActions, $action3));
+       } 
+       
+       if (empty($action4) !== true ) {
+           collect(array_push($allActions, $action4));
+       } 
+       
+       if (empty($action5) !== true ) {
+           collect(array_push($allActions, $action5));
+       } 
+       
+       if (empty($action6) !== true ) {
+           collect(array_push($allActions, $action6));
+       } 
+       return $allActions;
+        // return view('results');
     }
 
     public function answers(Request $request)
     {
-        $allActions = [];
 
-     //declare variables that I get from GET method
-    $action1= $request->idea1;
-    $action2= $request->idea2;
-    $action3= $request->idea3;
-    $action4= $request->idea4; 
-    $action5= $request->idea5;
-    $action6= $request->idea6;
-
-    //this is where I collect the variables
-    
-    if (empty($action1) !== true ) {
-        collect(array_push($allActions, $action1));
-    } 
-    
-    if (empty($action2) !== true ) {
-        collect(array_push($allActions, $action2));
-    } 
-    
-    if (empty($action3) !== true ) {
-        collect(array_push($allActions, $action3));
-    } 
-    
-    if (empty($action4) !== true ) {
-        collect(array_push($allActions, $action4));
-    } 
-    
-    if (empty($action5) !== true ) {
-        collect(array_push($allActions, $action5));
-    } 
-    
-    if (empty($action6) !== true ) {
-        collect(array_push($allActions, $action6));
-    } 
-
-        return $allActions;
+        return view('results');
     }
     
 }
