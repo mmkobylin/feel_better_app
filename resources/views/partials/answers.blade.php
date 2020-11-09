@@ -10,23 +10,28 @@
             
             @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
 
+{{-- 
+$array = [100, 200, 300];
+
+$last = last($array); --}}
+
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
-                    <label class="container">{{$idea->pluck('idea1')}}
+                    <label class="container">{{$idea->pluck('idea1')->last()}}
                         <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
 
-                    <label class="container">{{$idea->pluck('idea2')}}
+                    <label class="container">{{$idea->pluck('idea2')->last()}}
                         <input type="checkbox" name="action2" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea3')}}
+                    <label class="container">{{$idea->pluck('idea3')->last()}}
                         <input type="checkbox" name="action3" value="1"/>
                         <span class="checkmark"></span>
                         
@@ -34,21 +39,23 @@
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea4')}}
+                    <label class="container">{{$idea->pluck('idea4')->last()}}
                         <input type="checkbox" name="action4" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea5')}}
+                    <label class="container">{{$idea->pluck('idea5')->last()}}
                         <input type="checkbox" name="action5" value="1"/>
                         <span class="checkmark"></span>
                     </label>
 
                     <br><br>
                     
-                    <label class="container">{{$idea->pluck('idea6')}}
+                    <label class="container"
+                    {{-- <?php if (){ ?> hidden <?php } ?>     --}}
+                    >{{$idea->pluck('idea6')->last()}}
                         <input type="checkbox" name="action6" value="1"/>
                         <span class="checkmark"></span>
                     </label>

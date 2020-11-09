@@ -75,6 +75,12 @@ class Heavylifters extends Controller
         return view('results');
     }
 
+    public function lastItem() {
+        $array = [100, 200, 300];
+
+    $last = last($array);
+    }
+
     public function answers(Request $request)
     {
 
