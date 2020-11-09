@@ -54,94 +54,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-figure {
-  background: var(--font-color-primary);
-  margin-top: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.images {
-  height: 7rem;
-  width: 10rem;
-  opacity: 85%;
-}
-
-.images {
-  height: 7rem;
-  width: 10rem;
-}
-
-@media only screen and (min-width: 500px) {
-  .images {
-    height: 15rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    float: left;
-    width: 20rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 699pc) {
-  .images {
-    height: 15rem;
-    width: 20rem;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .images {
-    height: 25rem;
-    width: 33rem;
-  }
-}
-
-section {
-  background: var(--background-secondary);
-  border: solid 1rem var(--font-color-primary);
-  border-radius: 1.5rem;
-  color: var(--font-color-primary);
-  padding: 2rem;
-  margin: 2rem;
-}
-
-@media only screen and (min-width: 500px) {
-  section {
-    line-height: 3rem;
-    padding: 6rem;
-    margin: 7rem;
-  }
-}
-
-a {
-  color: var(--background-secondary);
-}
-
-a:active, a:hover {
-  color: var(--font-color-link);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.link {
-  color: var(--font-color-link);
-  font-family: var(--font-color-secondary);
-  text-decoration: none;
-}
-
-link:active, link:hover {
-  color: var(--font-color-secondary);
-  font-weight: bold;
-  /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-    -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-    box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
-}
-
 button {
   background: var(--font-color-primary);
   border-radius: 25px;
@@ -163,6 +75,83 @@ button:active, button:hover {
   box-shadow: 17px 24px 71px 78px #f2eed9;
 }
 
+.card-body {
+  border: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: var(--font-color-link);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--font-color-primary);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 figure {
   background: var(--font-color-primary);
   margin-top: 0;
@@ -228,7 +217,7 @@ section {
 }
 
 a {
-  color: var(--background-secondary);
+  color: var(--font-color-secondary);
 }
 
 a:active, a:hover {
@@ -238,16 +227,57 @@ a:active, a:hover {
 }
 
 .link {
-  color: var(--font-color-link);
+  color: var(--font-color-secondary);
   font-family: var(--font-color-secondary);
-  text-decoration: none;
 }
 
-link:active, link:hover {
-  color: var(--font-color-secondary);
+.link:active, .link:hover {
+  color: var(--font-color-link);
   font-weight: bold;
   /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
     -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
     box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
+}
+
+.navbar-home {
+  font-family: 'Amatic SC', cursive;
+  font-size: 150%;
+}
+
+.navbar-home:active, .navbar-home:hover {
+  display: inline;
+  font-size: 200%;
+  list-style: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar-home {
+    font-size: 250%;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.navbar-home {
+  font-family: 'Amatic SC', cursive;
+  font-size: 150%;
+}
+
+.navbar-home:active, .navbar-home:hover {
+  display: inline;
+  font-size: 200%;
+  list-style: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar-home {
+    font-size: 250%;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.card-body {
+  border: none;
 }
 /*# sourceMappingURL=app.css.map */
