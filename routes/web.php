@@ -38,6 +38,9 @@ Route::post('/heavylifter',
 Route::post('/results',
  'App\Http\Controllers\Heavylifters@createNew');
 
+ Route::get('/results',
+ 'App\Http\Controllers\Heavylifters@createNew');
+
 Route::get('/all',
 'App\Http\Controllers\Heavylifters@index');
 
