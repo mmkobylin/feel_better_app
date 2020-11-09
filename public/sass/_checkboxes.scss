@@ -22,12 +22,12 @@
     left: 0;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #eee;
+    background-color: var(--font-color-link);
   }
   
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: var(--font-color-link);
+    background-color: var(--font-color-primary);
   }
   
   /* When the checkbox is checked, add a blue background */
