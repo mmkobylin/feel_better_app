@@ -17,7 +17,44 @@
                         <span class="checkmark"></span>
                     </label>
 
+                    <br><br>
 
+                    <label class="container">{{$idea1->pluck('idea2')}}
+                        <input type="checkbox" name="action2" value="1"/>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <br><br>
+                    
+                    <label class="container">{{$idea1->pluck('idea3')}}
+                        <input type="checkbox" name="action3" value="1"/>
+                        <span class="checkmark"></span>
+                        
+                    </label>
+
+                    <br><br>
+                    
+                    <label class="container">{{$idea1->pluck('idea4')}}
+                        <input type="checkbox" name="action4" value="1"/>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <br><br>
+                    
+                    <label class="container">{{$idea1->pluck('idea5')}}
+                        <input type="checkbox" name="action5" value="1"/>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <br><br>
+                    
+                    <label class="container">{{$idea1->pluck('idea6')}}
+                        <input type="checkbox" name="action6" value="1"/>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <br><br>
+    
                     <button class="button" id="subtitle1" style="display: block" 
                     type="submit" name="formSubmit" value="Submit">Submit!</button>
                 </fieldset>
