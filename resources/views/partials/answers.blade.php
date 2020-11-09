@@ -12,7 +12,7 @@
 
             {{-- Cross-Site Request Forgery Token --}}
                 @csrf
-                    <label class="container">{{$idea1->pluck('idea1')->toArray()[0]}}
+                    <label class="container">{{$idea1->pluck('idea1')}}
                         <input type="checkbox" name="action1" value="1"/>
                         <span class="checkmark"></span>
                     </label>
