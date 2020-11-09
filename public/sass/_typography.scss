@@ -1,18 +1,26 @@
 //things applicable to all items: 
+
 *, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: normal;
+    margin:0;
+    line-height: 2rem;
+    fill:var(--background-secondary);
 }
-
 body {
-
-    background: rgb(53,34,195);
-    background: linear-gradient(0deg, rgba(53,34,195,1) 0%, rgba(229,42,212,1) 74%, rgba(45,196,253,1) 100%);
-    padding: 0;
-    margin: 0;
+    background: var(--font-color-link);  
+    color: var(--font-color-primary);
+    font-family: var(--font-secondary);
+    position: relative;
     text-align: center;
+
 }
+
+@media only screen and (min-width: 500px) {
+    body {
+        font-size: 1.5rem;
+    }
+};
+
+
 
 p {
     font-family: var(--base-font-color);

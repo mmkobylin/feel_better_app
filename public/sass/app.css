@@ -11,19 +11,23 @@
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Orbitron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: normal;
+  margin: 0;
+  line-height: 2rem;
+  fill: var(--background-secondary);
 }
 
 body {
-  background: #3522c3;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3522c3), color-stop(74%, #e52ad4), to(#2dc4fd));
-  background: linear-gradient(0deg, #3522c3 0%, #e52ad4 74%, #2dc4fd 100%);
-  padding: 0;
-  margin: 0;
+  background: var(--font-color-link);
+  color: var(--font-color-primary);
+  font-family: var(--font-secondary);
+  position: relative;
   text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -97,7 +101,7 @@ figure {
   }
 }
 
-.section {
+section {
   background: var(--background-secondary);
   border: solid 1rem var(--font-color-primary);
   border-radius: 1.5rem;
@@ -107,7 +111,116 @@ figure {
 }
 
 @media only screen and (min-width: 500px) {
-  .section {
+  section {
+    line-height: 3rem;
+    padding: 6rem;
+    margin: 7rem;
+  }
+}
+
+a {
+  color: var(--background-secondary);
+}
+
+a:active, a:hover {
+  color: var(--font-color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link {
+  color: var(--font-color-link);
+  font-family: var(--font-color-secondary);
+  text-decoration: none;
+}
+
+link:active, link:hover {
+  color: var(--font-color-secondary);
+  font-weight: bold;
+  /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
+    -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
+    box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
+}
+
+button {
+  background: var(--font-color-primary);
+  border-radius: 25px;
+  border: 4px solid var(--font-color-primary);
+  background: var(--background-secondary);
+  font-family: var(--font-primary);
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+button:active, button:hover {
+  background-color: var(--font-color-link);
+  border: 10px solid var(--font-color-primary);
+  color: var(--font-color-secondary);
+  font-weight: bolder;
+  -webkit-box-shadow: 17px 24px 71px 78px #f2eed9;
+  box-shadow: 17px 24px 71px 78px #f2eed9;
+}
+
+figure {
+  background: var(--font-color-primary);
+  margin-top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.images {
+  height: 7rem;
+  width: 10rem;
+  opacity: 85%;
+}
+
+.images {
+  height: 7rem;
+  width: 10rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .images {
+    height: 15rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    width: 20rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699pc) {
+  .images {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .images {
+    height: 25rem;
+    width: 33rem;
+  }
+}
+
+section {
+  background: var(--background-secondary);
+  border: solid 1rem var(--font-color-primary);
+  border-radius: 1.5rem;
+  color: var(--font-color-primary);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  section {
     line-height: 3rem;
     padding: 6rem;
     margin: 7rem;

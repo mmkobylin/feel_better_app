@@ -1,4 +1,4 @@
-.section {
+section {
     background: var(--background-secondary);
     border: solid 1rem var(--font-color-primary);
     border-radius: 1.5rem;
@@ -8,7 +8,7 @@
 };
 
 @media only screen and (min-width: 500px) {
-    .section {
+    section {
         line-height: 3rem;
         padding:6rem;
         margin:7rem;
