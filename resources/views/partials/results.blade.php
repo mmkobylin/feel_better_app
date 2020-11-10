@@ -4,13 +4,13 @@
     //declare an empty array for variables
     $allActions = [];
 
-     //declare variables that I get from GET method
-    $action1=$_GET['idea1'];
-    $action2=$_GET['idea2'];
-    $action3=$_GET['idea3'];
-    $action4=$_GET['idea4']; 
-    $action5=$_GET['idea5'];
-    $action6=$_GET['idea6'];
+     //declare variables that I POST from POST method
+    $action1=$_POST['idea1'];
+    $action2=$_POST['idea2'];
+    $action3=$_POST['idea3'];
+    $action4=$_POST['idea4']; 
+    $action5=$_POST['idea5'];
+    $action6=$_POST['idea6'];
 
     //this is where I collect the variables
     
@@ -58,9 +58,10 @@
                 </label>
             <?php } ?>
             
-            <input type="submit">
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
+</section>
 
     <?php
         //collecting all the points
@@ -94,14 +95,3 @@
             }
         ?> 
     </section>
-    {{-- if no action submitted - shows encouraging message --}}
-    <aside>
-        @php 
-            if (isset($_POST['formSubmit']) && $total === 0)  {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            }
-        @endphp
-    </aside>
-
-</form>
-</section>

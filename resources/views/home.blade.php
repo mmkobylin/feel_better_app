@@ -4,9 +4,11 @@
         "Feel Better"
     }}@endsection
 
-    @section("content")
+    <header>
+            @include("partials/header")
 
-        @include("partials/title")
+    </header>
+    @section("content")
         @include("partials/images")
         @include("partials/intro")
     @endsection

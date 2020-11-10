@@ -1,0 +1,8 @@
+#span1:active, 
+#span:hover, #span2:active, 
+#span:hover, #span3:active, 
+#span:hover, #span4:active, 
+#span:hover {
+    color: var(--font-color-secondary);
+    text-decoration: underline;
+}

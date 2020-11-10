@@ -34,12 +34,6 @@
   .container input:checked ~ .checkmark {
     background-color: var(--font-color-primary);
   }
-      
-//   svg {
-//     fill: var(--background-primary);
-//     height: 2rem;
-//     width: 2rem;
-// }
   
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {

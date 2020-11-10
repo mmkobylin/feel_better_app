@@ -8,8 +8,7 @@ button {
     font-size: 1rem;
     padding:1.5rem;
     margin:2rem;
-
-}
+};
 
 button:active, button:hover {
         background-color: var(--font-color-link);
@@ -19,5 +18,5 @@ button:active, button:hover {
         -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
         -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
         box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-}
+};
 

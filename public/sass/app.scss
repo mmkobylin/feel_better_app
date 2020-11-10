@@ -10,5 +10,10 @@
 @import '_nav.scss';
 @import '_nav-home.scss';
 @import '_sections.scss';
-
+@import '_paragraphs.scss';
 @import '_card-body.scss';
+
+
+* {
+    line-height: 45rem;
+}

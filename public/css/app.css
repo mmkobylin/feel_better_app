@@ -14,7 +14,7 @@
 *::before,
 *::after {
   margin: 0;
-  line-height: 2rem;
+  line-height: 3rem;
   fill: var(--background-secondary);
 }
 
@@ -58,6 +58,22 @@ h6 {
   p {
     line-height: 1.7rem;
     padding: 4rem;
+  }
+}
+
+article {
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  background: var(--background-secondary);
+}
+
+@media only screen and (min-width: 500px) {
+  article {
+    line-height: 2rem;
+    margin: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -236,8 +252,80 @@ a:hover {
   box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
 }
 
+* {
+  fill: var(--background-secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: var(--background-primary);
+  font-size: 2rem;
+  padding: 0.6rem;
+  padding-top: 1.4rem;
+  line-height: 0.5rem;
+}
+
+li:active,
+li:hover {
+  color: var(--background-primary);
+  font-weight: bolder;
+}
+
+li.a:active,
+li.a:hover {
+  color: var(--background-primary);
+  text-decoration: none;
+}
+
+#nav {
+  text-align: justify;
+  padding: 0;
+}
+
+#nav:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+#nav li {
+  display: inline-block;
+  color: var(--font-primary);
+}
+
+svg {
+  fill: var(--background-primary);
+  height: 2rem;
+  width: 2rem;
+}
+
+span {
+  display: none;
+}
+
+ul li {
+  display: inline;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 500px) {
+  span {
+    display: inline-block;
+  }
+
+  li {
+    color: var(--background-primary);
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
 .navbar-home {
-  font-family: "Amatic SC", cursive;
+  font-family: var(--font-primary);
   font-size: 150%;
 }
 
@@ -261,6 +349,7 @@ section {
   border: solid 1rem var(--font-color-primary);
   border-radius: 1.5rem;
   color: var(--font-color-primary);
+  line-height: 3rem;
   padding: 2rem;
   margin: 2rem;
 }
@@ -273,7 +362,59 @@ section {
   }
 }
 
-.card-body {
-  border: none;
+p {
+  line-height: 7rem;
+}
+
+@media only screen and (min-width: 500px) {
+  p {
+    line-height: 4rem;
+  }
+}
+
+fieldset {
+  color: var(--font-color-secondary);
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  fieldset {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  color: var(--font-color-primary);
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  line-height: 4rem;
+  padding-bottom: 1.3rem;
+}
+
+h2,
+h3 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 4rem;
+    margin: 3rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 3rem;
+  }
 }
 

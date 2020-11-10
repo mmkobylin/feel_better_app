@@ -9,13 +9,20 @@ a:active, a:hover {
 
 }   
 
+section > a:active, section > a:hover {
+    color: var(--font-color-link);
+    font-weight: bold;
+    text-decoration: none;
+
+} 
+
 .link {
     color: var(--font-color-secondary);
     font-family: var(--font-color-secondary);
 }
 
 .link:active, .link:hover {
-    color: var(--font-color-link);
+    color: var(--background-secondary);
     font-weight: bold;
     /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
     -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);

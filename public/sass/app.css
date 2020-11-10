@@ -241,25 +241,6 @@ a:active, a:hover {
   }
 }
 
-.navbar-home {
-  font-family: 'Amatic SC', cursive;
-  font-size: 150%;
-}
-
-.navbar-home:active, .navbar-home:hover {
-  display: inline;
-  font-size: 200%;
-  list-style: none;
-  text-align: center;
-}
-
-@media only screen and (min-width: 500px) {
-  .navbar-home {
-    font-size: 250%;
-    letter-spacing: 0.3rem;
-  }
-}
-
 section {
   background: var(--background-secondary);
   border: solid 1rem var(--font-color-primary);

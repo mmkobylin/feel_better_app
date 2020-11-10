@@ -80,7 +80,9 @@
                     
                     ?> <br> <?php
                     //-- comment showing with results --}}
-                    if($total > 0 && $total < 2 ) {
+                    if ($total === 0) {
+                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+                    } elseif ( $total > 0 && $total < 2 ) {
                         echo "Well done, every little step counts!";
                     } elseif ($total >= 2 && $total < 4 ) {
                         echo "That's an excellent progress. Keep going!";
@@ -90,12 +92,5 @@
                 ?> 
             </section>
             {{-- if no action submitted - shows encouraging message --}}
-            <aside>
-                @php 
-                    if (isset($_POST['formSubmit']) && $total === 0)  {
-                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-                    }
-                @endphp
-            </aside>
         </section>
 

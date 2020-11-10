@@ -1,0 +1,15 @@
+article {
+    border-radius:2rem;
+    margin:2rem;
+    padding:2rem;
+    background: var(--background-secondary);
+}
+
+@media only screen and (min-width: 500px) {
+    article {
+        line-height: 2rem;
+        margin:6rem;
+        padding-left:6rem;
+        padding-right:6rem;
+    }
+  };
