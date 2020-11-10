@@ -179,17 +179,17 @@ grid-template-columns: 1fr;
     </style>
 
     <body>
-        <header>
-            {{-- this is where the header goes --}}
-        </header>
         
+        <header>
+            @include("partials/header")
+        </header>
+            
         <main class="content">
         {{-- this is where I let the other parts in --}}
             @yield("content")
         </main>
 
-        <footer>
-            {{-- this is where the header would go --}}
+          <footer>
             @include("partials/home-nav")
         </footer>
 
