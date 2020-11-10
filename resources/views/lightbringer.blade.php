@@ -13,4 +13,4 @@
 
     @endsection
 
-    <footer
+

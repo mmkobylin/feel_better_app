@@ -19373,7 +19373,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: Node Sass version 5.0.0 is incompatible with ^4.0.0.\n    at getSassImplementation (/mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/sass-loader/dist/getSassImplementation.js:46:13)\n    at Object.loader (/mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/sass-loader/dist/index.js:40:61)\n    at /mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/webpack/lib/NormalModule.js:316:20\n    at /mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at runSyncOrAsync (/mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/loader-runner/lib/LoaderRunner.js:143:3)\n    at iterateNormalLoaders (/mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/loader-runner/lib/LoaderRunner.js:232:2)\n    at /mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/loader-runner/lib/LoaderRunner.js:205:4\n    at /mnt/c/Users/mmkob/Videos/Code/feel-better-app/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

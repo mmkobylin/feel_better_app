@@ -3,7 +3,8 @@
     "mappings": "ACAA,AAAA,KAAK,CAAC;EACF,oBAAoB,CAAA,QAAC;EAErB,sBAAsB,CAAA,QAAC;EAEvB,oBAAoB,CAAA,OAAC;EAErB,iBAAiB,CAAA,QAAC;EAElB,sBAAsB,CAAA,QAAC;EAEvB,cAAc,CAAA,iBAAC;EAEf,gBAAgB,CAAA,iBAAC;EAEjB,cAAc,CAAA,qBAAC;EAEf,kBAAkB,CAAA,6EAAC;CAEtB;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,KAAK;CACf",
     "sources": [
         "app.scss",
-        "_variables.scss"
+        "_variables.scss",
+        "_header.scss"
     ],
     "names": [],
     "file": "app.css"

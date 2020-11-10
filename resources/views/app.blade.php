@@ -8,7 +8,7 @@
 
         {{-- styles --}}
         
-        {{-- <link href="{{ asset('/sass/app.css') }}" rel="stylesheet"> --}}
+        <link href="{{ asset('/sass/app.css') }}" rel="stylesheet">
         {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
@@ -20,7 +20,7 @@
 
     </head>
 
-    <style>
+    {{-- <style>
     * {
         line-height:2rem;
     }
@@ -176,7 +176,7 @@ grid-template-columns: 1fr;
     }
 
 
-    </style>
+    </style> --}}
 
     <body>
         
