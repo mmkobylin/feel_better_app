@@ -1,5 +1,5 @@
 <h1>Check on yourself!</h2>
-<section>
+
     {{-- creating the form --}}
     <form class="form-control" method="POST" action="results">
     {{-- I am using fieldset for group of related elements in the form  --}}
@@ -90,7 +90,7 @@
                 );         
             ?>
             {{-- hide if it form is not posted --}}
-            <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+            <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- commenting results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total . "!"; 

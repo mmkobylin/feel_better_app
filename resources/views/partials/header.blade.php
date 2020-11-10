@@ -10,9 +10,11 @@
         <li><a href="/form"><span class="navigation">Customise</span>
             {!! file_get_contents('icons/option.svg') !!} </a>
         </li>
-        <li><a href="/info"><span class="navigation">About Us</span>
+
+        <li><a href="/info"><span class="navigation">Info</span>
         {!! file_get_contents('icons/question.svg') !!} </a>
         </li>
+        
         <li> <a href="/"><span class="navigation">Home</span>{!! file_get_contents('icons/home.svg') !!} </a>
         </li>
     </ul>
