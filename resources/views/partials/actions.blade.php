@@ -63,7 +63,7 @@
         +(isset($_POST["action3"]) ? ($_POST["action3"]): 0));
 ?>
 
-<section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+<section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- total displays --}}
     <?php
         echo "The total amount of points for the day is... " . $total . "!"; 

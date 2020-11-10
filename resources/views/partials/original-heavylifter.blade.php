@@ -75,7 +75,7 @@
             <div <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
-                    echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
+                    echo "The total amount of points for the day is... " . $total . "!"; 
                     {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
                     
                     ?> <br> <?php

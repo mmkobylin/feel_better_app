@@ -248,8 +248,9 @@ a:active, a:hover {
 }
 
 .link:active, .link:hover {
-  color: var(--font-color-link);
+  color: var(--font-color-primary);
   font-weight: bold;
+  text-shadow: 3px 3px gray;
   text-decoration: underline;
 }
 
