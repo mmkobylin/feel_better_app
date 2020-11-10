@@ -10,10 +10,6 @@
   --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
 }
 
-body {
-  color: blueviolet;
-}
-
 *, *::before, *::after {
   margin: 0;
   text-align: center;
@@ -22,7 +18,7 @@ body {
 }
 
 body {
-  background: purple;
+  background: var(--font-color-link);
   color: var(--font-color-primary);
   font-family: var(--font-secondary);
   position: relative;
@@ -364,11 +360,11 @@ section {
 }
 
 #span1:active,
-#span:hover, #span2:active,
-#span:hover, #span3:active,
-#span:hover, #span4:active,
-#span:hover {
-  color: var(--font-color-secondary);
+#span1:hover, #span2:active,
+#span2:hover, #span3:active,
+#span3:hover, #span4:active,
+#span4:hover {
+  color: var(--font-color-link);
   text-decoration: underline;
 }
 

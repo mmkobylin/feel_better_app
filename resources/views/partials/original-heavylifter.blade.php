@@ -72,7 +72,7 @@
                 );         
             ?>
             {{-- hide if it form is not posted --}}
-            <section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+            <div id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
@@ -90,7 +90,5 @@
                         echo "Amazing job! Look at you go!";
                     }
                 ?> 
-            </section>
-            {{-- if no action submitted - shows encouraging message --}}
+            </div>
         </section>
-
