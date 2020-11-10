@@ -1,7 +1,7 @@
 :root {
   --background-primary: #c5db98;
   --background-secondary: #fff8dc;
-  --font-color-primary:#c71772;
+  --font-color-primary:#aa0058;
   --font-color-link: #01cbeb;
   --font-color-secondary: #421730;
   --font-primary: 'Salsa', cursive;
@@ -153,6 +153,13 @@ button:active, button:hover {
   user-select: none;
 }
 
+@media only screen and (min-width: 500px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+
 fieldset {
   border: none;
   color: var(--font-color-secondary);
@@ -261,6 +268,10 @@ a:active, a:hover {
   color: var(--font-color-link);
   font-weight: bold;
   text-decoration: underline;
+}
+
+.links-section {
+  line-height: 0.6rem;
 }
 
 .navbar-home {

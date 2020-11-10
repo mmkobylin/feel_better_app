@@ -1,4 +1,4 @@
-<section>
+<section class="links-section">
     <h4> Other websites that make you feel better: <h4>
     <p>Tired of cats videos? Or maybe just fancing some variety? </p>
     <a href="https://www.zooborns.com/?cnn=yes" class="link">Zoobrons</a>
