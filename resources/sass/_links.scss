@@ -9,14 +9,24 @@ a:active, a:hover {
 
 }   
 
+.link-image {
+    color: var(--font-color-secondary);
+}   
+
+.link-image:active, .link-image:hover {
+    color: var(--background-secondary);
+    font-weight: bold;
+    text-decoration: underline;
+}   
+
+
 .link {
     color: var(--font-color-secondary);
     font-family: var(--font-color-secondary);
 }
 
 .link:active, .link:hover {
-    color: var(--font-color-primary);
+    color: var(--font-color-link);
     font-weight: bold;
-    text-shadow: 3px 3px gray;
     text-decoration: underline;
-}
+}     
