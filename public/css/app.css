@@ -252,13 +252,6 @@ a:hover {
   text-decoration: none;
 }
 
-a.nav.link:active,
-a.nav.link:hover {
-  color: var(--font-color-link);
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 .link {
   color: var(--font-color-secondary);
   font-family: var(--font-color-secondary);
@@ -266,11 +259,9 @@ a.nav.link:hover {
 
 .link:active,
 .link:hover {
-  color: var(--background-secondary);
+  color: var(--font-color-link);
   font-weight: bold;
-  /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-  -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-  box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
+  text-decoration: underline;
 }
 
 .navbar-home {
@@ -394,6 +385,17 @@ section {
     margin: 7rem;
     margin-top: 1rem;
   }
+}
+
+#span1:active,
+#span1:hover,
+#span2:active,
+#span2:hover,
+#span3:active,
+#span3:hover,
+#span4:active,
+#span4:hover {
+  color: var(--font-color-link);
 }
 
 #span1:active,

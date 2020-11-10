@@ -6,8 +6,8 @@
 
     @section("content")
 
-        @include("partials/title")
         @include("partials/images")
+        @include("partials/title")
         @include("partials/info")
         @include("partials/links")
 

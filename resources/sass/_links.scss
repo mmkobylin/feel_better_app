@@ -9,14 +9,7 @@ a:active, a:hover {
 
 }   
 
-// section > a:active, section > a:hover,
-// section > link:active, section > link:hover,
-a.nav.link:active, a.nav.link:hover {
-    color: var(--font-color-link);
-    font-weight: bold;
-    text-decoration: underline;
 
-} 
 
 .link {
     color: var(--font-color-secondary);
@@ -24,9 +17,7 @@ a.nav.link:active, a.nav.link:hover {
 }
 
 .link:active, .link:hover {
-    color: var(--background-secondary);
+    color: var(--font-color-link);
     font-weight: bold;
-    /* -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-    -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-    box-shadow: 17px 24px 71px 78px rgba(242,238,217,1); */
+    text-decoration: underline;
 } 
