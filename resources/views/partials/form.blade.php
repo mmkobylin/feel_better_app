@@ -1,3 +1,4 @@
+<section>
     <form class="form-control" method="POST" action="results">
         {{ csrf_field() }}
 
@@ -23,3 +24,4 @@
             <button type="submit">Submit</button>
         </fieldset>
     </form> 
+<section>
