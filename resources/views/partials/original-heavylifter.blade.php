@@ -72,7 +72,7 @@
                 );         
             ?>
             {{-- hide if it form is not posted --}}
-            <div id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+            <div <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total ?? '' . "!"; 
