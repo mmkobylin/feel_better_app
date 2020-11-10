@@ -5,7 +5,7 @@
     </h3>
     <div id="paragraph2" style="display: none"> 
         <p> Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
-            This is what I created a <a class="nav" href="/heavylifter">HEAVYLIFTER</a> for.
+            This is what I created a heavylifter for.
             I created a list of checking boxes, that you might tick, and get the score you had after each day. 
             It is ok if some of them don't apply. This is your journey.</p>
             <h4> Not for you? </h4>

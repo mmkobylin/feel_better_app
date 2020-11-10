@@ -10,7 +10,8 @@
             <section <?php if ($idea->pluck('idea1')->last() === NULL ){ ?> hidden <?php } ?>>
 
                 <h3>Did you...<h3>
-                {{-- Cross-Site Request Forgery Token --}}
+                    <div class="column">
+                    {{-- Cross-Site Request Forgery Token --}}
                     @csrf
                         <label class="container"
                         <?php if ($idea->pluck('idea1')->last() === NULL ){ ?> hidden <?php } ?>>
@@ -39,7 +40,9 @@
                             
                         </label>
 
-                        <br><br>
+                    </div>
+
+                    <div class="column">
                         
                         <label class="container"
                         <?php if ($idea->pluck('idea4')->last() === NULL ){ ?> hidden <?php } ?>>  
@@ -66,17 +69,17 @@
                             <span class="checkmark"></span>
                         </label>
 
-                        <br><br>
+                    </div>
         
-                        <button class="button" id="subtitle1" style="display: block" 
-                        type="submit" name="formSubmit" value="Submit">Submit!</button>
-                    </fieldset>
-                </form>
-                
-                @endforeach
+                    <button class="button" id="subtitle1" style="display: block" 
+                    type="submit" name="formSubmit" value="Submit">Submit!</button>
+                </fieldset>
+            </form>
             
-            </section>
-            
+            @endforeach
+        
+        </section>
+        
 
              <?php
                 //collecting all the points
