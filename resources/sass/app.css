@@ -351,11 +351,13 @@ ul li {
 
 p {
   font-size: 1rem;
+  line-height: 2rem;
 }
 
 @media only screen and (min-width: 500px) {
   p {
-    line-height: 4rem;
+    line-height: 3rem;
+    font-size: 2rem;
   }
 }
 
