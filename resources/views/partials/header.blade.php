@@ -7,7 +7,7 @@
         <li><a href="/heavylifter"><span class="navigation">Heavylifter</span>
             {!! file_get_contents('icons/heavylifter.svg') !!} </a>
         </li> 
-        <li><a href="/heavy-custom"><span class="navigation">Customise</span>
+        <li><a href="/form"><span class="navigation">Customise</span>
             {!! file_get_contents('icons/option.svg') !!} </a>
         </li>
         <li><a href="/info"><span class="navigation">About Us</span>
