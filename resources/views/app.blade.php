@@ -8,7 +8,7 @@
 
         {{-- styles --}}
         
-        <link href="{{ asset('/sass/app.css') }}" rel="stylesheet">
+        {{-- <link href="{{ asset('/sass/app.css') }}" rel="stylesheet"> --}}
         {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
