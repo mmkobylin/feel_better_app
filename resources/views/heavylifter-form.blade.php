@@ -1,4 +1,4 @@
-@extends("app")
+@import("app")
 
     @section("title"){{
         "Feel Better"

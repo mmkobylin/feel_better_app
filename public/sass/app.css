@@ -199,23 +199,6 @@ figure {
   }
 }
 
-section {
-  background: var(--background-secondary);
-  border: solid 1rem var(--font-color-primary);
-  border-radius: 1.5rem;
-  color: var(--font-color-primary);
-  padding: 2rem;
-  margin: 2rem;
-}
-
-@media only screen and (min-width: 500px) {
-  section {
-    line-height: 3rem;
-    padding: 6rem;
-    margin: 7rem;
-  }
-}
-
 a {
   color: var(--font-color-secondary);
 }
@@ -274,6 +257,23 @@ a:active, a:hover {
   .navbar-home {
     font-size: 250%;
     letter-spacing: 0.3rem;
+  }
+}
+
+section {
+  background: var(--background-secondary);
+  border: solid 1rem var(--font-color-primary);
+  border-radius: 1.5rem;
+  color: var(--font-color-primary);
+  padding: 2rem;
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  section {
+    line-height: 3rem;
+    padding: 6rem;
+    margin: 7rem;
   }
 }
 

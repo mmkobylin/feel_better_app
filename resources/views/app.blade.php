@@ -7,7 +7,9 @@
         <title>Feel Better</title>
 
         {{-- styles --}}
-        <link rel="stylesheet" type="text/css" href="{{ url('sass/app.scss') }}" />
+        
+        <link href="{{ asset('/sass/app.css') }}" rel="stylesheet">
+        {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
 
@@ -15,12 +17,15 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt&family=Salsa&display=swap" rel="stylesheet">       
+        <link rel="stylesheet" type="text/css" href="{{ url('../sass/app.scss') }}" />
 
     </head>
 
     <body>
         <header>
             {{-- this is where the header goes --}}
+            @include("partials/header")
+
         </header>
         
         <main class="content">
