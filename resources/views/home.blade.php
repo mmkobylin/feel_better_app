@@ -10,5 +10,6 @@
 
         @include("partials/title")
 
+         @include("partials/intro")
     
     @endsection

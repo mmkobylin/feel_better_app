@@ -22,7 +22,7 @@
 
     <style>
     * {
-        line-height:5rem;
+        line-height:2rem;
     }
 
     a {

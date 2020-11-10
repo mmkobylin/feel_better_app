@@ -12,3 +12,5 @@
         @include("partials/actions")
 
     @endsection
+
+    <footer
