@@ -41,6 +41,20 @@ p {
   font-family: var(--font-primary);
 }
 
+.disclaimer {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .disclaimer {
+    line-height: 2rem;
+    margin: 7rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   button {
     background: var(--font-color-primary);
@@ -273,7 +287,7 @@ figure {
 }
 
 label {
-  font-size: bolder;
+  font-size: bold;
   font-size: 1rem;
 }
 
@@ -487,7 +501,6 @@ h1 {
   font-family: var(--font-primary);
   font-size: 3rem;
   line-height: 4rem;
-  padding: 2rem;
 }
 
 h2 {
@@ -510,6 +523,7 @@ h4 {
 
 @media only screen and (min-width: 500px) {
   h1 {
+    background-color: var(--background-secondary);
     font-size: 4rem;
     letter-spacing: 0.3rem;
     margin: 0;

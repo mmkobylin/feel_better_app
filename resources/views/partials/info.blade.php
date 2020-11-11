@@ -1,14 +1,10 @@
     <h2>Further Help</h2>
-    
-    <article>
         
         <h4> What this will not do?</h4>
 
-        <p>
+        <p class="disclaimer">
             This is not an substitute for general health professional. If you need one, please go <a href>HERE</a> and find resources that are right for you.
         </p>
-
-    </article>
     <section>
         
         <h4 id="subtitle1"> 
