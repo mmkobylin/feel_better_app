@@ -6,11 +6,11 @@
 
     @section("content")
 
-        @include("partials/images")
+        {{-- @include("partials/images") --}}
 
         @include("partials/title")
 
-        {{-- @include("partials/images") --}}
+        @include("partials/images")
 
          @include("partials/intro")
     
