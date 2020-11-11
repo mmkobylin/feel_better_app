@@ -6,7 +6,6 @@
 
     @section("content")
 
-        @include("partials/title")
         @include("partials/answers")
         @include("partials/links")
 
