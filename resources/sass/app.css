@@ -1,9 +1,9 @@
 :root {
   --background-primary: #c5db98;
-  --background-secondary: #fbfbf7;
-  --font-color-primary:#a70056;
-  --font-color-link: #01cbeb;
-  --font-color-secondary: #44122f;
+  --background-secondary: #fff8dc;
+  --font-color-primary:#c71772;
+  --font-color-link: #00bad6;
+  --font-color-secondary: #421730;
   --font-primary: 'Salsa', cursive;
   --font-secondary: 'Rokkitt', serif;
   --font-tetrary: 'Amatic SC', cursive;
@@ -18,7 +18,7 @@
 }
 
 body {
-  background: var(--font-color-link);
+  background: red;
   color: var(--font-color-primary);
   font-family: var(--font-secondary);
   position: relative;
@@ -37,22 +37,6 @@ p {
   padding: 1rem;
   color: var(--base-font-color);
   font-family: var(--font-primary);
-}
-
-.links {
-  font-family: var(--font-secondary);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--font-color-second);
-  font-family: var(--font-primary);
-}
-
-@media only screen and (min-width: 500px) {
-  p {
-    line-height: 1.7rem;
-    padding: 4rem;
-  }
 }
 
 button {
