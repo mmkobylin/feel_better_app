@@ -3,8 +3,8 @@
 
     <section>
         <h4>My first goal with this app is to try my best to help anyone in a dark place, cause I've been there myself. <br>
-            For that go to <a class="nav link" href="/lightbringer">LIGHTBRINGER</a>
-        </h4>
+            <br>For that go to <a class="nav link" href="/lightbringer">LIGHTBRINGER</a>.
+        </h4><br>
 
         <h4 id="subtitle1"> 
         <span id=span1 style="display: block">Tell me more! </span>
@@ -23,10 +23,13 @@
             <br>For that go to <a class="link" href="/heavylifter">HEAVYLIFTER</a>.
         </h4>
 
+        <br>
+
         <h4 id="subtitle2"> 
             <span id=span3 style="display: block">Tell me more! </span>
             <span id=span4 style="display: none">Got it, thanks! </span>
         </h4>
+
         <p id="paragraph2" style="display: none">
             Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
             This is what I created a <a class="link" href="/heavylifter">HEAVYLIFTER</a> for. <br>

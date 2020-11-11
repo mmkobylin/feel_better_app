@@ -441,7 +441,6 @@ section {
 }
 
 h1 {
-  background-color: var(--background-secondary);
   color: var(--font-color-primary);
   font-family: var(--font-primary);
   font-size: 3rem;
@@ -450,14 +449,12 @@ h1 {
 }
 
 h2 {
-  font-family: var(--font-primary);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 4;
 }
 
 h3 {
-  font-family: var(--font-secondary);
   font-size: 1.4rem;
   line-height: 1.7;
   font-weight: bold;
@@ -471,7 +468,6 @@ h4 {
 
 @media only screen and (min-width: 500px) {
   h1 {
-    background-color: var(--background-secondary);
     font-size: 4rem;
     letter-spacing: 0.3rem;
     margin: 0;
