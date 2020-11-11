@@ -10,7 +10,6 @@ button {
     padding:0.8rem;
     padding-left:1.5rem;
     padding-right:1.5rem;
-
     margin:1rem;
 };
 
@@ -26,8 +25,10 @@ button:active, button:hover {
     
     button {
         font-weight: bolder;
-        font-size: 1rem;
-        padding:1.5rem;
+        font-size: 1.7rem;
+
+        padding-left:3rem;
+        padding-right:3rem;
         margin:2rem;
     };
 
