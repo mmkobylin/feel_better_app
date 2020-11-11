@@ -3,9 +3,9 @@ section {
     border: solid 1rem var(--font-color-primary);
     border-radius: 1.5rem;
     color:var(--font-color-primary);
-    line-height: 3rem;
-    padding:1.5rem;
-    margin:1.5rem;
+    line-height: 2rem;
+    padding:1rem;
+    margin:1rem;
 };
 
 @media only screen and (min-width: 500px) {
@@ -13,7 +13,9 @@ section {
         line-height: 3rem;
         padding:6rem;
         padding-top: 1rem;
-        margin:7rem;
+        margin:5rem;
         margin-top: 1rem;
+        margin-bottom: 1rem;
+
     }
 };

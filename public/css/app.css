@@ -384,8 +384,8 @@ ul li {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -400,9 +400,9 @@ section {
   border: solid 1rem var(--font-color-primary);
   border-radius: 1.5rem;
   color: var(--font-color-primary);
-  line-height: 3rem;
-  padding: 1.5rem;
-  margin: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -410,8 +410,9 @@ section {
     line-height: 3rem;
     padding: 6rem;
     padding-top: 1rem;
-    margin: 7rem;
+    margin: 5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -450,15 +451,21 @@ h1 {
 
 h2 {
   font-family: var(--font-primary);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 4;
 }
 
 h3 {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1;
   font-weight: bold;
 }
 
