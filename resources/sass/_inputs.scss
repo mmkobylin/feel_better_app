@@ -3,12 +3,19 @@ input {
     margin:0.5rem;
 }
 
+input:active { 
+    border: 2px solid var(--font-color-primary);
+    border-radius: 2px;
+}
+
 input[type=text] {
     color: var(--font-color-primary);
     background: transparent;
     font-weight: bold;
     font-size: 0.6rem;
 }
+
+
 
 @media only screen and (min-width: 500px) {
     input {
