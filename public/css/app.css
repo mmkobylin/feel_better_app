@@ -76,6 +76,19 @@ button:hover {
   font-weight: bolder;
 }
 
+.button {
+  margin: 0;
+  position: absolute;
+  left: 40%;
+}
+
+.button2 {
+  margin: 0;
+  position: absolute;
+  left: 38%;
+  top: 63%;
+}
+
 @media only screen and (min-width: 500px) {
   button {
     font-weight: bolder;
@@ -116,6 +129,7 @@ button:hover {
   height: 1.5rem;
   width: 1.5rem;
   background-color: var(--font-color-link);
+  margin: 0.9rem;
 }
 
 /* On mouse-over, add a grey background color */
@@ -192,16 +206,6 @@ button:hover {
 fieldset {
   border: none;
   color: var(--font-color-secondary);
-  font-size: 1rem;
-  margin: 0;
-  padding-left: 2rem;
-  text-align: center;
-}
-
-@media only screen and (min-width: 500px) {
-  fieldset {
-    font-size: 2rem;
-  }
 }
 
 input {
@@ -536,8 +540,8 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  line-height: 1.2;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 @media only screen and (min-width: 500px) {
@@ -557,7 +561,7 @@ h4 {
   h3 {
     font-size: 3rem;
     letter-spacing: 0.3rem;
-    padding: 3rem;
+    padding: 5rem;
   }
 
   h4 {

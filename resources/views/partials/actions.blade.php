@@ -38,8 +38,8 @@
         </fieldset>
     </form>
 
-
-    <p>Wanna try something different? Just refresh the page and try again!</p>
+    <br><br>
+    <h4>Wanna try something different? Just refresh the page and try again!</h4>
 
 </section>
 
