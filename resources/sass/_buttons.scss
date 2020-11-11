@@ -8,6 +8,9 @@ button {
     font-weight: bolder;
     font-size: 1rem;
     padding:0.8rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+
     margin:1rem;
 };
 
@@ -21,11 +24,11 @@ button:active, button:hover {
 
 @media only screen and (min-width: 500px) {
     
-button {
-    font-weight: bolder;
-    font-size: 1rem;
-    padding:1.5rem;
-    margin:2rem;
-};
+    button {
+        font-weight: bolder;
+        font-size: 1rem;
+        padding:1.5rem;
+        margin:2rem;
+    };
 
 }
