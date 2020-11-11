@@ -41,25 +41,28 @@ p {
   font-family: var(--font-primary);
 }
 
-button {
-  background: var(--font-color-primary);
-  border-radius: 25px;
-  border: 4px solid var(--font-color-primary);
-  background: var(--background-secondary);
-  font-family: var(--font-primary);
-  font-weight: bolder;
-  font-size: 1rem;
-  padding: 1.5rem;
-  margin: 2rem;
-}
+@media only screen and (min-width: 500px) {
+  button {
+    background: var(--font-color-primary);
+    border-radius: 25px;
+    border: 4px solid var(--font-color-primary);
+    background: var(--background-secondary);
+    clear: both;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 1.5rem;
+    margin: 2rem;
+  }
 
-button:active,
-button:hover {
-  background-color: var(--font-color-link);
-  border: 10px solid var(--font-color-primary);
-  color: var(--font-color-secondary);
-  font-weight: bolder;
-  box-shadow: 17px 24px 71px 78px #f2eed9;
+  button:active,
+  button:hover {
+    background-color: var(--font-color-link);
+    border: 10px solid var(--font-color-primary);
+    color: var(--font-color-secondary);
+    font-weight: bolder;
+    box-shadow: 17px 24px 71px 78px #f2eed9;
+  }
 }
 
 .card-body {
@@ -180,6 +183,24 @@ fieldset {
   }
 }
 
+input {
+  margin: 2rem;
+}
+
+input[type=text] {
+  background: transparent;
+  color: var(--font-color-secondary);
+  font-family: --font-secondary;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  input {
+    margin: 3rem;
+  }
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr;
@@ -238,6 +259,17 @@ figure {
     padding-left: 3rem;
     padding-right: 3rem;
     width: 100%;
+  }
+}
+
+label {
+  font-size: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  label {
+    font-size: 1rem;
   }
 }
 

@@ -9,21 +9,21 @@
         <fieldset>
             <div class="column">
 
-                <label> Action 1: </label> <br>
+                <label> Action 1: </label>
                 <input type="text" name="idea1"><br>
-                <label> Action 2: </label> <br>
+                <label> Action 2: </label>
                 <input type="text" name="idea2"><br>
-                <label> Action 3: </label> <br>
+                <label> Action 3: </label>
                 <input type="text" name="idea3"><br>
             </div>
             
             <div class="column">
 
-                <label> Action 4: </label> <br>
+                <label> Action 4: </label>
                 <input type="text" name="idea4"><br>
-                <label> Action 5: </label> <br>
+                <label> Action 5: </label>
                 <input type="text" name="idea5"><br>
-                <label> Action 6: </label> <br>
+                <label> Action 6: </label>
                 <input type="text" name="idea6"><br>
             </div>
             

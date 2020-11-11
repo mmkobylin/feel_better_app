@@ -18,7 +18,7 @@
 }
 
 body {
-  background: red;
+  background: var(--font-color-link);
   color: var(--font-color-primary);
   font-family: var(--font-secondary);
   position: relative;
@@ -39,25 +39,27 @@ p {
   font-family: var(--font-primary);
 }
 
-button {
-  background: var(--font-color-primary);
-  border-radius: 25px;
-  border: 4px solid var(--font-color-primary);
-  background: var(--background-secondary);
-  font-family: var(--font-primary);
-  font-weight: bolder;
-  font-size: 1rem;
-  padding: 1.5rem;
-  margin: 2rem;
-}
-
-button:active, button:hover {
-  background-color: var(--font-color-link);
-  border: 10px solid var(--font-color-primary);
-  color: var(--font-color-secondary);
-  font-weight: bolder;
-  -webkit-box-shadow: 17px 24px 71px 78px #f2eed9;
-  box-shadow: 17px 24px 71px 78px #f2eed9;
+@media only screen and (min-width: 500px) {
+  button {
+    background: var(--font-color-primary);
+    border-radius: 25px;
+    border: 4px solid var(--font-color-primary);
+    background: var(--background-secondary);
+    clear: both;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 1.5rem;
+    margin: 2rem;
+  }
+  button:active, button:hover {
+    background-color: var(--font-color-link);
+    border: 10px solid var(--font-color-primary);
+    color: var(--font-color-secondary);
+    font-weight: bolder;
+    -webkit-box-shadow: 17px 24px 71px 78px #f2eed9;
+    box-shadow: 17px 24px 71px 78px #f2eed9;
+  }
 }
 
 .card-body {
@@ -137,11 +139,24 @@ button:active, button:hover {
   user-select: none;
 }
 
+.column-image {
+  float: left;
+  width: 50%;
+  background-color: var(--font-color-primary);
+}
+
 @media only screen and (min-width: 500px) {
   .column {
     float: left;
     width: 50%;
   }
+}
+
+.form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
 }
 
 fieldset {
@@ -156,6 +171,24 @@ fieldset {
 @media only screen and (min-width: 500px) {
   fieldset {
     font-size: 2rem;
+  }
+}
+
+input {
+  margin: 2rem;
+}
+
+input[type=text] {
+  background: transparent;
+  color: var(--font-color-secondary);
+  font-family: --font-secondary;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  input {
+    margin: 3rem;
   }
 }
 
@@ -189,7 +222,7 @@ figure {
 
 .images {
   height: 7rem;
-  width: 10rem;
+  width: 11rem;
   opacity: 85%;
 }
 
@@ -203,9 +236,8 @@ figure {
     height: 15rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    float: left;
+    float: center;
     width: 20rem;
-    text-align: center;
   }
 }
 
@@ -219,7 +251,20 @@ figure {
 @media only screen and (min-width: 700px) {
   .images {
     height: 25rem;
-    width: 33rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+  }
+}
+
+label {
+  font-size: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  label {
+    font-size: 1rem;
   }
 }
 
@@ -306,6 +351,11 @@ li.a:active, li.a:hover {
   text-decoration: none;
 }
 
+ul#nav {
+  background: var(--font-color-primary);
+  max-height: 5rem;
+}
+
 #nav {
   text-align: justify;
   padding: 0;
@@ -347,11 +397,14 @@ ul li {
     font-size: 2rem;
     line-height: 2rem;
   }
+  ul#nav {
+    max-height: 6.5rem;
+  }
 }
 
 p {
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -366,17 +419,19 @@ section {
   border: solid 1rem var(--font-color-primary);
   border-radius: 1.5rem;
   color: var(--font-color-primary);
-  line-height: 3rem;
-  padding: 1.5rem;
-  margin: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 @media only screen and (min-width: 500px) {
   section {
     line-height: 3rem;
     padding: 6rem;
-    margin: 7rem;
+    padding-top: 2rem;
+    margin: 5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -403,27 +458,46 @@ h1 {
   font-family: var(--font-primary);
   font-size: 3rem;
   line-height: 4rem;
-  margin: 2rem;
+  padding: 2rem;
 }
 
-h2, h3 {
-  font-family: var(--font-primary);
-  font-size: 1rem;
+h2 {
+  font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
+  line-height: 4;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 500px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.3rem;
-    padding: 4rem;
-    margin: 3rem;
+    margin: 0;
+    padding: 7rem;
   }
-  h2, h3 {
+  h2 {
+    font-size: 4rem;
+    line-height: 3;
+  }
+  h3 {
     font-size: 3rem;
     letter-spacing: 0.3rem;
     padding: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    line-height: 1.5;
   }
 }
 /*# sourceMappingURL=app.css.map */
