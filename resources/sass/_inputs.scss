@@ -1,18 +1,23 @@
 
 input {
-    margin:2rem;
+    margin:0.5rem;
 }
 
 input[type=text] {
+    color: var(--font-color-primary);
     background: transparent;
-    color: var(--font-color-secondary);
-    font-family: (--font-secondary);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 0.6rem;
 }
 
 @media only screen and (min-width: 500px) {
     input {
-        margin:3rem;
+        font-size: 2rem;
+        margin:2rem;
     };
+
+    input[type=text] {
+        font-family: var(--font-secondary);
+        font-size: 2rem;
+    }
 }
