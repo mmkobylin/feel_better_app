@@ -6,7 +6,6 @@
         </figure>
     </a>
 
-
     <a class="column-image" href="/heavylifter">
         <figure class="fig2">
             <img src="{{url('../images/weights.jpg')}}" alt="weights" class="images">
