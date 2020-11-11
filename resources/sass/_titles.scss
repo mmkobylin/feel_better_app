@@ -7,23 +7,36 @@ h1 {
     padding: 2rem;
 };
 
-h2, h3 {
+h2 {
     font-family: var(--font-primary);
     font-size: 1rem;
+    font-weight: bold;    
+    line-height: 4;
+};
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+    line-height: 1.5;
     font-weight: bold;
-    text-align: center;
+    
 };
 
 @media only screen and (min-width: 500px) {
     h1 {
         background-color: var(--background-secondary);
-        font-size:3rem;
+        font-size:4rem;
         letter-spacing: 0.3rem;
         margin: 0;
         padding: 7rem;
     };
 
-    h2, h3 {
+    h2 {
+        font-size: 4rem;
+        line-height: 3;
+    }
+    
+    h3 {
         font-size:3rem;
         letter-spacing: 0.3rem;
         padding:3rem;
