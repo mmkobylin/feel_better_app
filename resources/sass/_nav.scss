@@ -15,12 +15,12 @@
     }
 
     li:active, li:hover {
-        color: var(--background-primary);
+        color: var(--background-secondary);
         font-weight: bolder;
     }
 
     li.a:active, li.a:hover {
-        color: var(--background-primary);
+        color: var(--background-secondary);
         text-decoration:none;
     }
 
@@ -64,11 +64,13 @@
 
 
    .header-titles {
-    display:inline-block;
+        color: var(--background-primary);
+        display:inline-block;
+        font-size: 2.3rem;
     }
 
     li {
-        color: var(--background-primary);
+        color: var(--background-secondary);
         padding:2rem;
         font-size:2rem;
         line-height: 2rem;
