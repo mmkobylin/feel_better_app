@@ -1,21 +1,21 @@
 <header> 
     <ul id="nav">
-        <li> <a href="/lightbringer"><span class="navigation">Lightbringer</span>
+        <li> <a href="/lightbringer"><span class="navigation header-titles">Lightbringer</span>
             {!! file_get_contents('icons/light1.svg') !!} </a>
         </li> 
 
-        <li><a href="/heavylifter"><span class="navigation">Heavylifter</span>
+        <li><a href="/heavylifter"><span class="navigation header-titles">Heavylifter</span>
             {!! file_get_contents('icons/heavylifter.svg') !!} </a>
         </li> 
-        <li><a href="/form"><span class="navigation">Customise</span>
+        <li><a href="/form"><span class="navigation header-titles">Customise</span>
             {!! file_get_contents('icons/option.svg') !!} </a>
         </li>
 
-        <li><a href="/info"><span class="navigation">Info & Links</span>
+        <li><a href="/info"><span class="navigation header-titles">Info & Links</span>
         {!! file_get_contents('icons/question.svg') !!} </a>
         </li>
 
-        <li> <a href="/"><span class="navigation">Home</span>{!! file_get_contents('icons/home.svg') !!} </a>
+        <li> <a href="/"><span class="navigation header-titles">Home</span>{!! file_get_contents('icons/home.svg') !!} </a>
         </li>
     </ul>
 </header>

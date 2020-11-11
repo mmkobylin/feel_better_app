@@ -78,14 +78,6 @@
     </div>
 </section>   
 
-<aside>
-    @php 
-        if (isset($_POST['formSubmit']) && $total === 0)  {
-            echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-        }
-    @endphp
-</aside>
-
 <section>
     <h3 id="subtitle1"> 
         <span id=span1 style="display: block">Tell me more! </span>
