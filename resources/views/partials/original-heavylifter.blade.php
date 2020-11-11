@@ -1,6 +1,6 @@
-<section>
+<section class="form">
     {{-- creating the form --}}
-    <form class="form-control" method="POST" action="heavylifter">
+    <form method="POST" action="heavylifter">
     
         <h3>Did you...<h3>
 
@@ -9,17 +9,17 @@
         {{-- Cross-Site Request Forgery Token --}}
             @csrf
             <div class='column'>
-                <label class="container">done some self care?
+                <label class="container"><sub>done some self care?</sub>
                     <input type="checkbox" name="action1" value="1"/>
                     <span class="checkmark"></span>
                 </label>
 
-                <label class="container">helped others?
+                <label class="container"><sub>helped others?</sub>
                     <input type="checkbox" name="action2" value="1"/>
                     <span class="checkmark"></span>
                 </label> 
             
-                <label class="container">eaten healthier?
+                <label class="container"><sub>eaten healthier?</sub>
                     <input type="checkbox" name="action3" value="1"/>
                     <span class="checkmark"></span>
                 </label>
@@ -27,15 +27,15 @@
 
             <div class='column'>
 
-                <label class="container">had a decent sleep?
+                <label class="container"><sub>had a decent sleep?</sub>
                     <input type="checkbox" name="action4" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">stayed sober?
+                <label class="container"><sub>stayed sober?</sub>
                     <input type="checkbox" name="action5" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">exercised?
+                <label class="container"><sub>exercised?</sub>
                     <input type="checkbox" name="action6" value="1"/>
                     <span class="checkmark"></span>
                 </label>

@@ -1,5 +1,5 @@
-<section>
-    <form class="form-control" method="POST" action="results">
+<section class="form">
+    <form method="POST" action="results">
         {{ csrf_field() }}
 
         <h2>Here is a form for your ideas! </h2>

@@ -20,7 +20,7 @@
 }
 
 body {
-  background: red;
+  background: var(--font-color-link);
   color: var(--font-color-primary);
   font-family: var(--font-secondary);
   position: relative;
@@ -145,11 +145,24 @@ button:hover {
   user-select: none;
 }
 
+.column-image {
+  float: left;
+  width: 50%;
+  background-color: var(--font-color-primary);
+}
+
 @media only screen and (min-width: 500px) {
   .column {
     float: left;
     width: 50%;
   }
+}
+
+.form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
 }
 
 fieldset {
@@ -194,7 +207,9 @@ figure {
 
 .images {
   height: 7rem;
-  width: 10rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   opacity: 85%;
 }
 
@@ -316,6 +331,11 @@ li.a:hover {
   text-decoration: none;
 }
 
+ul#nav {
+  background: var(--font-color-primary);
+  max-height: 5rem;
+}
+
 #nav {
   text-align: justify;
   padding: 0;
@@ -358,6 +378,10 @@ ul li {
     font-size: 2rem;
     line-height: 2rem;
   }
+
+  ul#nav {
+    max-height: 6.5rem;
+  }
 }
 
 p {
@@ -386,6 +410,7 @@ section {
   section {
     line-height: 3rem;
     padding: 6rem;
+    padding-top: 1rem;
     margin: 7rem;
     margin-top: 1rem;
   }
@@ -416,11 +441,12 @@ section {
 }
 
 h1 {
+  background-color: var(--background-secondary);
   color: var(--font-color-primary);
   font-family: var(--font-primary);
   font-size: 3rem;
   line-height: 4rem;
-  margin: 2rem;
+  padding: 2rem;
 }
 
 h2,
@@ -433,10 +459,11 @@ h3 {
 
 @media only screen and (min-width: 500px) {
   h1 {
+    background-color: var(--background-secondary);
     font-size: 3rem;
     letter-spacing: 0.3rem;
-    padding: 4rem;
-    margin: 3rem;
+    margin: 0;
+    padding: 7rem;
   }
 
   h2,

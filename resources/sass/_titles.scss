@@ -1,9 +1,10 @@
 h1 {
+    background-color: var(--background-secondary);
     color: var(--font-color-primary);
     font-family: var(--font-primary);
     font-size: 3rem;
     line-height: 4rem;
-    margin: 2rem;
+    padding: 2rem;
 };
 
 h2, h3 {
@@ -15,10 +16,11 @@ h2, h3 {
 
 @media only screen and (min-width: 500px) {
     h1 {
+        background-color: var(--background-secondary);
         font-size:3rem;
         letter-spacing: 0.3rem;
-        padding: 4rem;
-        margin:3rem;
+        margin: 0;
+        padding: 7rem;
     };
 
     h2, h3 {

@@ -1,11 +1,12 @@
 <h3 id="subtitle2" > 
     <span id=span3 style="display: block">Show suggestions! </span>
-    <span id=span4 style="display: none">Try some of these!</span>
+    <span id=span4 style="display: none">Hide them!</span>
 </h3>
 
-<section id="paragraph2" style="display: none">
+<section class="form" id="paragraph2" style="display: none">
 
-    <form class="form-control" method="POST" action="lightbringer">        
+    <form class="form-control" method="POST" action="lightbringer"> 
+        <h4>Try some of these... </h4>       
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
