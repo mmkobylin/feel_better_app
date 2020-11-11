@@ -1,7 +1,7 @@
-<div>
+
     <a class="column-image" href="/lightbringer">
-        <figure class="fig1">
-            <img src="{{url('/images/light2.jpg')}}" alt="sunshine" class="images">
+        <figure class="fig2">
+            <img src="{{url('../images/light5.webp')}}" alt="tree in a sun" class="images">
             <h2 class="link-image">Lightbringer</h2>
         </figure>
     </a>
@@ -13,4 +13,3 @@
             <h2 class="link-image">Heavylifter</h2>
         </figure>
     </a>
-</div>

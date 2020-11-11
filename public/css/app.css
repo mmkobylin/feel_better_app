@@ -207,9 +207,7 @@ figure {
 
 .images {
   height: 7rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 11rem;
   opacity: 85%;
 }
 
@@ -222,9 +220,8 @@ figure {
   .images {
     height: 15rem;
     box-sizing: border-box;
-    float: left;
+    float: center;
     width: 20rem;
-    text-align: center;
   }
 }
 
@@ -237,8 +234,8 @@ figure {
 
 @media only screen and (min-width: 700px) {
   .images {
-    height: 25rem;
-    width: 33rem;
+    height: 20rem;
+    width: 100%;
   }
 }
 
