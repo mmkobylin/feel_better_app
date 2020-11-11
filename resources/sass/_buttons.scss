@@ -1,6 +1,3 @@
-
-@media only screen and (min-width: 500px) {
-    
 button {
     background: var(--font-color-primary);
     border-radius: 25px;
@@ -10,8 +7,8 @@ button {
     font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 1rem;
-    padding:1.5rem;
-    margin:2rem;
+    padding:0.8rem;
+    margin:1rem;
 };
 
 button:active, button:hover {
@@ -19,9 +16,16 @@ button:active, button:hover {
         border: 10px solid var(--font-color-primary);
         color: var(--font-color-secondary);
         font-weight: bolder;
-        -webkit-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-        -moz-box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
-        box-shadow: 17px 24px 71px 78px rgba(242,238,217,1);
     };
+
+
+@media only screen and (min-width: 500px) {
+    
+button {
+    font-weight: bolder;
+    font-size: 1rem;
+    padding:1.5rem;
+    margin:2rem;
+};
 
 }

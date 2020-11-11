@@ -53,27 +53,33 @@ p {
   }
 }
 
+button {
+  background: var(--font-color-primary);
+  border-radius: 25px;
+  border: 4px solid var(--font-color-primary);
+  background: var(--background-secondary);
+  clear: both;
+  font-family: var(--font-primary);
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+button:active,
+button:hover {
+  background-color: var(--font-color-link);
+  border: 10px solid var(--font-color-primary);
+  color: var(--font-color-secondary);
+  font-weight: bolder;
+}
+
 @media only screen and (min-width: 500px) {
   button {
-    background: var(--font-color-primary);
-    border-radius: 25px;
-    border: 4px solid var(--font-color-primary);
-    background: var(--background-secondary);
-    clear: both;
-    font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 1rem;
     padding: 1.5rem;
     margin: 2rem;
-  }
-
-  button:active,
-  button:hover {
-    background-color: var(--font-color-link);
-    border: 10px solid var(--font-color-primary);
-    color: var(--font-color-secondary);
-    font-weight: bolder;
-    box-shadow: 17px 24px 71px 78px #f2eed9;
   }
 }
 
@@ -330,6 +336,12 @@ a:hover {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  a {
+    font-size: 1.5rem;
+  }
 }
 
 .links-section {
