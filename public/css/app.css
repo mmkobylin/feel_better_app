@@ -257,6 +257,7 @@ a:hover {
   color: var(--background-secondary);
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link-image {
@@ -268,6 +269,7 @@ a:hover {
   color: var(--background-secondary);
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .link {
@@ -280,6 +282,7 @@ a:hover {
   color: var(--font-color-link);
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .links-section {
@@ -430,6 +433,7 @@ section {
 #span4:hover {
   color: var(--font-color-secondary);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 h1 {
