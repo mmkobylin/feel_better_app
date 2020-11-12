@@ -44,7 +44,7 @@ p {
 button {
   background: var(--font-color-primary);
   border-radius: 25px;
-  border: 4px solid var(--font-color-primary);
+  border: 7px solid var(--font-color-primary);
   background: var(--background-secondary);
   clear: both;
   font-family: var(--font-primary);
@@ -75,6 +75,10 @@ button:hover {
     padding-left: 3rem;
     padding-right: 3rem;
     margin: 2rem;
+  }
+
+  .button {
+    margin-left: 40%;
   }
 }
 

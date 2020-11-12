@@ -73,8 +73,8 @@
         
         </section>
         
-
-             <?php
+        <section>
+            <?php
                 //collecting all the points
                 $total = (
                     +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
@@ -86,7 +86,7 @@
                 );         
             ?>
             {{-- hide if it form is not posted --}}
-            <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+            <div <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
             {{-- Here go the results --}}
                 <?php
                     echo "The total amount of points for the day is... " . $total . "!"; 
@@ -104,6 +104,7 @@
                         echo "Amazing job! Look at you go!";
                     }
                 ?> 
-            </section>    
-        
+            </div>
+        </section>
+                
 
