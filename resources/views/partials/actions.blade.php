@@ -38,7 +38,7 @@
             @endforeach
             
             {{-- <button type="submit">Submit</button> --}}
-            <button class="button" id="subtitle1" style="display: block" 
+            <button class="button2" id="subtitle1" style="display: block" 
             type="submit" name="formSubmit" value="Submit">Submit!</button>
             
             </fieldset>

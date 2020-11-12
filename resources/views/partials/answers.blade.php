@@ -1,14 +1,48 @@
-<h1>Check on yourself!</h2>
+<h2>Check on yourself!</h2>
 
+ <div>
+    <?php
+        //collecting all the points
+        $total = (
+            +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
+            +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
+            +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
+            +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
+            +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
+            +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
+        );         
+    ?>
+    {{-- hide if it form is not posted --}}
+    <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+    {{-- Here go the results --}}
+        <?php
+            echo "The total amount of points for the day is... " . $total . "!"; 
+            {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
+            
+            ?> <br> <?php
+            //-- comment showing with results --}}
+            if ($total === 0) {
+                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+            } elseif ( $total > 0 && $total < 2 ) {
+                echo "Well done, every little step counts!";
+            } elseif ($total >= 2 && $total < 4 ) {
+                echo "That's an excellent progress. Keep going!";
+            } elseif ($total > 4 ) {
+                echo "Amazing job! Look at you go!";
+            }
+        ?> 
+    </section>
+</div>
+
+<section class="form-control" <?php if (isset($_POST["formSubmit"]) !== false ){ ?> hidden <?php } ?>>
+ 
     {{-- creating the form --}}
-    <form class="form-control" method="POST" action="results">
+    <form  method="POST" action="results">
     {{-- I am using fieldset for group of related elements in the form  --}}
             <fieldset>
             
             @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
             
-            <section>
-
                 <h3>Did you...<h3>
                     <div class="column">
                     {{-- Cross-Site Request Forgery Token --}}
@@ -71,40 +105,6 @@
             
             @endforeach
         
-        </section>
+    </section>
         
-        <section>
-            <?php
-                //collecting all the points
-                $total = (
-                    +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-                    +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
-                    +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
-                    +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
-                    +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
-                    +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
-                );         
-            ?>
-            {{-- hide if it form is not posted --}}
-            <div <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-            {{-- Here go the results --}}
-                <?php
-                    echo "The total amount of points for the day is... " . $total . "!"; 
-                    {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
-                    
-                    ?> <br> <?php
-                    //-- comment showing with results --}}
-                    if ($total === 0) {
-                        echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-                    } elseif ( $total > 0 && $total < 2 ) {
-                        echo "Well done, every little step counts!";
-                    } elseif ($total >= 2 && $total < 4 ) {
-                        echo "That's an excellent progress. Keep going!";
-                    } elseif ($total > 4 ) {
-                        echo "Amazing job! Look at you go!";
-                    }
-                ?> 
-            </div>
-        </section>
-                
-
+       
