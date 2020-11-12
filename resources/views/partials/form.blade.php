@@ -27,7 +27,7 @@
                 <input type="text" name="idea6"><br>
             </div>
             
-            <button type="submit">Submit</button>
+            <button class="button2" type="submit">Submit</button>
         </fieldset>
     </form> 
 </section>

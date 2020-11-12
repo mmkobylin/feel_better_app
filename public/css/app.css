@@ -224,10 +224,6 @@ fieldset {
   color: var(--font-color-secondary);
 }
 
-button {
-  margin-left: 42%;
-}
-
 @media only screen and (min-width: 500px) {
   .form-control {
     padding: 10rem;
