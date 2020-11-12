@@ -48,7 +48,7 @@
             @yield("content")
         </main>
 
-          <footer>
+        <footer>
             @include("partials/home-nav")
         </footer>
 
