@@ -27,16 +27,16 @@ figure {
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 699pc) {
+@media only screen and (min-width: 640px) and (max-width: 969pc) {
 
     .images {
         height: 15rem;
-        width: 20rem;
+        width: 100%;
     }
     
 };
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 970px) {
     .images {
         height: 25rem;
         padding-left: 3rem;
