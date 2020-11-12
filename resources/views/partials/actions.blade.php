@@ -1,4 +1,4 @@
-<h3 id="subtitle2" > 
+<h3 class="subtitle6" id="subtitle2" > 
     <span id=span3 style="display: block">Show suggestions! </span>
     <span id=span4 style="display: none">Hide them!</span>
 </h3>

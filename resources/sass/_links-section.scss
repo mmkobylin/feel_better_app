@@ -1,3 +1,32 @@
 .links-section {
     line-height: 0.6rem;
 }
+
+ul.help {
+    list-style-position: inside;
+    list-style-type: square;
+    padding:0;
+}
+
+a.link {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.link-description {
+    padding-top: 0;
+}
+
+@media only screen and (min-width: 500px) {
+
+    a.link {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top:1.5rem;
+    }
+
+    .link-description {
+        font-size: 1.6rem;
+    }
+}

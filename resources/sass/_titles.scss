@@ -8,7 +8,7 @@ h1 {
 };
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;    
     line-height: 4;
 };
@@ -20,18 +20,16 @@ h3 {
 };
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.2;
+    padding-bottom:2rem;
+    padding-top:2rem;
     
 };
 
-// #subtitle2 {
-//     padding: 3rem;
-//     font-size: 1.4rem
-// }
 
-.subtitle5 {
+.subtitle5, .subtitle6 {
     font-size:1.3rem;
     padding:2.5rem;
 
@@ -60,12 +58,20 @@ h4 {
     h4 {
         font-size: 2.5rem;
         line-height: 1.5;
+        padding:3rem;
         
     };
 
     .subtitle5 {
         font-size:2rem;
     }
+
+    .subtitle6 {
+        font-size:3rem;
+        font-weight: bold;
+        padding:3.5rem;
+    }
+    
     
 };
 

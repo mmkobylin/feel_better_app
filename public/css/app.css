@@ -2,7 +2,7 @@
   --background-primary: #c5db98;
   --background-secondary: #fff8dc;
   --font-color-primary: #c71772;
-  --font-color-link: #14e2f8;
+  --font-color-link: #12c6e2;
   --font-color-secondary: #421730;
   --font-primary: "Salsa", cursive;
   --font-secondary: "Rokkitt", serif;
@@ -43,6 +43,7 @@ p {
 
 .disclaimer {
   padding: 0.5rem;
+  padding-bottom: 1.7rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -50,6 +51,7 @@ p {
     line-height: 2rem;
     padding-left: 6rem;
     padding-right: 6rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -155,6 +157,12 @@ p {
   margin: 0;
   border: none;
   border-radius: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .form {
+    margin-bottom: 5rem;
+  }
 }
 
 fieldset {
@@ -292,6 +300,7 @@ a:hover {
 .link {
   color: var(--font-color-secondary);
   font-family: var(--font-color-secondary);
+  font-size: 1.5rem;
 }
 
 .link:active,
@@ -314,6 +323,34 @@ a:hover {
 
 .links-section {
   line-height: 0.6rem;
+}
+
+ul.help {
+  list-style-position: inside;
+  list-style-type: square;
+  padding: 0;
+}
+
+a.link {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.link-description {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  a.link {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+  }
+
+  .link-description {
+    font-size: 1.6rem;
+  }
 }
 
 .navbar-home {
@@ -431,7 +468,7 @@ ul li {
   }
 
   ul#nav {
-    max-height: 6.5rem;
+    max-height: 7.5rem;
   }
 }
 
@@ -508,7 +545,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 4;
 }
@@ -520,12 +557,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: bold;
   line-height: 1.2;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-.subtitle5 {
+.subtitle5,
+.subtitle6 {
   font-size: 1.3rem;
   padding: 2.5rem;
 }
@@ -552,10 +592,17 @@ h4 {
   h4 {
     font-size: 2.5rem;
     line-height: 1.5;
+    padding: 3rem;
   }
 
   .subtitle5 {
     font-size: 2rem;
+  }
+
+  .subtitle6 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3.5rem;
   }
 }
 
