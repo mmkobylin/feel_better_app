@@ -1,0 +1,565 @@
+:root {
+  --background-primary: #c5db98;
+  --background-secondary: #fff8dc;
+  --font-color-primary:#c71772;
+  --font-color-link: #00bad6;
+  --font-color-secondary: #421730;
+  --font-primary: 'Salsa', cursive;
+  --font-secondary: 'Rokkitt', serif;
+  --font-tetrary: 'Amatic SC', cursive;
+  --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
+}
+
+*, *::before, *::after {
+  margin: 0;
+  text-align: center;
+  line-height: 3rem;
+  fill: var(--background-secondary);
+}
+
+body {
+  background: var(--font-color-link);
+  color: var(--font-color-primary);
+  font-family: var(--font-secondary);
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-family: var(--base-font-color);
+  margin: 0.5rem;
+  padding: 1rem;
+  color: var(--base-font-color);
+  font-family: var(--font-primary);
+}
+
+.disclaimer {
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .disclaimer {
+    line-height: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+button {
+  background: var(--font-color-primary);
+  border-radius: 25px;
+  border: 4px solid var(--font-color-primary);
+  background: var(--background-secondary);
+  clear: both;
+  font-family: var(--font-primary);
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 1rem;
+}
+
+button:active, button:hover {
+  background-color: var(--font-color-link);
+  border: 10px solid var(--font-color-primary);
+  color: var(--font-color-secondary);
+  font-weight: bolder;
+}
+
+.button {
+  margin: 0;
+  position: absolute;
+  left: 40%;
+}
+
+.button2 {
+  margin: 0;
+  position: absolute;
+  left: 38%;
+  top: 63%;
+}
+
+@media only screen and (min-width: 500px) {
+  button {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 2rem;
+  }
+}
+
+.card-body {
+  border: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  opacity: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--font-color-link);
+  margin: 0.9rem;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: var(--font-color-primary);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--font-color-primary);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 3rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.column-image {
+  float: left;
+  width: 50%;
+  background-color: var(--font-color-primary);
+}
+
+@media only screen and (min-width: 500px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+
+.form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+fieldset {
+  border: none;
+  color: var(--font-color-secondary);
+}
+
+input {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+input:active, input:hover {
+  border: 5px solid var(--font-color-primary);
+}
+
+input[type=text] {
+  color: var(--font-color-primary);
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.6rem;
+}
+
+@media only screen and (min-width: 500px) {
+  input {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  input[type=text] {
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+  }
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  max-height: 5rem;
+  background: var(--font-color-primary);
+}
+
+@media only screen and (min-width: 500px) {
+  header {
+    max-height: 6.5rem;
+  }
+}
+
+figure {
+  background: var(--font-color-primary);
+  margin-top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.images {
+  height: 7rem;
+  width: 11rem;
+  opacity: 85%;
+}
+
+.images {
+  height: 7rem;
+  width: 10rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .images {
+    height: 15rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    float: center;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699pc) {
+  .images {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .images {
+    height: 25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+  }
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+  label {
+    font-size: 2rem;
+  }
+}
+
+a {
+  color: var(--font-color-secondary);
+}
+
+a:active, a:hover {
+  color: var(--background-secondary);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-image {
+  color: var(--font-color-secondary);
+}
+
+.link-image:active, .link-image:hover {
+  color: var(--background-secondary);
+  font-size: 110%;
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link {
+  color: var(--font-color-secondary);
+  font-family: var(--font-color-secondary);
+}
+
+.link:active, .link:hover {
+  color: var(--font-color-link);
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+  a {
+    font-size: 1.5rem;
+  }
+  .link {
+    font-size: 3rem;
+  }
+}
+
+.links-section {
+  line-height: 0.6rem;
+}
+
+.navbar-home {
+  font-family: var(--font-primary);
+  font-size: 150%;
+}
+
+.navbar-home:active, .navbar-home:hover {
+  display: inline;
+  font-size: 200%;
+  list-style: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar-home {
+    font-size: 250%;
+    letter-spacing: 0.3rem;
+  }
+}
+
+* {
+  fill: var(--background-secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: var(--background-primary);
+  font-size: 2rem;
+  padding: 0.6rem;
+  padding-top: 1.4rem;
+  line-height: 0.5rem;
+}
+
+li:active, li:hover {
+  color: var(--background-secondary);
+  font-weight: bolder;
+}
+
+li.a:active, li.a:hover {
+  color: var(--background-secondary);
+  text-decoration: none;
+}
+
+ul#nav {
+  background: var(--font-color-primary);
+  max-height: 5rem;
+}
+
+#nav {
+  text-align: justify;
+  padding: 0;
+}
+
+#nav:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#nav li {
+  display: inline-block;
+  color: var(--font-primary);
+}
+
+svg {
+  fill: var(--background-primary);
+  height: 2rem;
+  width: 2rem;
+}
+
+.header-titles {
+  display: none;
+}
+
+ul li {
+  display: inline;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 701px) and (min-width: 501px) {
+  .header-titles {
+    color: var(--background-primary);
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header-titles {
+    font-size: 2.3rem;
+  }
+  li {
+    color: var(--background-secondary);
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  ul#nav {
+    max-height: 6.5rem;
+  }
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  p {
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+}
+
+section {
+  background: var(--background-secondary);
+  border: solid 1rem var(--font-color-primary);
+  border-radius: 1.5rem;
+  color: var(--font-color-primary);
+  line-height: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 500px) {
+  section {
+    line-height: 3rem;
+    padding: 6rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+  }
+}
+
+#span1:active,
+#span1:hover, #span2:active,
+#span2:hover, #span3:active,
+#span3:hover, #span4:active,
+#span4:hover {
+  color: var(--font-color-link);
+}
+
+#span1:active,
+#span1:hover, #span2:active,
+#span2:hover, #span3:active,
+#span3:hover, #span4:active,
+#span4:hover {
+  color: var(--font-color-secondary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1 {
+  color: var(--font-color-primary);
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding: 2rem;
+  background-color: var(--background-secondary);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 4;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#subtitle2 {
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    background-color: var(--background-secondary);
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    margin: 0;
+    padding: 7rem;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 3;
+  }
+  h3 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=app.css.map */

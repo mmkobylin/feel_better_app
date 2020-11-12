@@ -6,7 +6,12 @@
 
     @section("content")
 
+        {{-- @include("partials/images") --}}
+
         @include("partials/title")
+
         @include("partials/images")
-        @include("partials/intro")
+
+         @include("partials/intro")
+    
     @endsection

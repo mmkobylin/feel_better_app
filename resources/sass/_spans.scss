@@ -1,0 +1,23 @@
+
+#span1:active, 
+#span1:hover, #span2:active, 
+#span2:hover, #span3:active, 
+#span3:hover, #span4:active, 
+#span4:hover {
+    color: var(--font-color-link);
+}
+
+
+#span1:active, 
+#span1:hover, #span2:active, 
+#span2:hover, #span3:active, 
+#span3:hover, #span4:active, 
+#span4:hover {
+    color: var(--font-color-secondary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span#span4 {
+    padding: 2.5rem;
+}

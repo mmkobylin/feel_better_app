@@ -11,10 +11,12 @@ It is coming from a place of love. My genuine wish is to make it as accessible a
 - adding tick boxes to lightbringer; making random suggestions displaying uniquely and properly. 
 - customised form submitting and displaying correctly;
 - checkboxes working and submission messages displaying.
+- SASS styling applied
+
 
 ## In Progress
 
-- adding SASS
+- bug fixing
 - commenting code
 
 ## Next Steps: 

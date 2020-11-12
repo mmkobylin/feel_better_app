@@ -1,0 +1,21 @@
+    .column-image {
+        float: left;
+        width: 50%;
+        background-color: var(--font-color-primary);
+        
+    };
+
+    .column {
+        line-height:0.1;
+    }
+
+      
+@media only screen and (min-width: 500px) {
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+      
+  };

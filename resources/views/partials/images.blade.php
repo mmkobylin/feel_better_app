@@ -1,16 +1,16 @@
-<div>
-    <a class="column" href="/lightbringer">
-        <figure class="fig1">
-            <img src="{{url('/images/light2.jpg')}}" alt="sunshine" class="images">
-            <h2 class="link">Lightbringer</h2>
+<article>
+    <a class="column-image" href="/lightbringer">
+        <figure class="fig2">
+            <img src="{{url('../images/light5.webp')}}" alt="tree in a sun" class="images">
+            <h3 class="link-image">Lightbringer</h3>
         </figure>
     </a>
 
-
-    <a class="column" href="/heavylifter">
+    <a class="column-image" href="/heavylifter">
         <figure class="fig2">
             <img src="{{url('../images/weights.jpg')}}" alt="weights" class="images">
-            <h2 class="link">Heavylifter</h2>
+            <h3 class="link-image">Heavylifter</h3>
         </figure>
     </a>
-</div>
+</article>
+

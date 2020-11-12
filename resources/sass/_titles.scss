@@ -1,0 +1,77 @@
+h1 {
+    color: var(--font-color-primary);
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding: 2rem;
+    background-color: var(--background-secondary);
+};
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;    
+    line-height: 4;
+};
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: bold;  
+};
+
+h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom:2rem;
+    padding-top:2rem;
+    
+};
+
+
+.subtitle5, .subtitle6 {
+    font-size:1.3rem;
+    padding:2.5rem;
+
+}
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        background-color: var(--background-secondary);
+        font-size:4rem;
+        letter-spacing: 0.3rem;
+        margin: 0;
+        padding: 7rem;
+
+    };
+
+    h2 {
+        font-size: 4rem;
+        line-height: 3;
+    }
+    
+    h3 {
+        font-size:3rem;
+        letter-spacing: 0.3rem;
+    };
+
+    h4 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        padding:3rem;
+        
+    };
+
+    .subtitle5 {
+        font-size:2rem;
+    }
+
+    .subtitle6 {
+        font-size:3rem;
+        font-weight: bold;
+        padding:3.5rem;
+    }
+    
+    
+};
+

@@ -1,0 +1,12 @@
+.form {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .form {
+    margin-bottom: 5rem;
+    }
+}

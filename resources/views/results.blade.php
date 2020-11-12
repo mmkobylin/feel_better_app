@@ -6,10 +6,7 @@
 
     @section("content")
 
-        {{-- @include("partials/title") --}}
-        {{-- @include("partials/form") --}}
         @include("partials/answers")
-
-        {{-- @include("partials/links") --}}
+        @include("partials/links")
 
     @endsection

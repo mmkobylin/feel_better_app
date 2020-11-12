@@ -7,28 +7,51 @@
         <title>Feel Better</title>
 
         {{-- styles --}}
-        <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}" />
+        
+        <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+        {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
+
         {{-- js link --}}
+
         <script defer type="text/javascript" src="{{ url('js/jquery.js') }}"></script>        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Comfortaa:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt&family=Salsa&display=swap" rel="stylesheet">       
-      
 
     </head>
 
-    <body>
-        <header>
-            {{-- this is where the header goes --}}
-        </header>
+    {{-- sass is struggling, till then i will write it here and later move it to sass --}}
+    <style>
+
+
+        div#total: {
+            font-weight:bold;
+            line-height: 1.5;
+            padding: 1.5rem;
+        }
+
+        div#total:active, div#total:hover {
+            color: var(--font-color-primary);
+            text-decoration: none;            
+        }
+
+        .column {
+        line-height:0.1;
+        }
         
+    </style>
+    <body>
+        
+        <header>
+            @include("partials/header")
+        </header>
+            
         <main class="content">
         {{-- this is where I let the other parts in --}}
             @yield("content")
         </main>
 
         <footer>
-            {{-- this is where the header would go --}}
             @include("partials/home-nav")
         </footer>
 

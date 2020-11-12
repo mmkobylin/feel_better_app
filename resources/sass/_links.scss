@@ -1,0 +1,46 @@
+a {
+    color: var(--font-color-secondary);
+}
+
+a:active, a:hover {
+    color: var(--background-secondary);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+}   
+
+.link-image {
+    color: var(--font-color-secondary);
+}   
+
+.link-image:active, .link-image:hover {
+    color: var(--background-secondary);
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}   
+
+
+.link {
+    color: var(--font-color-secondary);
+    font-family: var(--font-color-secondary);
+    font-size: 1.5rem;
+}
+
+.link:active, .link:hover {
+    color: var(--font-color-link);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}     
+
+@media only screen and (min-width: 500px) {
+    a {
+        font-size: 1.5rem;
+    };
+
+    .link{
+        font-size: 3rem;
+    };
+}   

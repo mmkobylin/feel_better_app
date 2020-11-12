@@ -1,5 +1,6 @@
 @extends("app")
 
+
     @section("title"){{
         "Feel Better"
     }}@endsection
@@ -11,3 +12,5 @@
         @include("partials/actions")
 
     @endsection
+
+

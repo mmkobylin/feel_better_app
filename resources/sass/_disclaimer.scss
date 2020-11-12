@@ -1,0 +1,14 @@
+.disclaimer {
+    padding:0.5rem;
+    padding-bottom: 1.7rem;
+
+}
+
+@media only screen and (min-width: 500px) {
+    .disclaimer {
+        line-height: 2rem;
+        padding-left:6rem;
+        padding-right:6rem;
+        padding-bottom: 3rem;
+    }
+  };
