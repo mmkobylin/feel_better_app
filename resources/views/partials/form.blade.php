@@ -6,7 +6,7 @@
 
         {{-- using fieldset for group of related elements in the form  --}}
 
-        <fieldset>
+        <fieldset class="form-control">
             <div class="column">
 
                 <label> Action 1: </label>

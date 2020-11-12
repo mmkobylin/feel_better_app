@@ -59,6 +59,12 @@ p {
   border: none;
 }
 
+@media only screen and (min-width: 500px) {
+  .card-body {
+    padding-left: 15rem;
+  }
+}
+
 .container {
   display: block;
   position: relative;
@@ -173,7 +179,6 @@ label.container {
   margin: 0;
   border: none;
   border-radius: 0;
-  text-align: left;
 }
 
 @media only screen and (min-width: 500px) {

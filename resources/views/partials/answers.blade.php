@@ -3,7 +3,7 @@
     {{-- creating the form --}}
     <form class="form-control" method="POST" action="results">
     {{-- I am using fieldset for group of related elements in the form  --}}
-            <fieldset class="card-body" >
+            <fieldset>
             
             @foreach (App\Models\Heavylifter::all()->take(1) as $idea ) 
             

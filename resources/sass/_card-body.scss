@@ -2,3 +2,11 @@
     border: none;
   };
   
+
+  
+@media only screen and (min-width: 500px) {
+
+  .card-body {
+  padding-left: 15rem;
+  }
+}
