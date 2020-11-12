@@ -10,5 +10,5 @@
         @include("partials/images")
         @include("partials/info")
         @include("partials/links")
-
+        @include("partials/help")
     @endsection

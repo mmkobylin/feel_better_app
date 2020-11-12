@@ -6,7 +6,7 @@
 <section class="form" id="paragraph2" style="display: none">
 
     <form class="form-control" method="POST" action="lightbringer"> 
-        <h4>Try some of these... </h4>       
+        <h4 class="subtitle5">Try some of these... </h4>       
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
@@ -39,7 +39,7 @@
     </form>
 
     <br><br>
-    <h4>Wanna try something different? Just refresh the page and try again!</h4>
+    <h4 class="subtitle5">Wanna try something different? Just refresh the page and try again!</h4>
 
 </section>
 

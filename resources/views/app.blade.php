@@ -20,6 +20,23 @@
 
     </head>
 
+    {{-- sass is struggling, till then i will write it here and later move it to sass --}}
+    <style>
+
+
+        div#total: {
+            font-weight:bold;
+            line-height: 1.5;
+            padding: 1.5rem;
+        }
+
+        div#total:active, div#total:hover {
+            color: var(--font-color-primary);
+            text-decoration: none;            
+        }
+
+
+    </style>
     <body>
         
         <header>
