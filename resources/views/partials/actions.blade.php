@@ -4,12 +4,8 @@
 </h3>
 
 
-<section class="form" class="form" id="paragraph2" style="display: none">>
-    <h2>Here is a form for your ideas! </h2>
-
-        {{-- using fieldset for group of related elements in the form  --}}
-
-        <form class="form-control" method="POST" action="lightbringer"> 
+<section class="form" class="form" id="paragraph2" style="display: none">
+    <form class="form-control" method="POST" action="lightbringer"> 
         <h4 class="subtitle5">Try some of these... </h4>       
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
@@ -41,12 +37,11 @@
             <button class="button2" id="subtitle1" style="display: block" 
             type="submit" name="formSubmit" value="Submit">Submit!</button>
             
-            </fieldset>
-            <br><br>
-
-            <h4 class="subtitle5">Wanna try something different? Just refresh the page and try again!</h4>
-
         </fieldset>
+        <br><br>
+
+        <h4 class="subtitle5">Wanna try something different? Just refresh the page and try again!</h4>
+
     </form> 
 </section>
 
@@ -59,9 +54,9 @@
         +(isset($_POST["action3"]) ? ($_POST["action3"]): 0));
 ?>
 
-<section id="span2" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+<section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- total displays --}}
-    <div id='total'>  
+    <div id="span2 total">  
         <?php
             echo "The total amount of points for the day is... " . $total . "!"; 
             {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) : NULL;  --}}
