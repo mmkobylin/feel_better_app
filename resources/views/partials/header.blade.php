@@ -1,7 +1,7 @@
 <ul id="nav">
 
     <li><a href="/info"><span class="navigation header-titles">Resources</span>
-    {!! file_get_contents('icons/question.svg') !!} </a>
+    {!! file_get_contents('icons/tools2.svg') !!} </a>
     </li>
 
     <li><a href="/form"><span class="navigation header-titles">Customise</span>
