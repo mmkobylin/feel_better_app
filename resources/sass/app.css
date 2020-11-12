@@ -2,7 +2,7 @@
   --background-primary: #c5db98;
   --background-secondary: #fff8dc;
   --font-color-primary:#c71772;
-  --font-color-link: #00bad6;
+  --font-color-link: #12c6e2;
   --font-color-secondary: #421730;
   --font-primary: 'Salsa', cursive;
   --font-secondary: 'Rokkitt', serif;
@@ -39,22 +39,10 @@ p {
   font-family: var(--font-primary);
 }
 
-.disclaimer {
-  padding: 0.5rem;
-}
-
-@media only screen and (min-width: 500px) {
-  .disclaimer {
-    line-height: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-}
-
 button {
   background: var(--font-color-primary);
   border-radius: 25px;
-  border: 4px solid var(--font-color-primary);
+  border: 7px solid var(--font-color-primary);
   background: var(--background-secondary);
   clear: both;
   font-family: var(--font-primary);
@@ -74,16 +62,11 @@ button:active, button:hover {
 }
 
 .button {
-  margin: 0;
-  position: absolute;
-  left: 40%;
+  margin-left: 40%;
 }
 
 .button2 {
-  margin: 0;
-  position: absolute;
-  left: 38%;
-  top: 63%;
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 500px) {
@@ -94,10 +77,19 @@ button:active, button:hover {
     padding-right: 3rem;
     margin: 2rem;
   }
+  .button {
+    margin-left: 40%;
+  }
 }
 
 .card-body {
   border: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .card-body {
+    padding-left: 15rem;
+  }
 }
 
 .container {
@@ -125,6 +117,7 @@ button:active, button:hover {
   width: 1.5rem;
   background-color: var(--font-color-link);
   margin: 0.9rem;
+  margin-top: 0.8rem;
 }
 
 /* On mouse-over, add a grey background color */
@@ -174,16 +167,60 @@ button:active, button:hover {
   user-select: none;
 }
 
+label.container {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .checkbox {
+    margin-top: 3rem;
+  }
+}
+
 .column-image {
   float: left;
   width: 50%;
   background-color: var(--font-color-primary);
 }
 
+.column {
+  line-height: 0.1;
+}
+
 @media only screen and (min-width: 500px) {
   .column {
     float: left;
     width: 50%;
+  }
+}
+
+.disclaimer {
+  padding: 0.5rem;
+  padding-bottom: 1.7rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .disclaimer {
+    line-height: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+fieldset {
+  border: none;
+  color: var(--font-color-secondary);
+}
+
+button {
+  margin-left: 42%;
+}
+
+@media only screen and (min-width: 500px) {
+  .form-control {
+    padding: 10rem;
   }
 }
 
@@ -194,9 +231,10 @@ button:active, button:hover {
   border-radius: 0;
 }
 
-fieldset {
-  border: none;
-  color: var(--font-color-secondary);
+@media only screen and (min-width: 500px) {
+  .form {
+    margin-bottom: 5rem;
+  }
 }
 
 input {
@@ -267,7 +305,7 @@ figure {
   width: 10rem;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 640px) {
   .images {
     height: 15rem;
     -webkit-box-sizing: border-box;
@@ -277,14 +315,14 @@ figure {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 699pc) {
+@media only screen and (min-width: 640px) and (max-width: 969pc) {
   .images {
     height: 15rem;
-    width: 20rem;
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 970px) {
   .images {
     height: 25rem;
     padding-left: 3rem;
@@ -321,7 +359,6 @@ a:active, a:hover {
 
 .link-image:active, .link-image:hover {
   color: var(--background-secondary);
-  font-size: 110%;
   font-weight: bolder;
   text-decoration: underline;
   cursor: pointer;
@@ -330,6 +367,7 @@ a:active, a:hover {
 .link {
   color: var(--font-color-secondary);
   font-family: var(--font-color-secondary);
+  font-size: 1.5rem;
 }
 
 .link:active, .link:hover {
@@ -350,6 +388,33 @@ a:active, a:hover {
 
 .links-section {
   line-height: 0.6rem;
+}
+
+ul.help {
+  list-style-position: inside;
+  list-style-type: square;
+  padding: 0;
+}
+
+a.link {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.link-description {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  a.link {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+  }
+  .link-description {
+    font-size: 1.6rem;
+  }
 }
 
 .navbar-home {
@@ -433,17 +498,25 @@ ul li {
   vertical-align: middle;
 }
 
-@media only screen and (max-width: 701px) and (min-width: 501px) {
+@media only screen and (min-width: 501px) {
   .header-titles {
-    color: var(--background-primary);
+    color: var(--background-secondary);
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
+  }
+  .header-titles:active {
+    color: var(--background-primary);
+    font-size: 2.5rem;
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) and (max-width: 1301px) {
   .header-titles {
-    font-size: 2.3rem;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+  .header-titles:active {
+    font-size: 1.5rem;
   }
   li {
     color: var(--background-secondary);
@@ -452,7 +525,7 @@ ul li {
     line-height: 2rem;
   }
   ul#nav {
-    max-height: 6.5rem;
+    max-height: 7.5rem;
   }
 }
 
@@ -509,6 +582,10 @@ section {
   cursor: pointer;
 }
 
+span#span4 {
+  padding: 2.5rem;
+}
+
 h1 {
   color: var(--font-color-primary);
   font-family: var(--font-primary);
@@ -519,7 +596,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 4;
 }
@@ -531,14 +608,16 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: bold;
   line-height: 1.2;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-#subtitle2 {
-  padding: 3rem;
-  font-size: 1.4rem;
+.subtitle5, .subtitle6 {
+  font-size: 1.3rem;
+  padding: 2.5rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -560,6 +639,16 @@ h4 {
   h4 {
     font-size: 2.5rem;
     line-height: 1.5;
+    padding: 3rem;
+  }
+  .subtitle5 {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+  .subtitle6 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 3.5rem;
   }
 }
 /*# sourceMappingURL=app.css.map */
