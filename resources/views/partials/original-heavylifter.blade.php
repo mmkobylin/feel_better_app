@@ -9,17 +9,17 @@
         {{-- Cross-Site Request Forgery Token --}}
             @csrf
             <div class='column'>
-                <label class="container"><sub>done some self care?</sub>
+                <label class="container"><sup>done some self care?</sup>
                     <input type="checkbox" name="action1" value="1"/>
                     <span class="checkmark"></span>
                 </label>
 
-                <label class="container"><sub>helped others?</sub>
+                <label class="container"><sup>helped others?</sup>
                     <input type="checkbox" name="action2" value="1"/>
                     <span class="checkmark"></span>
                 </label> 
             
-                <label class="container"><sub>eaten healthier?</sub>
+                <label class="container"><sup>eaten healthier?</sup>
                     <input type="checkbox" name="action3" value="1"/>
                     <span class="checkmark"></span>
                 </label>
@@ -27,15 +27,15 @@
 
             <div class='column'>
 
-                <label class="container"><sub>had a decent sleep?</sub>
+                <label class="container"><sup>had a decent sleep?</sup>
                     <input type="checkbox" name="action4" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container"><sub>stayed sober?</sub>
+                <label class="container"><sup>stayed sober?</sup>
                     <input type="checkbox" name="action5" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container"><sub>exercised?</sub>
+                <label class="container"><sup>exercised?</sup>
                     <input type="checkbox" name="action6" value="1"/>
                     <span class="checkmark"></span>
                 </label>
