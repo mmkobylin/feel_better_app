@@ -3,45 +3,53 @@
     <span id=span4 style="display: none">Hide them!</span>
 </h3>
 
-<section class="form" id="paragraph2" style="display: none">
 
-    <form class="form-control" method="POST" action="lightbringer"> 
+<section class="form" class="form" id="paragraph2" style="display: none">>
+    <h2>Here is a form for your ideas! </h2>
+
+        {{-- using fieldset for group of related elements in the form  --}}
+
+        <form class="form-control" method="POST" action="lightbringer"> 
         <h4 class="subtitle5">Try some of these... </h4>       
         {{-- Cross-Site Request Forgery Token --}}
         @csrf
 
-        {{-- accessing Actions --}}
-        @foreach (App\Models\Action::all()->take(1) as $action ) 
-            {{-- taking first value from uniqueCollection--}}
-            <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[0]}}</sup>
-                <input type="checkbox" name="action1" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
+            {{-- accessing Actions --}}
+            @foreach (App\Models\Action::all()->take(1) as $action ) 
+                {{-- taking first value from uniqueCollection--}}
+                <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[0]}}</sup>
+                    <input type="checkbox" name="action1" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                
+                <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[1]}}</sup>
+                    <input type="checkbox" name="action2" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+
+                <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[2]}}</sup>
+                    <input type="checkbox" name="action3" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+
+            @endforeach
             
-            <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[1]}}</sup>
-                <input type="checkbox" name="action2" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-            <label class="container"><sup>{{$action->randomiser()[0]->pluck('action')->toArray()[2]}}</sup>
-                <input type="checkbox" name="action3" value="1">
-                <span class="checkmark"></span>
-            </label>
-            <br>
-
-        @endforeach
-        
+            {{-- <button type="submit">Submit</button> --}}
             <button class="button" id="subtitle1" style="display: block" 
             type="submit" name="formSubmit" value="Submit">Submit!</button>
+            
+            </fieldset>
+            <br><br>
+
+            <h4 class="subtitle5">Wanna try something different? Just refresh the page and try again!</h4>
+
         </fieldset>
-    </form>
-
-    <br><br>
-    <h4 class="subtitle5">Wanna try something different? Just refresh the page and try again!</h4>
-
+    </form> 
 </section>
+
 
 {{-- $total counts the points --}}
 <?php 
