@@ -11,7 +11,7 @@
         @csrf
 
             {{-- accessing Actions --}}
-            @foreach (App\Models\Action::all()->take(1) as $action ) 
+            @foreach (App\Models\Action::all()->take(1) as $action) 
                 {{-- taking first value from uniqueCollection--}}
                 <label class="container"><sup>{{$action->randomiser(3)->pluck('action')}}</sup>
                     <input type="checkbox" name="action1" value="1">
