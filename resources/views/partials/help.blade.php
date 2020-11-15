@@ -1,6 +1,5 @@
+<h2>Help</h2>
 <section class="links-section">
-    <h4>Help & Resources</h4>
-
         <ul class="help">
             <li><a href="https://www.nhs.uk/conditions/stress-anxiety-depression/" class="link">NHS Mental Health</a></li>
                 <p class="link-description">Official NHS website about mental health and wellbeing</p>

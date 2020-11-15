@@ -6,10 +6,9 @@
 
     @section("content")
 
-        @include("partials/title")
-
         @include("partials/help")
 
+        @include("partials/title")
         @include("partials/images")
     
     @endsection
