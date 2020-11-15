@@ -19,8 +19,8 @@
 
             Overall, I want you to know that THIS IS A PROCESS. And you will never get it done, it will never be perfect, and that's ok.<br>
             We named it 'Feel better' rather than 'Be perfect' . My genuine wish for you is to enjoy this journey, and go as far as you want, at your own pace. 
-            <br>
-            I know this is not easy. I am proud of you for looking for help. <br>
+            <br><br>
+            I know this is not easy. I am proud of you for looking for help.<br> <br>
             Another thing that this is not, it is not a professional trainer or eating program. I am fat positive and trans-inclusive, and I believe the health and happiness can be find in any size, and if anyone tells you otherwise, it is because they are unhappy with themselves. PROMISE. 
             That's why all the dots are called: 'eat HEALTHIER' not ' healthy'. If you eat only salad all day and be miserable about it, this is not the outcome that you want, right? You finally got to eat home made meal instead of takeout? Great! Made something with vegetables you don't like? Fabolous! Eaten five Oreos instead of entire pack like yesterday? Congratulations, here is your dot!
             
