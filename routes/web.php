@@ -19,9 +19,13 @@ Route::get('/',  'App\Http\Controllers\Actions@home');
 //new and only real way to make routes in laravel 8.0
 Route::get('/info', 'App\Http\Controllers\Actions@info');
 
+//new help route
+Route::get('/help', 'App\Http\Controllers\Actions@help');
+
 //get:route name ; function returns VIEW; 
 Route::get('/lightbringer',
  'App\Http\Controllers\Actions@lightbringer');
+
 Route::post('/lightbringer',
  'App\Http\Controllers\Actions@lightbringer');
 
@@ -43,15 +47,4 @@ Route::post('/results',
 
 Route::get('/all',
 'App\Http\Controllers\Heavylifters@index');
-
-// //  creating the POST for this route
-
-//  Route::post('/results-final',
-//  'App\Http\Controllers\Heavylifters@results');
-
-// Route::post('/results',
-// 'App\Http\Controllers\Heavylifters@createNew');
-
-// // Route::post('/results',
-// 'App\Http\Controllers\Heavylifters@answers');
 

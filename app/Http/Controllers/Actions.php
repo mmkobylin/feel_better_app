@@ -15,6 +15,10 @@ class Actions extends Controller
         return view('info');
     }
 
+    public function help(){
+        return view('help-links');
+    }
+
     public function lightbringer(){
         return view('lightbringer');
     }
