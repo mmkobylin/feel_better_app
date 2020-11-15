@@ -3,7 +3,7 @@
         <h4> What this will not do?</h4>
 
         <p class="disclaimer">
-            This is not an substitute for general health professional. If you need one, please go <a href="/help">HERE</a> and find resources that are right for you.
+            This is not an substitute for general health professional. If you need one, please take a look at <a href="/help">THIS</a> and find resources that are right for you.
         </p>
     <section>
         
