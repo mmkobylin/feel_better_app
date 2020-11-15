@@ -10,6 +10,10 @@ ul.help {
 
 a.link {
     font-size: 1.3rem;
+}
+
+a.link:active, a.link:hover {
+    font-size: 1.3rem;
     font-weight: bold;
 }
 

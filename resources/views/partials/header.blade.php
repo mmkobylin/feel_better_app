@@ -1,6 +1,6 @@
 <ul id="nav">
 
-    <li><a href="/info"><span class="navigation header-titles">Resources</span>
+    <li><a href="/help"><span class="navigation header-titles">Resources</span>
     {!! file_get_contents('icons/tools2.svg') !!} </a>
     </li>
 
@@ -8,7 +8,7 @@
         {!! file_get_contents('icons/option.svg') !!} </a>
     </li>
 
-    <li> <a href="/"><span class="navigation header-titles">Info and Links</span>{!! file_get_contents('icons/question.svg') !!} </a>
+    <li> <a href="/info"><span class="navigation header-titles">Info and Links</span>{!! file_get_contents('icons/question.svg') !!} </a>
     </li>
 
     <li> <a href="/lightbringer"><span class="navigation header-titles">Lightbringer</span>
