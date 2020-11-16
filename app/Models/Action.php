@@ -15,12 +15,8 @@ class Action extends Model
         "point",
     ];
 
-    public function randomiser() { 
+    public static function randomiser() { 
     
-            $collectActions = (Action::all()->random(3));
-
-        return $collectActions;
+        return Action::all()->random(3);
     }
-
-
 }
