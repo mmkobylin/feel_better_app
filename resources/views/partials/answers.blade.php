@@ -64,7 +64,7 @@
                         <br><br>
                         
                         <label class="container">    
-                    <sup>    {{$idea->pluck('idea3')->last()}}</sup>
+                            <sup>{{$idea->pluck('idea3')->last()}}</sup>
                             <input type="checkbox" name="action3" value="1"/>
                             <span class="checkmark"></span>
                             
@@ -75,7 +75,7 @@
                     <div class="column">
                         
                         <label class="container">  
-                      <sup>  {{$idea->pluck('idea4')->last()}}</sup>
+                            <sup>{{$idea->pluck('idea4')->last()}}</sup>
                             <input type="checkbox" name="action4" value="1"/>
                             <span class="checkmark"></span>
                         </label>
@@ -83,7 +83,7 @@
                         <br><br>
                         
                         <label class="container">
-                        <sup>{{$idea->pluck('idea5')->last()}}</sup>                    
+                            <sup>{{$idea->pluck('idea5')->last()}}</sup>                    
                             <input type="checkbox" name="action5" value="1"/>
                             <span class="checkmark"></span>
                         </label>
@@ -91,7 +91,7 @@
                         <br><br>
                         
                         <label class="container">
-                        <sup>{{$idea->pluck('idea6')->last()}}</sup>
+                            <sup>{{$idea->pluck('idea6')->last()}}</sup>
                             <input type="checkbox" name="action6" value="1"/>
                             <span class="checkmark"></span>
                         </label>
