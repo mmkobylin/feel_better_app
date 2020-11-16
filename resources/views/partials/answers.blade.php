@@ -50,23 +50,26 @@
                         <label class="container">
                             <sup>{{$idea->pluck('idea1')->last()}}</sup>
                             <input type="checkbox" name="action1" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark"
+                            <?php if ($idea->pluck('idea1')->last() === NULL ){ ?> hidden <?php } ?>></span></span></span>
                         </label>
 
-                        <br><br>
+                        <br>
 
                         <label class="container">   
                             <sup>{{$idea->pluck('idea2')->last()}}</sup>
                             <input type="checkbox" name="action2" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark"
+                            <?php if ($idea->pluck('idea2')->last() === NULL ){ ?> hidden <?php } ?>></span></span></span>
                         </label>
 
-                        <br><br>
+                        <br>
                         
                         <label class="container">    
                             <sup>{{$idea->pluck('idea3')->last()}}</sup>
                             <input type="checkbox" name="action3" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark"
+                            <?php if ($idea->pluck('idea3')->last() === NULL ){ ?> hidden <?php } ?>></span></span></span>
                             
                         </label>
 
@@ -78,22 +81,25 @@
                             <sup>{{$idea->pluck('idea4')->last()}}</sup>
                             <input type="checkbox" name="action4" value="1"/>
                             <span class="checkmark"></span>
+                            <?php if ($idea->pluck('idea4')->last() === NULL ){ ?> hidden <?php } ?></span>
                         </label>
 
-                        <br><br>
+                        <br>
                         
                         <label class="container">
                             <sup>{{$idea->pluck('idea5')->last()}}</sup>                    
                             <input type="checkbox" name="action5" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark" 
+                            <?php if ($idea->pluck('idea5')->last() === NULL ){ ?> hidden <?php } ?>></span></span>
                         </label>
 
-                        <br><br>
+                        <br>
                         
                         <label class="container">
                             <sup>{{$idea->pluck('idea6')->last()}}</sup>
                             <input type="checkbox" name="action6" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark"
+                            <?php if ($idea->pluck('idea6')->last() === NULL ){ ?> hidden <?php } ?>></span>
                         </label>
 
                     </div>
