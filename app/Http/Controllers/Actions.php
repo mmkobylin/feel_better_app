@@ -23,4 +23,8 @@ class Actions extends Controller
         return view('lightbringer');
     }
 
+    public function randomAction() { 
+    
+        return Action::all()->random(1);
+    }
 }

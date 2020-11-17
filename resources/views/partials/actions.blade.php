@@ -12,6 +12,7 @@
 
             {{-- accessing Actions --}}
 
+
                 @foreach (App\Models\Action::randomiser() AS $action)
                   <label class="container"><sup>{{ $action->action }}</sup>
                     <input type="checkbox" name="action[]" value="{{ $action->point }}">
