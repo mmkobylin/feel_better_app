@@ -19,4 +19,8 @@ class Action extends Model
     
         return Action::all()->random(3);
     }
+
+    public static function sum() { 
+    //
+    }
 }
