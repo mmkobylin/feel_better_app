@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Action; 
+
+
 class Actions extends Controller
 {
 
@@ -19,12 +22,22 @@ class Actions extends Controller
         return view('help-links');
     }
 
-    public function lightbringer(){
+    public function create()
+    {
         return view('lightbringer');
     }
+
+    public function createAnswers(Request $request){
+        $data = $request->all();
+        $article = Action::create($data);
+        return view('lightbringer');
+    }
+    
 
     public function randomAction() { 
     
         return Action::all()->random(1);
     }
+
+  
 }

@@ -24,10 +24,10 @@ Route::get('/help', 'App\Http\Controllers\Actions@help');
 
 //get:route name ; function returns VIEW; 
 Route::get('/lightbringer',
- 'App\Http\Controllers\Actions@lightbringer');
+ 'App\Http\Controllers\Actions@create');
 
 Route::post('/lightbringer',
- 'App\Http\Controllers\Actions@lightbringer');
+ 'App\Http\Controllers\Actions@createAnswers');
 
 Route::get('/heavylifter',
  'App\Http\Controllers\Heavylifters@show_basic');

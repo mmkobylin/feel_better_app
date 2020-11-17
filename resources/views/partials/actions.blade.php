@@ -32,7 +32,7 @@
 
 
 {{-- $total counts the points --}}
-<?php 
+<?php
     $total = (
         +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
         +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +

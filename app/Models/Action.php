@@ -21,6 +21,6 @@ class Action extends Model
     }
 
     public static function sum() { 
-    //
+        dd($request->data);
     }
 }
