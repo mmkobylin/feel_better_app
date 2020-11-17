@@ -11,28 +11,14 @@
         @csrf
 
             {{-- accessing Actions --}}
-            @foreach (App\Models\Action::all()->take(1) as $action) 
-                {{-- taking first value from uniqueCollection--}}
-                <label class="container"><sup>{{$action->randomiser(3)->pluck('action')}}</sup>
-                    <input type="checkbox" name="action1" value="1">
+
+                @foreach (App\Models\Action::randomiser() AS $action)
+                  <label class="container"><sup>{{ $action->action }}</sup>
+                    <input type="checkbox" name="action[]" value="{{ $action->point }}">
                     <span class="checkmark"></span>
                 </label>
-                <br>
+                @endforeach
                 
-                {{-- <label class="container"><sup>{{$action->randomiser()->pluck('action')->toArray()[1]}}</sup>
-                    <input type="checkbox" name="action2" value="1">
-                    <span class="checkmark"></span>
-                </label>
-                <br>
-
-                <label class="container"><sup>{{$action->randomiser()->pluck('action')->toArray()[2]}}</sup>
-                    <input type="checkbox" name="action3" value="1">
-                    <span class="checkmark"></span>
-                </label> --}}
-                <br>
-
-            @endforeach
-            
             {{-- <button type="submit">Submit</button> --}}
             <button class="button2" id="subtitle1" style="display: block" 
             type="submit" name="formSubmit" value="Submit">Submit!</button>
