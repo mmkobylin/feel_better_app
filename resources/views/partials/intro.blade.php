@@ -7,8 +7,8 @@
         </h4><br>
 
         <h4 id="subtitle1"> 
-        <span id=span1 style="display: block">Tell me more! </span>
-        <span id=span2 style="display: none">Got it, thanks! </span>
+            <span id=span1 style="display: block">Tell me more! </span>
+            <span id=span2 style="display: none">Got it, thanks! </span>
         </h4>
         <p id='paragraph1' style="display: none">
         Let's say you have been in a dark place. Might be for a week. Might be for a month, or you really don't know for how long.
