@@ -1,9 +1,9 @@
 :root {
-  --background-primary: #c5db98;
-  --background-secondary: #fff8dc;
-  --font-color-primary:#c71772;
-  --font-color-link: #12c6e2;
-  --font-color-secondary: #421730;
+  --background-primary: #eadedaff;
+  --background-secondary: #ffe4c2ff;
+  --font-color-primary:#d90368ff;
+  --font-color-link: #00bd9dff;
+  --font-color-secondary: #820263ff;
   --font-primary: 'Salsa', cursive;
   --font-secondary: 'Rokkitt', serif;
   --font-tetrary: 'Amatic SC', cursive;
@@ -214,10 +214,6 @@ fieldset {
   color: var(--font-color-secondary);
 }
 
-button {
-  margin-left: 42%;
-}
-
 @media only screen and (min-width: 500px) {
   .form-control {
     padding: 10rem;
@@ -252,7 +248,8 @@ input[type=text] {
   color: var(--font-color-primary);
   background: transparent;
   font-weight: bold;
-  font-size: 0.6rem;
+  font-size: 1rem;
+  font-family: var(--font-secondary);
 }
 
 @media only screen and (min-width: 500px) {
@@ -598,7 +595,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 4;
+  line-height: 1.4;
 }
 
 h3 {
