@@ -50,16 +50,13 @@
 
         <?php
             if ($total === 0) {
-            echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            } else {
-
-                if ($total > 0 && $total < 2 ) {
+                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+            } elseif ($total === 1 ) {
                     echo "Well done, every little step counts!";
-                } elseif ($total = 2 && $total < 4 ) {
+            } elseif ($total === 2) {
                     echo "That's an excellent progress. Keep going!";
-                } elseif ($total > 2 ) {
+            } elseif ($total === 3 ) {
                     echo "Amazing job! Look at you go!";
-                }
             }
         ?>
     </div>
