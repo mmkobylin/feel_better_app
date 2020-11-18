@@ -13,17 +13,16 @@
             {{-- accessing Actions --}}
             @foreach (App\Models\Action::randomiser() AS $action)
                 <label class="container"><sup>{{ $action->action }}</sup>
-                <input type="checkbox" name="action[]" value="{{ $action->point }}">
-                <span class="checkmark"></span>
-            </label>
+                    <input type="checkbox" name="action[]" value="{{ $action->point }}">
+                    <span class="checkmark"></span>
+                </label>
             @endforeach
                 
             {{-- <button type="submit">Submit</button> --}}
             <button class="button" style="display: block" 
             type="submit" name="formSubmit" value="Submit">Submit!</button>
             
-        </fieldset>
-        <br>
+            <br>
         <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
 
     </form> 
