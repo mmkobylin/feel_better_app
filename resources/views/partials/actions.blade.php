@@ -4,15 +4,64 @@
             <span id=span4 style="display: none">Got it, thanks! </span>
         </h4>
 
-        <p id="paragraph2" style="display: none">
-            Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
-            This is what I created a <a class="link" href="/heavylifter">HEAVYLIFTER</a> for. <br>
-            I created a items to be checked off on a list every day, like part of a healthier daily routine.
-            You get the score you had after each day. 
-            It is ok if some of items don't apply. This is your journey. 
-            If you prefer to <br><a class="nav-home link" href="/form">pick your own adventure</a><br>
-            Just click on link and put some of your own ideas of things that will make you feel better!
-        </p>
+    <section id="paragraph2" style="display: none">
+            {{-- <div class="form" class="form" id="paragraph2" style="display: none"> --}}
+     <form class="form-control" method="POST" action="lightbringer"> 
+        <h4 class="subtitle5">Try some of these... </h4>       
+        {{-- Cross-Site Request Forgery Token --}}
+        @csrf
+
+            {{-- accessing Actions --}}
+            @foreach (App\Models\Action::randomiser() AS $action)
+                <label class="container"><sup>{{ $action->action }}</sup>
+                <input type="checkbox" name="action[]" value="{{ $action->point }}">
+                <span class="checkmark"></span>
+            </label>
+            @endforeach
+                
+            {{-- <button type="submit">Submit</button> --}}
+            <button class="button" style="display: block" 
+            type="submit" name="formSubmit" value="Submit">Submit!</button>
+            
+        </fieldset>
+        <br><br>
+
+        <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
+
+    </form> 
+</section>
+
+{{-- $total counts the points --}}
+
+<aside <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+    {{-- total displays --}}
+    <div id="span2 total">  
+        
+        @php
+               
+            //-- $total counts the points --}}
+
+            $total = isset($_POST["action"][0]) + isset($_POST["action"][1]) + isset($_POST["action"][2]);
+
+            echo "The total amount of points for the day is... " . $total . "!"; 
+
+            echo "<br>";
+
+            //-- different message displaying depending on the total amount --}}
+
+            if ($total === 0) {
+                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+            } elseif ($total === 1 ) {
+                echo "Well done, every little step counts!";
+            } elseif ($total === 2) {
+                echo "That's an excellent progress. Keep going!";
+            } elseif ($total > 2 ) {
+                echo "Amazing job! Look at you go!";
+            }
+        @endphp
+    </div>
+            </aside>   
+        </section>
 
 
     <section>
