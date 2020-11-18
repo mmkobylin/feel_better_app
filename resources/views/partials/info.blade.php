@@ -21,11 +21,14 @@
         <br>
 
         Overall, I want you to know that THIS IS A PROCESS. And you will never get it done, it will never be perfect, and that's ok.<br>
-        We named it 'Feel better' rather than 'Be perfect' . My genuine wish for you is to enjoy this journey, and go as far as you want, at your own pace. 
+        It's about feeling better rather than being perfect. My genuine wish for you is to enjoy this journey, and go as far as you want, at your own pace. 
         <br><br>
         I know this is not easy. I am proud of you for looking for help.<br> <br>
-        Another thing that this is not, it is not a professional trainer or eating program. I believe the health and happiness can be find in any size, and if anyone tells you otherwise, it is because they are unhappy with themselves. PROMISE. 
-        That's why all the dots are called: 'eat HEALTHIER' not ' healthy'. If you finally got to eat home-made meal instead of takeout? Great! 
+
+
+        Another thing that this is not, is a training programme or eating programme. I believe the health and happiness can be find in any size, shape and ability level. 
+        That's why I'm using term: 'eat HEALTHIER' not ' healthy', because you can do this at your own pace.
+        If you finally got to eat home-made meal instead of takeout? Great job! 
         
     </p>
 </section>
