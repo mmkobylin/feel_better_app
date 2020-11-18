@@ -27,7 +27,7 @@ Route::get('/lightbringer',
  'App\Http\Controllers\Actions@create');
 
 Route::post('/lightbringer',
- 'App\Http\Controllers\Actions@createAnswers');
+ 'App\Http\Controllers\Actions@create');
 
 Route::get('/heavylifter',
  'App\Http\Controllers\Heavylifters@show_basic');

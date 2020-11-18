@@ -27,11 +27,11 @@ class Actions extends Controller
         return view('lightbringer');
     }
 
-    public function createAnswers(Request $request){
-        $data = $request->all();
-        $article = Action::create($data);
-        return view('lightbringer');
-    }
+    // public function createAnswers(Request $request){
+    //     $data = $request->all();
+    //     $article = Action::create($data);
+    //     return view('lightbringer');
+    // }
     
 
     public function randomAction() { 

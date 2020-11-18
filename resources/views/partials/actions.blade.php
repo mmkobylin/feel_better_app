@@ -32,19 +32,17 @@
 
 
 {{-- $total counts the points --}}
-<?php
-    $total = (
-        +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-        +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
-        +(isset($_POST["action3"]) ? ($_POST["action3"]): 0));
-?>
 
 <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- total displays --}}
     <div id="span2 total">  
         <?php
+        
+            //-- $total counts the points --}}
+
+            $total = isset($_POST["action"][0]) + isset($_POST["action"][1]) + $val = isset($_POST["action"][2]);
+
             echo "The total amount of points for the day is... " . $total . "!"; 
-            {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) : NULL;  --}}
         ?> 
         <br>
         
