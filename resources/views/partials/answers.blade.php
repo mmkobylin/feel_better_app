@@ -6,15 +6,16 @@
     <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- Here go the results --}}
         @php
+            
             //collecting all the points
             $total = (
-                +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-                +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
-                +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
-                +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
-                +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
-                +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
-            );         
+                +(isset($_POST["action1"]))+ 
+                +(isset($_POST["action2"]))+
+                +(isset($_POST["action3"]))+
+                +(isset($_POST["action4"]))+
+                +(isset($_POST["action5"]))+
+                +(isset($_POST["action6"]))
+            );       
     
             echo "The total amount of points for the day is... " . $total . "!"; 
             
