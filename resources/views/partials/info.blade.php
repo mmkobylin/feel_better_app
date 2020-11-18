@@ -1,16 +1,19 @@
 <h2>Further Help</h2>
-    
+<aside>
     <h4> What this will not do?</h4>
 
     <p class="disclaimer">
         This is not an substitute for general health professional. If you need one, please take a look at <a href="/help">THIS</a> and find resources that are right for you.
     </p>
+</aside>
+
 <section>
     
     <h4 id="subtitle1"> 
-    <span id=span1 style="display: block">Common Sense </span>
-    <span id=span2 style="display: none">Got it, thanks! </span>
+        <span id=span1 style="display: block">Common Sense </span>
+        <span id=span2 style="display: none">Got it, thanks! </span>
     </h4>
+    
     <p id='paragraph1' style="display: none">
         This one is more applicable to the <a class="link" href="/lightbringer">LIGHTBRINGER</a>. <br>
         Remember, this is not your personal wheel of torture. Use your own guidance and common sense. You got 'go for the walk' but you are living in Alberta and it is - 40 degrees? Probably not thev best idea, try again. You got 'play happy music' but your spouse and newly born just fell asleep after atrocious day? Use headphones.  

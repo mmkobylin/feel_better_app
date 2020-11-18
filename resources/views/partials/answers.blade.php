@@ -107,7 +107,7 @@
                 </fieldset>
             </form>
             
-            @endforeach
+        @endforeach
         
     </section>
         
