@@ -9,12 +9,12 @@
             
             //collecting all the points
             $total = (
-                +(isset($_POST["action1"]))+ 
-                +(isset($_POST["action2"]))+
-                +(isset($_POST["action3"]))+
-                +(isset($_POST["action4"]))+
-                +(isset($_POST["action5"]))+
-                +(isset($_POST["action6"]))
+                +isset($_POST["action1"])+ 
+                +isset($_POST["action2"])+
+                +isset($_POST["action3"])+
+                +isset($_POST["action4"])+
+                +isset($_POST["action5"])+
+                +isset($_POST["action6"])
             );       
     
             echo "The total amount of points for the day is... " . $total . "!"; 
