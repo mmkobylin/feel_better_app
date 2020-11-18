@@ -5,7 +5,6 @@
         </h4>
 
     <section id="paragraph2" style="display: none">
-            {{-- <div class="form" class="form" id="paragraph2" style="display: none"> --}}
      <form class="form-control" method="POST" action="lightbringer"> 
         <h4 class="subtitle5">Try some of these... </h4>       
         {{-- Cross-Site Request Forgery Token --}}
@@ -24,8 +23,7 @@
             type="submit" name="formSubmit" value="Submit">Submit!</button>
             
         </fieldset>
-        <br><br>
-
+        <br>
         <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
 
     </form> 
