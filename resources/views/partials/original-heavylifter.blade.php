@@ -1,3 +1,35 @@
+
+{{-- hide if it form is not posted --}}
+<section class="results" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+{{-- Here go the results --}}
+    @php
+        
+        //collecting all the points
+        $total = (
+            +isset($_POST["action1"])+ 
+            +isset($_POST["action2"])+
+            +isset($_POST["action3"])+
+            +isset($_POST["action4"])+
+            +isset($_POST["action5"])+
+            +isset($_POST["action6"])
+        );       
+
+        echo "The total amount of points for the day is... " . $total . "!"; 
+        
+        echo "<br>";
+
+        //-- comment showing with results --}}
+        if ($total === 0) {
+            echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+        } elseif ( $total > 0 && $total < 2 ) {
+            echo "Well done, every little step counts!";
+        } elseif ($total >= 2 && $total < 4 ) {
+            echo "That's an excellent progress. Keep going!";
+        } elseif ($total > 4 ) {
+            echo "Amazing job! Look at you go!";
+        }
+    @endphp
+</section>
 <section class="form">
     {{-- creating the form --}}
     <form method="POST" action="heavylifter">
@@ -45,40 +77,8 @@
             type="submit" name="formSubmit" value="Submit">Submit!</button>
         </fieldset>
     </form>
-
-    @php
-        //collecting all the points
-        $total = (
-            +(isset($_POST["action1"]) ? ($_POST["action1"]): 0) + 
-            +(isset($_POST["action2"]) ? ($_POST["action2"]): 0) +
-            +(isset($_POST["action3"]) ? ($_POST["action3"]): 0) +
-            +(isset($_POST["action4"]) ? ($_POST["action4"]): 0) +
-            +(isset($_POST["action5"]) ? ($_POST["action5"]): 0) +
-            +(isset($_POST["action6"]) ? ($_POST["action6"]): 0)
-        );         
-    @endphp
-    {{-- hide if it form is not posted --}}
-    <div <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-    {{-- Here go the results --}}
-        <h4 
-        <?php
-            echo "The total amount of points for the day is... " . $total . "!"; 
-            {{-- isset($_POST["formSubmit"]) ? print ($_POST["action1"]) + ($_POST["action2"]) + ($_POST["action3"]) + ($_POST["action4"]) + ($_POST["action5"]) + ($_POST["action6"])) : NULL;  --}}
-            
-            ?>></h4><br> <?php
-            //-- comment showing with results --}}
-            if ($total === 0) {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            } elseif ( $total > 0 && $total < 2 ) {
-                echo "Well done, every little step counts!";
-            } elseif ($total >= 2 && $total < 4 ) {
-                echo "That's an excellent progress. Keep going!";
-            } elseif ($total > 4 ) {
-                echo "Amazing job! Look at you go!";
-            }
-        ?> 
-    </div>
 </section>
+
 <section>
     <h3 id="subtitle2"> 
         <span id=span3 style="display: block">Tell me more! </span>
