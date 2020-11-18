@@ -19,7 +19,7 @@
 
     <section>
 
-        <h4> My second goal is to help people to step up their game after they got better! Now when you feel better, you might want to stretch yourself little further.<br>
+        <h4> My second goal is to help people to step up their game after if they feel up for it!<br>
             <br>For that go to <a class="link" href="/heavylifter">HEAVYLIFTER</a>.
         </h4>
 
@@ -33,9 +33,10 @@
         <p id="paragraph2" style="display: none">
             Maybe you just just got most of your ducks in order. Maybe it is the other way around, you used to and now they seem to be having a rave. Maybe you just need something to keep you in the routine. <br>
             This is what I created a <a class="link" href="/heavylifter">HEAVYLIFTER</a> for. <br>
-            I created a list of checking boxes, that you might tick, and get the score you had after each day. 
-            It is ok if some of them don't apply. This is your journey. 
-            If you prefer to <br><a class="nav-home link" href="/form">Pick your own adventure</a><br>
+            I created a items to be checked off on a list every day, like part of a healthier daily routine.
+            You get the score you had after each day. 
+            It is ok if some of items don't apply. This is your journey. 
+            If you prefer to <br><a class="nav-home link" href="/form">pick your own adventure</a><br>
             Just click on link and put some of your own ideas of things that will make you feel better!
         </p>
     </section>

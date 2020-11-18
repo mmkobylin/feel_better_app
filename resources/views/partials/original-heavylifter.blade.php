@@ -32,7 +32,7 @@
     @endphp
 </section>
 
-<section class="form">
+<section class="form" class="results" <?php if (isset($_POST["formSubmit"]) !== false ){ ?> hidden <?php } ?>>
     {{-- creating the form --}}
     <form method="POST" action="heavylifter">
     
