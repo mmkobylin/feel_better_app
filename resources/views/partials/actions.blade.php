@@ -36,8 +36,7 @@
 <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- total displays --}}
     <div id="span2 total">  
-      
-
+        
         @php
                
             //-- $total counts the points --}}
