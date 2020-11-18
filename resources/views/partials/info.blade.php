@@ -25,11 +25,9 @@
         <br><br>
         I know this is not easy. I am proud of you for looking for help.<br> <br>
 
-
-        Another thing that this is not, is a training programme or eating programme. I believe the health and happiness can be find in any size, shape and ability level. 
-        That's why I'm using term: 'eat HEALTHIER' not ' healthy', because you can do this at your own pace.
-        If you finally got to eat home-made meal instead of takeout? Great job! 
-        
+        Another thing that this is not, is a training programme or eating programme. I believe that health can be improved and happiness can be found in any size, shape and ability level. 
+        That's why I'm using term: 'eat HEALTHIER' not ' healthy', because you can do this at your own pace, to your own level.
+        If you finally ate a home-made, healthier meal instead of takeout? Great job!
     </p>
 </section>
 
