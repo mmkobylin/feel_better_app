@@ -30,7 +30,6 @@
     </form> 
 </section>
 
-
 {{-- $total counts the points --}}
 
 <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>

@@ -1,39 +1,36 @@
 <h2>Check on yourself!</h2>
 
- <div>
+{{-- hide if it form is not posted --}}
+<section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+{{-- Here go the results --}}
+    @php
+        
+        //collecting all the points
+        $total = (
+            +isset($_POST["action1"])+ 
+            +isset($_POST["action2"])+
+            +isset($_POST["action3"])+
+            +isset($_POST["action4"])+
+            +isset($_POST["action5"])+
+            +isset($_POST["action6"])
+        );       
 
-    {{-- hide if it form is not posted --}}
-    <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-    {{-- Here go the results --}}
-        @php
-            
-            //collecting all the points
-            $total = (
-                +isset($_POST["action1"])+ 
-                +isset($_POST["action2"])+
-                +isset($_POST["action3"])+
-                +isset($_POST["action4"])+
-                +isset($_POST["action5"])+
-                +isset($_POST["action6"])
-            );       
-    
-            echo "The total amount of points for the day is... " . $total . "!"; 
-            
-            echo "<br>";
+        echo "The total amount of points for the day is... " . $total . "!"; 
+        
+        echo "<br>";
 
-            //-- comment showing with results --}}
-            if ($total === 0) {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            } elseif ( $total > 0 && $total < 2 ) {
-                echo "Well done, every little step counts!";
-            } elseif ($total >= 2 && $total < 4 ) {
-                echo "That's an excellent progress. Keep going!";
-            } elseif ($total > 4 ) {
-                echo "Amazing job! Look at you go!";
-            }
-        @endphp
-    </section>
-</div>
+        //-- comment showing with results --}}
+        if ($total === 0) {
+            echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+        } elseif ( $total > 0 && $total < 2 ) {
+            echo "Well done, every little step counts!";
+        } elseif ($total >= 2 && $total < 4 ) {
+            echo "That's an excellent progress. Keep going!";
+        } elseif ($total > 4 ) {
+            echo "Amazing job! Look at you go!";
+        }
+    @endphp
+</section>
 
 <section class="form-control" <?php if (isset($_POST["formSubmit"]) !== false ){ ?> hidden <?php } ?>>
  
