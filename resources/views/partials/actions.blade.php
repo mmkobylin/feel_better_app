@@ -52,11 +52,11 @@
             if ($total === 0) {
                 echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
             } elseif ($total === 1 ) {
-                    echo "Well done, every little step counts!";
+                echo "Well done, every little step counts!";
             } elseif ($total === 2) {
-                    echo "That's an excellent progress. Keep going!";
+                echo "That's an excellent progress. Keep going!";
             } elseif ($total === 3 ) {
-                    echo "Amazing job! Look at you go!";
+                echo "Amazing job! Look at you go!";
             }
         ?>
     </div>
