@@ -1,9 +1,9 @@
 :root {
-  --background-primary:#e0ff70ff;
-  --background-secondary: #eadedaff;
+  --background-primary: #eadedaff;
+  --background-secondary: #ffe4c2ff;
   --font-color-primary:#d90368ff;
-  --font-color-link: #4dccbdff;
-  --font-color-secondary: #231123ff;
+  --font-color-link: #00bd9dff;
+  --font-color-secondary: #820263ff;
   --font-primary: 'Salsa', cursive;
   --font-secondary: 'Rokkitt', serif;
   --font-tetrary: 'Amatic SC', cursive;
