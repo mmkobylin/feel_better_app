@@ -15,12 +15,12 @@ class Action extends Model
         "point",
     ];
 
-    public function randomiser() { 
+    public static function randomiser() { 
     
-            $collectActions = (Action::all()->random(3));
-
-        return $collectActions;
+        return Action::all()->random(3);
     }
 
-
+    public static function sum() { 
+        dd($request->data);
+    }
 }

@@ -80,7 +80,7 @@
                         <label class="container">  
                             <sup>{{$idea->pluck('idea4')->last()}}</sup>
                             <input type="checkbox" name="action4" value="1"/>
-                            <span class="checkmark"></span>
+                            <span class="checkmark"
                             <?php if ($idea->pluck('idea4')->last() === NULL ){ ?> hidden <?php } ?></span>
                         </label>
 
