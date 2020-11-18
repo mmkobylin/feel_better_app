@@ -1,9 +1,9 @@
 :root {
-  --background-primary: #c5db98;
-  --background-secondary: #fff8dc;
-  --font-color-primary: #c71772;
-  --font-color-link: #12c6e2;
-  --font-color-secondary: #421730;
+  --background-primary: #eadeda;
+  --background-secondary: #e0ff70ff;
+  --font-color-primary: #d90368ff;
+  --font-color-link: #4dccbdff;
+  --font-color-secondary: #231123ff;
   --font-primary: "Salsa", cursive;
   --font-secondary: "Rokkitt", serif;
   --font-tetrary: "Amatic SC", cursive;
@@ -260,6 +260,7 @@ input[type=text] {
   background: transparent;
   font-weight: bold;
   font-size: 1rem;
+  font-family: var(--font-secondary);
 }
 
 @media only screen and (min-width: 500px) {
@@ -620,7 +621,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 4;
+  line-height: 1.4;
 }
 
 h3 {
