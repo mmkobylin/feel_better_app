@@ -11,9 +11,9 @@
             <span id=span2 style="display: none">Got it, thanks! </span>
         </h4>
         <p id='paragraph1' style="display: none">
-        Let's say you have been in a dark place. Might be for a week. Might be for a month, or you really don't know for how long.
-        But it has been attrocious. You have eaten all takeaway. Or opposite, nearly nothing at all. You don't remember when you washed your hair. The house is a mess. You still are not exactly energetic, but the reality had come knocking on the door. <br>
-        First of all, I feel you. This is what the <a class="link" href="/lightbringer">LIGHTBRINGER</a> is design for! I wanted to create an app where by simple and cheap or free steps you are able to feel just a little bit better. Maybe not every day, but often enough.
+        Let's say you have been in a dark place. Might have been for a week, a month, or you've just lost track of how long it's been.
+        'You've eaten nothing but takeaway/junk food, or done the opposite and barely eaten at all. You don't remember when you washed your hair. The house is a mess. You're really lacking energy.... but then the reality had come knocking on the door. <br>
+        First of all, I feel you. This is what the <a class="link" href="/lightbringer">LIGHTBRINGER</a> is designed for! I wanted to create an app where by simple and cheap or free steps you are able to feel just a little bit better. Maybe not every day, but often enough.
         </p>
     </section>
 
