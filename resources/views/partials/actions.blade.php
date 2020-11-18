@@ -36,29 +36,30 @@
 <section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
     {{-- total displays --}}
     <div id="span2 total">  
-        <?php
-        
+      
+
+        @php
+               
             //-- $total counts the points --}}
 
             $total = isset($_POST["action"][0]) + isset($_POST["action"][1]) + $val = isset($_POST["action"][2]);
 
             echo "The total amount of points for the day is... " . $total . "!"; 
-        ?> 
-        <br>
-        
-        {{-- different message displaying depending on the total amount --}}
 
-        <?php
+            echo "<br>";
+
+            //-- different message displaying depending on the total amount --}}
+
             if ($total === 0) {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+                echo "\r\n It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
             } elseif ($total === 1 ) {
-                echo "Well done, every little step counts!";
+                echo "\r\n Well done, every little step counts!";
             } elseif ($total === 2) {
-                echo "That's an excellent progress. Keep going!";
+                echo "\r\n That's an excellent progress. Keep going!";
             } elseif ($total === 3 ) {
-                echo "Amazing job! Look at you go!";
+                echo "\r\n Amazing job! Look at you go!";
             }
-        ?>
+        @endphp
     </div>
 </section>   
 
