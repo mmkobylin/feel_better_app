@@ -3,7 +3,7 @@
     <h4> What this will not do?</h4>
 
     <p class="disclaimer">
-        This is not an substitute for general health professional. If you need one, please take a look at <a href="/help">THIS</a> and find resources that are right for you.
+    This app is only to be used for guidance/support. If you require medical assistance or a healthcare professional please click <a href="/help">HERE</a> for the resource page
     </p>
 </aside>
 
