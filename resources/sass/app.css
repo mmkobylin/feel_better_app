@@ -1,6 +1,6 @@
 :root {
+  --background-secondary:#e0ff70ff;
   --background-primary: #eadedaff;
-  --background-secondary: #ffe4c2ff;
   --font-color-primary:#d90368ff;
   --font-color-link: #00bd9dff;
   --font-color-secondary: #820263ff;
@@ -209,6 +209,17 @@ label.container {
   }
 }
 
+div#total {
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+div#total:active, div#total:hover {
+  color: var(--font-color-primary);
+  text-decoration: none;
+}
+
 fieldset {
   border: none;
   color: var(--font-color-secondary);
@@ -394,6 +405,10 @@ ul.help {
 }
 
 a.link {
+  font-size: 1.3rem;
+}
+
+a.link:active, a.link:hover {
   font-size: 1.3rem;
   font-weight: bold;
 }
