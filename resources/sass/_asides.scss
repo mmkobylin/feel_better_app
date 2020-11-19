@@ -1,0 +1,24 @@
+aside {
+    background: var(--background-secondary);
+    border: solid 1rem var(--font-color-secondary);
+    border-radius: 1rem;
+    color:var(--font-color-secondary);
+    font-size:1.5rem;
+    font-weight:bold;
+    padding:1rem;
+    margin: 1rem;
+};
+
+
+@media only screen and (min-width: 500px) {
+    aside {
+        line-height: 3.4rem;
+        padding:6rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin:5rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+        
+    }
+};

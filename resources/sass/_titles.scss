@@ -23,11 +23,14 @@ h4 {
     font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.2;
-    padding-bottom:2rem;
-    padding-top:2rem;
+    margin:0; 
+    padding:0;
     
 };
 
+#subtitle1, .subtitle2 {
+    margin:0;
+}
 
 .subtitle5, .subtitle6 {
     font-size:1.3rem;

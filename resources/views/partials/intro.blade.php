@@ -21,9 +21,7 @@
 
         <h4> My second goal is to help people to step up their game after if they feel up for it!<br>
             <br>For that go to <a class="link" href="/heavylifter">HEAVYLIFTER</a>.
-        </h4>
-
-        <br>
+        </h4><br>
 
         <h4 id="subtitle2"> 
             <span id=span3 style="display: block">Tell me more! </span>
