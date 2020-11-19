@@ -1,9 +1,9 @@
 :root {
   --background-secondary:#eadedaff;
-  --background-primary: #eadedaff;
+  --background-primary: rgb(255, 144, 103);
   --font-color-primary:#d90368ff;
-  --font-color-link: #00bd9dff;
-  --font-color-secondary: #820263ff;
+  --font-color-link: #4dccbdff;
+  --font-color-secondary: rgb(90, 0, 90);
   --font-primary: 'Salsa', cursive;
   --font-secondary: 'Rokkitt', serif;
   --font-tetrary: 'Amatic SC', cursive;
@@ -448,10 +448,6 @@ a.link:active, a.link:hover {
   }
 }
 
-* {
-  fill: var(--background-secondary);
-}
-
 a {
   text-decoration: none;
 }
@@ -512,12 +508,12 @@ ul li {
 
 @media only screen and (min-width: 501px) {
   .header-titles {
-    color: var(--background-secondary);
+    color: var(--background-primary);
     display: inline-block;
     font-size: 2.3rem;
   }
   .header-titles:active {
-    color: var(--background-primary);
+    color: var(--background-secondary);
     font-size: 2.5rem;
   }
 }
@@ -554,7 +550,7 @@ p {
 }
 
 section {
-  background: var(--background-secondary);
+  background: var(--background-primary);
   border: solid 1rem var(--font-color-primary);
   border-radius: 1.5rem;
   color: var(--font-color-primary);
@@ -570,6 +566,8 @@ section {
     padding: 6rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     margin: 5rem;
     margin-top: 1rem;
     margin-bottom: 6rem;
@@ -604,7 +602,7 @@ h1 {
   font-size: 2.5rem;
   line-height: 4rem;
   padding: 2rem;
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
 }
 
 h2 {

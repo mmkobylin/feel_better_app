@@ -1,80 +1,75 @@
-* {
-    fill:var(--background-secondary);
+a {
+    text-decoration: none;
 }
 
-    a {
-        text-decoration: none;
-    }
+li {
+    color: var(--background-primary);
+    font-size:2rem;
+    padding:0.6rem;
+    padding-top:1.4rem;
+    line-height: 0.5rem;
+}
 
-    li {
-        color: var(--background-primary);
-        font-size:2rem;
-        padding:0.6rem;
-        padding-top:1.4rem;
-        line-height: 0.5rem;
-    }
+li:active, li:hover {
+    color: var(--background-secondary);
+    font-weight: bolder;
+}
 
-    li:active, li:hover {
-        color: var(--background-secondary);
-        font-weight: bolder;
-    }
+li.a:active, li.a:hover {
+    color: var(--background-secondary);
+    text-decoration:none;
+}
 
-    li.a:active, li.a:hover {
-        color: var(--background-secondary);
-        text-decoration:none;
-    }
+ul#nav {
+    background: var(--font-color-primary);
+    max-height: 5rem;
+}
 
-    ul#nav {
-        background: var(--font-color-primary);
-        max-height: 5rem;
-    }
+#nav {
+    text-align: justify;
+    padding:0;
+}
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 
-    #nav {
-        text-align: justify;
-        padding:0;
-    }
-    #nav:after {
-        content: '';
-        display: inline-block;
-        width: 100%;
+}
+#nav li {
+    display: inline-block;
+    color: var(--font-primary);
+}
 
-    }
-    #nav li {
-        display: inline-block;
-        color: var(--font-primary);
-    }
-    
-    svg {
-        fill: var(--background-primary);
-        height: 2rem;
-        width: 2rem;
-    }
+svg {
+    fill: var(--background-primary);
+    height: 2rem;
+    width: 2rem;
+}
 
-    .header-titles {
-        display:none;
-    }
+.header-titles {
+    display:none;
+}
 
-    ul li{
-        display: inline;
-        vertical-align: middle;
-    }
+ul li{
+    display: inline;
+    vertical-align: middle;
+}
 
 @media only screen and (min-width: 501px) {
 
     .header-titles {
-        color: var(--background-secondary);
+        color: var(--background-primary);
         display:inline-block;
         font-size: 2.3rem;
     };
 
     .header-titles:active{
-        color: var(--background-primary);
+        color: var(--background-secondary);
         font-size: 2.5rem;
     };
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1301px){
-
 
    .header-titles {
         display:inline-block;
