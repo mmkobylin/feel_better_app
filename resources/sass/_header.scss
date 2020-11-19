@@ -1,12 +1,18 @@
 header {
+    background: var(--font-color-secondary);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     max-height: 5rem;
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 
 @media only screen and (min-width: 500px) {
     header {
         max-height: 6.5rem;
     }
 };
+

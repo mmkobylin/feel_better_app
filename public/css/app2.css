@@ -41,52 +41,6 @@ p {
   font-family: var(--font-primary);
 }
 
-*,
-*::before,
-*::after {
-  fill: var(--background-primary);
-}
-
-section {
-  background: var(--background-primary);
-}
-
-h1 {
-  background-color: var(--background-primary);
-}
-
-header {
-  background: var(--font-color-secondary);
-  padding: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-footer {
-  background: var(--font-color-secondary);
-  padding: 2rem;
-}
-
-.navbar-home {
-  color: var(--background-primary);
-  font-family: var(--font-primary);
-  font-size: 1.5rem;
-}
-
-.navbar-home:active,
-.navbar-home:hover {
-  display: inline;
-  list-style: none;
-  text-align: center;
-}
-
-@media only screen and (min-width: 500px) {
-  .navbar-home {
-    font-size: 2.5rem;
-    letter-spacing: 0.3rem;
-  }
-}
-
 button {
   background: var(--font-color-primary);
   border-radius: 25px;
@@ -282,6 +236,17 @@ fieldset {
   color: var(--font-color-secondary);
 }
 
+footer {
+  background: var(--font-color-secondary);
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  footer {
+    max-height: 6.5rem;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .form-control {
     padding: 10rem;
@@ -334,10 +299,14 @@ input[type=text] {
 }
 
 header {
+  background: var(--font-color-secondary);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   max-height: 5rem;
+  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media only screen and (min-width: 500px) {
