@@ -75,8 +75,8 @@
                 </label>
             </div>
 
-            <button class="button" id="subtitle1" style="display: block" 
-            type="submit" name="formSubmit" value="Submit">Submit!</button>
+            <button class="button-heavy" type="submit" name="formSubmit" value="Submit">Submit!</button>
+
         </fieldset>
     </form>
 </section>

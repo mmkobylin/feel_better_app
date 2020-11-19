@@ -15,6 +15,7 @@
 *::after {
   margin: 0;
   text-align: center;
+  line-height: 1.5;
   fill: var(--background-secondary);
 }
 
@@ -49,6 +50,7 @@ aside {
   font-weight: bold;
   padding: 1rem;
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -77,7 +79,6 @@ aside {
 }
 
 button {
-  background: var(--font-color-primary);
   border-radius: 25px;
   border: 7px solid var(--font-color-primary);
   background: var(--background-secondary);
@@ -99,12 +100,8 @@ button:hover {
   font-weight: bolder;
 }
 
-.button {
-  margin-left: 40%;
-}
-
-.button2 {
-  margin-left: 0;
+.button-light {
+  margin-left: 3.5rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -116,8 +113,8 @@ button:hover {
     margin: 2rem;
   }
 
-  .button {
-    margin-left: 40%;
+  .button-heavy {
+    margin-right: 23%;
   }
 }
 
@@ -285,9 +282,9 @@ footer {
 }
 
 @media only screen and (min-width: 500px) {
-  .form-control {
+  .form-control2 {
     max-width: 30rem;
-    padding-left: 20rem;
+    padding-left: 34%;
   }
 }
 
@@ -757,7 +754,8 @@ h4 {
 .subtitle5,
 .subtitle6 {
   font-size: 1.3rem;
-  padding: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 @media only screen and (min-width: 500px) {

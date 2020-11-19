@@ -1,5 +1,4 @@
 button {
-    background: var(--font-color-primary);
     border-radius: 25px;
     border: 7px solid var(--font-color-primary);
     background: var(--background-secondary);
@@ -20,13 +19,9 @@ button:active, button:hover {
         font-weight: bolder;
     };
 
-    .button {
-        margin-left: 40%;
-    }
-
-    .button2 {
-        margin-left: 0;
-    }
+.button-light {
+    margin-left: 3.5rem;
+}
     
 @media only screen and (min-width: 500px) {
     
@@ -38,9 +33,8 @@ button:active, button:hover {
         margin:2rem;
     };
 
-
-    .button {
-        margin-left: 40%;
-    };
+    .button-heavy {
+        margin-right: 23%;
+    }
 
 }

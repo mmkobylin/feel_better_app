@@ -5,7 +5,7 @@
     </h4>
 
     <section id="paragraph2" style="display: none">
-        <form class="form-control" method="POST" action="lightbringer"> 
+        <form class="form-control2" method="POST" action="lightbringer"> 
             <h4 class="subtitle5">Try some of these... </h4>       
             {{-- Cross-Site Request Forgery Token --}}
             @csrf
@@ -19,13 +19,14 @@
                 @endforeach
                     
                 {{-- <button type="submit">Submit</button> --}}
-                <button class="button" style="display: block" 
+                <button class="button-light" style="display: block" 
                 type="submit" name="formSubmit" value="Submit">Submit!</button>
                 
                 <br>
-            <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
-
         </form> 
+        
+        <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
+
     </section>
 
     {{-- $total counts the points --}}
