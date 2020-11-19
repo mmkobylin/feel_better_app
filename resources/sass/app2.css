@@ -100,6 +100,10 @@ button:active, button:hover {
   margin-left: 3.5rem;
 }
 
+#button-heavy {
+  margin-left: 30%;
+}
+
 @media only screen and (min-width: 500px) {
   button {
     font-weight: bolder;
@@ -107,9 +111,6 @@ button:active, button:hover {
     padding-left: 3rem;
     padding-right: 3rem;
     margin: 2rem;
-  }
-  .button-box {
-    max-width: 10rem;
   }
 }
 
