@@ -118,7 +118,7 @@ button:active, button:hover {
   width: 1.5rem;
   background-color: var(--font-color-link);
   margin: 0.9rem;
-  margin-top: 0.8rem;
+  margin-top: 0;
 }
 
 /* On mouse-over, add a grey background color */
@@ -176,6 +176,9 @@ label.container {
 @media only screen and (min-width: 500px) {
   .checkbox {
     margin-top: 3rem;
+  }
+  .checkmark {
+    margin-top: .8rem;
   }
 }
 
