@@ -1,7 +1,7 @@
 <h2>Check on yourself!</h2>
 
 {{-- hide if it form is not posted --}}
-<section <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+<aside <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
 {{-- Here go the results --}}
     @php
         
@@ -30,7 +30,7 @@
             echo "Amazing job! Look at you go!";
         }
     @endphp
-</section>
+</aside>
 
 <section class="form-control" <?php if (isset($_POST["formSubmit"]) !== false ){ ?> hidden <?php } ?>>
  
