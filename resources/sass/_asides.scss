@@ -3,21 +3,21 @@ aside {
     border: solid 1rem var(--font-color-secondary);
     border-radius: 1rem;
     color:var(--font-color-secondary);
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-weight:bold;
     padding:1rem;
     margin: 1rem;
 };
 
 .container {
-    padding:0.5rem;
-    padding-bottom: 1.7rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    max-height: 0rem;
 }
 
 
 @media only screen and (min-width: 500px) {
     aside {
+        font-size:1.5rem;
         padding:6rem;
         padding-bottom: 2rem;
         padding-top: 2rem;
