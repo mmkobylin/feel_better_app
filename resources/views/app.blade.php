@@ -8,7 +8,7 @@
 
         {{-- styles --}}
         
-        <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('/css/app2.css') }}" rel="stylesheet">
         {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
@@ -22,49 +22,6 @@
 
     {{-- sass is struggling, till then i will write it here and later move it to sass --}}
     <style>
-    
-    *, *::before, *::after {
-        fill: var(--background-primary);
-    }
-
-    section {
-        background: var(--background-primary);
-    }
-
-    h1 {
-        background-color: var(--background-primary);
-    }
-
-    header {
-        background: var(--font-color-secondary);
-        padding: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    footer {
-        background: var(--font-color-secondary);
-        padding: 2rem;
-    }
-
-    .navbar-home {
-        color: var(--background-primary);
-        font-family: var(--font-primary);
-        font-size: 1.5rem;
-    };
-
-.navbar-home:active, .navbar-home:hover {
-    display: inline; 
-    list-style:none;
-    text-align: center;
-};
-
-@media only screen and (min-width: 500px) {
-    .navbar-home {
-        font-size: 2.5rem;
-        letter-spacing: 0.3rem;
-    };
-};
     </style>
     <body>
         
