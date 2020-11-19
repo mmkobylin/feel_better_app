@@ -1,7 +1,7 @@
 <h2>Check on yourself!</h2>
 
 {{-- hide if it form is not posted --}}
-<aside class="results" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+<section class="results" <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
 {{-- Here go the results --}}
     @php
         
@@ -30,7 +30,7 @@
             echo "Amazing job! Look at you go!";
         }
     @endphp
-</aside>
+</section>
 
 <section class="form" class="results" <?php if (isset($_POST["formSubmit"]) !== false ){ ?> hidden <?php } ?>>
     {{-- creating the form --}}
@@ -74,9 +74,10 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
-
-            <button class="button-heavy" type="submit" name="formSubmit" value="Submit">Submit!</button>
-
+            <div class="button-box">
+                <button id="subtitle1 button-heavy" style="display: block" 
+                type="submit" name="formSubmit" value="Submit">Submit!</button>
+            </div>
         </fieldset>
     </form>
 </section>
@@ -94,6 +95,6 @@
         You get the score you had after each day. 
         It is ok if some of items don't apply. This is your journey. 
         If you prefer to <br><a class="nav-home link" href="/form">pick your own adventure</a><br>
-        Just click on link and put some of your own ideas of things that will make you feel better!
+        Just click on link and put some of your own ideas of things that will make you feel good!
     </p>
 </section>
