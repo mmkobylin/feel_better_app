@@ -8,7 +8,7 @@
 
         {{-- styles --}}
         
-        <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('/css/app2.css') }}" rel="stylesheet">
         {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
@@ -22,18 +22,6 @@
 
     {{-- sass is struggling, till then i will write it here and later move it to sass --}}
     <style>
-    
-    *, *::before, *::after {
-        fill: var(--background-primary);
-    }
-
-    section {
-        background: var(--background-primary);
-    }
-
-    h1 {
-        background-color: var(--background-primary);
-    }
     </style>
     <body>
         

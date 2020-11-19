@@ -1,17 +1,13 @@
-header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  max-height: 5rem;
-}
-
-@media only screen and (min-width: 500px) {
-  header {
-    max-height: 6.5rem;
-  }
+:root {
+  --background-primary:#eadedaff;
+  --background-secondary: rgb(250, 209, 194);
+  --font-color-primary:#d90368ff;
+  --font-color-link: #4dccbdff;
+  --font-color-secondary: rgb(90, 0, 90);
+  --font-primary: 'Salsa', cursive;
+  --font-secondary: 'Rokkitt', serif;
+  --font-tetrary: 'Amatic SC', cursive;
+  --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
 }
 
 *, *::before, *::after {
@@ -41,6 +37,49 @@ p {
   padding: 1rem;
   color: var(--base-font-color);
   font-family: var(--font-primary);
+}
+
+*, *::before, *::after {
+  fill: var(--background-primary);
+}
+
+section {
+  background: var(--background-primary);
+}
+
+h1 {
+  background-color: var(--background-primary);
+}
+
+header {
+  background: var(--font-color-secondary);
+  padding: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer {
+  background: var(--font-color-secondary);
+  padding: 2rem;
+}
+
+.navbar-home {
+  color: var(--background-primary);
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+}
+
+.navbar-home:active, .navbar-home:hover {
+  display: inline;
+  list-style: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar-home {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
 }
 
 button {
@@ -663,4 +702,4 @@ h4 {
     padding: 3.5rem;
   }
 }
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app2.css.map */
