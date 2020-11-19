@@ -1,13 +1,13 @@
 :root {
-    --background-primary:#eadedaff;
+    --background-primary:#F9DBBD;
 
-    --background-secondary: rgb(250, 209, 194);
+    --background-secondary:#FFD6D9;
 
-    --font-color-primary:#d90368ff;
+    --font-color-primary: #A53860;
 
-    --font-color-link: #4dccbdff;
+    --font-color-link: #00CECB;
 
-    --font-color-secondary: rgb(90, 0, 90);
+    --font-color-secondary: #450920;
 
     --font-primary: 'Salsa', cursive;
 
@@ -15,9 +15,11 @@
 
     --font-tetrary: 'Amatic SC', cursive;
 
-    --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
+    --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-secondary));
 
 }
+
+
 
 
 
