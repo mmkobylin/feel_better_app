@@ -1,11 +1,9 @@
 header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   max-height: 5rem;
+  background: var(--font-color-primary);
 }
 
 @media only screen and (min-width: 500px) {
@@ -14,7 +12,9 @@ header {
   }
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   text-align: center;
   line-height: 3rem;
@@ -58,7 +58,8 @@ button {
   margin: 1rem;
 }
 
-button:active, button:hover {
+button:active,
+button:hover {
   background-color: var(--font-color-link);
   border: 10px solid var(--font-color-primary);
   color: var(--font-color-secondary);
@@ -81,6 +82,7 @@ button:active, button:hover {
     padding-right: 3rem;
     margin: 2rem;
   }
+
   .button {
     margin-left: 40%;
   }
@@ -108,11 +110,13 @@ button:active, button:hover {
 }
 
 /* Hide the browser's default checkbox */
+
 .container input {
   opacity: 0;
 }
 
 /* Create a custom checkbox */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -125,16 +129,19 @@ button:active, button:hover {
 }
 
 /* On mouse-over, add a grey background color */
+
 .container:hover input ~ .checkmark {
   background-color: var(--font-color-primary);
 }
 
 /* When the checkbox is checked, add a blue background */
+
 .container input:checked ~ .checkmark {
   background-color: var(--font-color-primary);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
@@ -142,11 +149,13 @@ button:active, button:hover {
 }
 
 /* Show the checkmark when checked */
+
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
+
 .container .checkmark:after {
   left: 9px;
   top: 5px;
@@ -154,7 +163,6 @@ button:active, button:hover {
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -219,7 +227,8 @@ div#total {
   padding: 1.5rem;
 }
 
-div#total:active, div#total:hover {
+div#total:active,
+div#total:hover {
   color: var(--font-color-primary);
   text-decoration: none;
 }
@@ -255,7 +264,8 @@ input {
   margin: 0.5rem;
 }
 
-input:active, input:hover {
+input:active,
+input:hover {
   border: 5px solid var(--font-color-primary);
 }
 
@@ -272,6 +282,7 @@ input[type=text] {
     font-size: 2rem;
     margin: 2rem;
   }
+
   input[type=text] {
     font-family: var(--font-secondary);
     font-size: 2rem;
@@ -279,13 +290,11 @@ input[type=text] {
 }
 
 header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   max-height: 5rem;
+  background: var(--font-color-primary);
 }
 
 @media only screen and (min-width: 500px) {
@@ -319,8 +328,7 @@ figure {
 @media only screen and (min-width: 640px) {
   .images {
     height: 15rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     float: center;
     width: 20rem;
   }
@@ -357,7 +365,8 @@ a {
   color: var(--font-color-secondary);
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   color: var(--background-secondary);
   font-weight: bold;
   text-decoration: none;
@@ -368,7 +377,8 @@ a:active, a:hover {
   color: var(--font-color-secondary);
 }
 
-.link-image:active, .link-image:hover {
+.link-image:active,
+.link-image:hover {
   color: var(--background-secondary);
   font-weight: bolder;
   text-decoration: underline;
@@ -381,7 +391,8 @@ a:active, a:hover {
   font-size: 1.5rem;
 }
 
-.link:active, .link:hover {
+.link:active,
+.link:hover {
   color: var(--font-color-link);
   font-weight: bold;
   text-decoration: underline;
@@ -392,6 +403,7 @@ a:active, a:hover {
   a {
     font-size: 1.5rem;
   }
+
   .link {
     font-size: 3rem;
   }
@@ -411,7 +423,8 @@ a.link {
   font-size: 1.3rem;
 }
 
-a.link:active, a.link:hover {
+a.link:active,
+a.link:hover {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -427,6 +440,7 @@ a.link:active, a.link:hover {
     margin-bottom: 0;
     margin-top: 1.5rem;
   }
+
   .link-description {
     font-size: 1.6rem;
   }
@@ -437,7 +451,8 @@ a.link:active, a.link:hover {
   font-size: 150%;
 }
 
-.navbar-home:active, .navbar-home:hover {
+.navbar-home:active,
+.navbar-home:hover {
   display: inline;
   font-size: 200%;
   list-style: none;
@@ -463,12 +478,14 @@ li {
   line-height: 0.5rem;
 }
 
-li:active, li:hover {
+li:active,
+li:hover {
   color: var(--background-secondary);
   font-weight: bolder;
 }
 
-li.a:active, li.a:hover {
+li.a:active,
+li.a:hover {
   color: var(--background-secondary);
   text-decoration: none;
 }
@@ -483,7 +500,7 @@ ul#nav {
 }
 
 #nav:after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 100%;
 }
@@ -514,6 +531,7 @@ ul li {
     display: inline-block;
     font-size: 2.3rem;
   }
+
   .header-titles:active {
     color: var(--background-secondary);
     font-size: 2.5rem;
@@ -525,15 +543,18 @@ ul li {
     display: inline-block;
     font-size: 1.3rem;
   }
+
   .header-titles:active {
     font-size: 1.5rem;
   }
+
   li {
     color: var(--background-secondary);
     padding: 2rem;
     font-size: 2rem;
     line-height: 2rem;
   }
+
   ul#nav {
     max-height: 7.5rem;
   }
@@ -577,17 +598,23 @@ section {
 }
 
 #span1:active,
-#span1:hover, #span2:active,
-#span2:hover, #span3:active,
-#span3:hover, #span4:active,
+#span1:hover,
+#span2:active,
+#span2:hover,
+#span3:active,
+#span3:hover,
+#span4:active,
 #span4:hover {
   color: var(--font-color-link);
 }
 
 #span1:active,
-#span1:hover, #span2:active,
-#span2:hover, #span3:active,
-#span3:hover, #span4:active,
+#span1:hover,
+#span2:active,
+#span2:hover,
+#span3:active,
+#span3:hover,
+#span4:active,
 #span4:hover {
   color: var(--font-color-secondary);
   text-decoration: underline;
@@ -627,7 +654,8 @@ h4 {
   padding-top: 2rem;
 }
 
-.subtitle5, .subtitle6 {
+.subtitle5,
+.subtitle6 {
   font-size: 1.3rem;
   padding: 2.5rem;
 }
@@ -640,27 +668,32 @@ h4 {
     margin: 0;
     padding: 7rem;
   }
+
   h2 {
     font-size: 4rem;
     line-height: 3;
   }
+
   h3 {
     font-size: 3rem;
     letter-spacing: 0.3rem;
   }
+
   h4 {
     font-size: 2.5rem;
     line-height: 1.5;
     padding: 3rem;
   }
+
   .subtitle5 {
     font-size: 2rem;
     padding: 1.5rem;
   }
+
   .subtitle6 {
     font-size: 3rem;
     font-weight: bold;
     padding: 3.5rem;
   }
 }
-/*# sourceMappingURL=app.css.map */
+

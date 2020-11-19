@@ -1,6 +1,6 @@
 :root {
-  --background-secondary: #eadedaff;
-  --background-primary: rgb(255, 144, 103);
+  --background-primary: #eadedaff;
+  --background-secondary: rgb(250, 209, 194);
   --font-color-primary: #d90368ff;
   --font-color-link: #4dccbdff;
   --font-color-secondary: rgb(90, 0, 90);
@@ -338,7 +338,6 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   max-height: 5rem;
-  background: var(--font-color-primary);
 }
 
 @media only screen and (min-width: 500px) {
