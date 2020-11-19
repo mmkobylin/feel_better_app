@@ -17,3 +17,18 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+#span3 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+@media only screen and (min-width: 500px) {
+    #span3 {
+        font-size: 4rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+};

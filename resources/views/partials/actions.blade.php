@@ -5,61 +5,59 @@
     </h4>
 
     <section id="paragraph2" style="display: none">
-     <form class="form-control" method="POST" action="lightbringer"> 
-        <h4 class="subtitle5">Try some of these... </h4>       
-        {{-- Cross-Site Request Forgery Token --}}
-        @csrf
+        <form class="form-control" method="POST" action="lightbringer"> 
+            <h4 class="subtitle5">Try some of these... </h4>       
+            {{-- Cross-Site Request Forgery Token --}}
+            @csrf
 
-            {{-- accessing Actions --}}
-            @foreach (App\Models\Action::randomiser() AS $action)
-                <label class="container"><sup>{{ $action->action }}</sup>
-                    <input type="checkbox" name="action[]" value="{{ $action->point }}">
-                    <span class="checkmark"></span>
-                </label>
-            @endforeach
+                {{-- accessing Actions --}}
+                @foreach (App\Models\Action::randomiser() AS $action)
+                    <label class="container"><sup>{{ $action->action }}</sup>
+                        <input type="checkbox" name="action[]" value="{{ $action->point }}">
+                        <span class="checkmark"></span>
+                    </label>
+                @endforeach
+                    
+                {{-- <button type="submit">Submit</button> --}}
+                <button class="button" style="display: block" 
+                type="submit" name="formSubmit" value="Submit">Submit!</button>
                 
-            {{-- <button type="submit">Submit</button> --}}
-            <button class="button" style="display: block" 
-            type="submit" name="formSubmit" value="Submit">Submit!</button>
+                <br>
+            <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
+
+        </form> 
+    </section>
+
+    {{-- $total counts the points --}}
+
+    <aside <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
+
+        <div id="span2 total">  
             
-            <br>
-        <h4 class="subtitle5">Wanna try something different? Just submit form, and click on 'Show suggestions!' again!</h4>
+            @php
+                
+                //-- $total counts the points --}}
 
-    </form> 
-</section>
+                $total = isset($_POST["action"][0]) + isset($_POST["action"][1]) + isset($_POST["action"][2]);
 
-{{-- $total counts the points --}}
+                echo "The total amount of points for the day is... " . $total . "!"; 
 
-<aside <?php if (isset($_POST["formSubmit"]) === false ){ ?> hidden <?php } ?>>
-    {{-- total displays --}}
-    <div id="span2 total">  
-        
-        @php
-               
-            //-- $total counts the points --}}
+                echo "<br>";
 
-            $total = isset($_POST["action"][0]) + isset($_POST["action"][1]) + isset($_POST["action"][2]);
+                //-- different message displaying depending on the total amount --}}
 
-            echo "The total amount of points for the day is... " . $total . "!"; 
-
-            echo "<br>";
-
-            //-- different message displaying depending on the total amount --}}
-
-            if ($total === 0) {
-                echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
-            } elseif ($total === 1 ) {
-                echo "Well done, every little step counts!";
-            } elseif ($total === 2) {
-                echo "That's an excellent progress. Keep going!";
-            } elseif ($total > 2 ) {
-                echo "Amazing job! Look at you go!";
-            }
-        @endphp
-    </div>
-            </aside>   
-        </section>
-
+                if ($total === 0) {
+                    echo "It's ok! Bet today was tough! Tomorrow is another day. In a meantime, be nice to yourself.";
+                } elseif ($total === 1 ) {
+                    echo "Well done, every little step counts!";
+                } elseif ($total === 2) {
+                    echo "That's an excellent progress. Keep going!";
+                } elseif ($total > 2 ) {
+                    echo "Amazing job! Look at you go!";
+                }
+            @endphp
+        </div>
+    </aside>   
 
     <section>
         <h4 id="subtitle1"> 

@@ -8,7 +8,5 @@
         
         @include("partials/info")
         @include("partials/links")
-
-        @include("partials/title")
-        @include("partials/images")
     @endsection
+

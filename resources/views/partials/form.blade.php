@@ -1,8 +1,8 @@
+<h2>Here is a form for your ideas! </h2>
+
 <section class="form">
     <form method="POST" action="results">
         {{ csrf_field() }}
-
-        <h2>Here is a form for your ideas! </h2>
 
         {{-- using fieldset for group of related elements in the form  --}}
 

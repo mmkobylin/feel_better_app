@@ -462,8 +462,9 @@ ul.help {
 }
 
 a.link {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 a.link:active,
@@ -495,7 +496,7 @@ a.link:hover {
 
 .navbar-home {
   color: var(--background-primary);
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
 }
 
@@ -683,6 +684,20 @@ section {
   cursor: pointer;
 }
 
+#span3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 500px) {
+  #span3 {
+    font-size: 4rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+}
+
 h1 {
   color: var(--font-color-primary);
   font-family: var(--font-primary);
@@ -702,12 +717,14 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  line-height: 1.7;
   font-weight: bold;
+  line-height: 1.7;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 h4 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
   margin: 0;

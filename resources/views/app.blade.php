@@ -31,8 +31,8 @@
             @yield("content")
         </main>
 
-        <footer>
-            @include("partials/home-nav")
-        </footer>
-
     </body>
+
+    <footer>
+        @include("partials/home-nav")
+    </footer>

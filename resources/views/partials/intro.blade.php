@@ -4,7 +4,7 @@
     <section>
         <h4>My first goal with this app is to try my best to help anyone in a dark place, cause I've been there myself. <br>
             <br>For that go to <a class="nav link" href="/lightbringer">LIGHTBRINGER</a>.
-        </h4><br>
+        </h4>
 
         <h4 id="subtitle1"> 
             <span id=span1 style="display: block">Tell me more! </span>
@@ -21,7 +21,7 @@
 
         <h4> My second goal is to help people to step up their game after if they feel up for it!<br>
             <br>For that go to <a class="link" href="/heavylifter">HEAVYLIFTER</a>.
-        </h4><br>
+        </h4>
 
         <h4 id="subtitle2"> 
             <span id=span3 style="display: block">Tell me more! </span>
