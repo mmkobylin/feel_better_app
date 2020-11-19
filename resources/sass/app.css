@@ -206,6 +206,7 @@ label.container {
 .disclaimer {
   padding: 0.5rem;
   padding-bottom: 1.7rem;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -214,6 +215,7 @@ label.container {
     padding-left: 6rem;
     padding-right: 6rem;
     padding-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -624,10 +626,10 @@ section {
   cursor: pointer;
 }
 
-#span3 {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+#span1, #span3 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 @media only screen and (min-width: 500px) {

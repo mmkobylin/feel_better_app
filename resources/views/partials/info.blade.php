@@ -1,8 +1,7 @@
 <h2>Further Help</h2>
-<aside>
-    <h4> What this will not do?</h4>
-
-    <p class="disclaimer">
+<aside class="disclaimer">
+    <h5> What this will not do?</h5>
+    <p>
     This app is only to be used for guidance/support. If you require medical assistance or a healthcare professional please click <a href="/help">HERE</a> for the resource page
     </p>
 </aside>
