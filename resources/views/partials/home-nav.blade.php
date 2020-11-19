@@ -1,1 +1,1 @@
-<a href="/"><span class="navbar-home">Home</span>{!! file_get_contents('icons/home.svg') !!} </a>
+<a href="/">{!! file_get_contents('icons/home.svg') !!} <span class="navbar-home"> Home</span></a>
