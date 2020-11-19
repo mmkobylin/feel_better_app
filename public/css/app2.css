@@ -490,7 +490,7 @@ a.link:hover {
 }
 
 .navbar-home {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
 }
 
@@ -505,13 +505,13 @@ a.link:hover {
 
 @media only screen and (min-width: 500px) {
   .navbar-home {
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.3rem;
   }
 
   .navbar-home:active,
   .navbar-home:hover {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
   }
 }
 
