@@ -50,6 +50,12 @@ aside {
   margin: 1rem;
 }
 
+.container {
+  padding: 0.5rem;
+  padding-bottom: 1.7rem;
+  margin-bottom: 3rem;
+}
+
 @media only screen and (min-width: 500px) {
   aside {
     padding: 6rem;
@@ -58,6 +64,13 @@ aside {
     margin: 5rem;
     margin-top: 1rem;
     margin-bottom: 7rem;
+  }
+  .container {
+    line-height: 2.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -658,10 +671,10 @@ section {
 }
 
 @media only screen and (min-width: 500px) {
-  #span3 {
+  #span1, #span3 {
     font-size: 4rem;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
   }
 }
 
@@ -677,7 +690,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.4;
+  margin: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -687,7 +700,6 @@ h3 {
   font-weight: bold;
   line-height: 1.7;
   padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 h4 {
@@ -727,6 +739,11 @@ h4 {
     font-size: 2.5rem;
     line-height: 1.5;
     padding: 3rem;
+  }
+  h5 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 2rem;
   }
   .subtitle5 {
     font-size: 2rem;

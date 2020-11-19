@@ -633,10 +633,10 @@ section {
 }
 
 @media only screen and (min-width: 500px) {
-  #span3 {
+  #span1, #span3 {
     font-size: 4rem;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
   }
 }
 
@@ -652,7 +652,7 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.4;
+  margin: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -662,7 +662,6 @@ h3 {
   font-weight: bold;
   line-height: 1.7;
   padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 h4 {
@@ -702,6 +701,11 @@ h4 {
     font-size: 2.5rem;
     line-height: 1.5;
     padding: 3rem;
+  }
+  h5 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 2rem;
   }
   .subtitle5 {
     font-size: 2rem;
