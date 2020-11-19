@@ -3,7 +3,7 @@ a {
 }
 
 a:active, a:hover {
-    color: var(--background-secondary);
+    color: var(--background-primary);
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -37,8 +37,15 @@ a:active, a:hover {
 
 @media only screen and (min-width: 500px) {
     a {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     };
+
+    a:active, a:hover {
+        font-size: 1.9rem;
+        font-weight: bold;
+        cursor: pointer;
+    
+    }   
 
     .link{
         font-size: 3rem;

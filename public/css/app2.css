@@ -410,7 +410,7 @@ a {
 
 a:active,
 a:hover {
-  color: var(--background-secondary);
+  color: var(--background-primary);
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -444,7 +444,14 @@ a:hover {
 
 @media only screen and (min-width: 500px) {
   a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  a:active,
+  a:hover {
+    font-size: 1.9rem;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .link {
@@ -479,9 +486,13 @@ a.link:hover {
 @media only screen and (min-width: 500px) {
   a.link {
     font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 0;
     margin-top: 1.5rem;
+  }
+
+  a.link:active,
+  a.link:hover {
+    font-size: 2.2rem;
   }
 
   .link-description {
