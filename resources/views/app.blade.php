@@ -19,10 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt&family=Salsa&display=swap" rel="stylesheet">       
 
     </head>
-
-    {{-- sass is struggling, till then i will write it here and later move it to sass --}}
-    <style>
-    </style>
+    
     <body>
         
         <header>
