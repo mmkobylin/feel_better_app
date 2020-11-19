@@ -410,7 +410,7 @@ a {
 
 a:active,
 a:hover {
-  color: var(--background-secondary);
+  color: var(--background-primary);
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -444,7 +444,14 @@ a:hover {
 
 @media only screen and (min-width: 500px) {
   a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  a:active,
+  a:hover {
+    font-size: 1.9rem;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .link {
@@ -464,12 +471,13 @@ ul.help {
 
 a.link {
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 a.link:active,
 a.link:hover {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .link-description {
@@ -479,9 +487,13 @@ a.link:hover {
 @media only screen and (min-width: 500px) {
   a.link {
     font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 0;
     margin-top: 1.5rem;
+  }
+
+  a.link:active,
+  a.link:hover {
+    font-size: 2.2rem;
   }
 
   .link-description {
@@ -490,22 +502,28 @@ a.link:hover {
 }
 
 .navbar-home {
-  font-family: var(--font-primary);
-  font-size: 150%;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
 }
 
 .navbar-home:active,
 .navbar-home:hover {
+  color: var(--background-secondary);
   display: inline;
-  font-size: 200%;
+  font-size: 1.7rem;
   list-style: none;
   text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
   .navbar-home {
-    font-size: 250%;
+    font-size: 2.5rem;
     letter-spacing: 0.3rem;
+  }
+
+  .navbar-home:active,
+  .navbar-home:hover {
+    font-size: 2.7rem;
   }
 }
 
@@ -575,7 +593,8 @@ ul li {
     font-size: 2.3rem;
   }
 
-  .header-titles:active {
+  .header-titles:active,
+  .header-titles:hover {
     color: var(--background-secondary);
     font-size: 2.5rem;
   }

@@ -1,18 +1,26 @@
 .navbar-home {
-    font-family: var(--font-primary);
-    font-size: 150%;
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
 };
 
 .navbar-home:active, .navbar-home:hover {
+    color: var(--background-secondary);
     display: inline; 
-    font-size: 200%;
+    font-size: 1.7rem;
     list-style:none;
     text-align: center;
+
 };
 
 @media only screen and (min-width: 500px) {
     .navbar-home {
-        font-size:250%;
+        font-size:2.5rem;
         letter-spacing: 0.3rem;
     };
+
+    .navbar-home:active, .navbar-home:hover {
+        font-size: 2.7rem;
+    
+    };
 };
+
