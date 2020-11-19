@@ -52,7 +52,6 @@ aside {
 
 @media only screen and (min-width: 500px) {
   aside {
-    line-height: 3.4rem;
     padding: 6rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -250,7 +249,8 @@ fieldset {
 
 @media only screen and (min-width: 500px) {
   .form-control {
-    padding: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
