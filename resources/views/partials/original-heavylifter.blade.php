@@ -74,10 +74,9 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
-            <div class="button-box">
+            
                 <button id="subtitle1 button-heavy" style="display: block" 
                 type="submit" name="formSubmit" value="Submit">Submit!</button>
-            </div>
         </fieldset>
     </form>
 </section>

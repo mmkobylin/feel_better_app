@@ -18,7 +18,7 @@ header {
 
 *, *::before, *::after {
   margin: 0;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
   fill: var(--background-secondary);
 }
@@ -70,10 +70,6 @@ button:active, button:hover {
   margin-left: 3.5rem;
 }
 
-#button-heavy {
-  margin-left: 30%;
-}
-
 @media only screen and (min-width: 500px) {
   button {
     font-weight: bolder;
@@ -90,7 +86,7 @@ button:active, button:hover {
 
 @media only screen and (min-width: 500px) {
   .card-body {
-    padding-left: 15rem;
+    max-width: 50rem;
   }
 }
 
@@ -230,6 +226,7 @@ div#total:active, div#total:hover {
 fieldset {
   border: none;
   color: var(--font-color-secondary);
+  max-width: 30rem;
 }
 
 @media only screen and (min-width: 500px) {

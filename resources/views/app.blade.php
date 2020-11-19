@@ -9,7 +9,6 @@
         {{-- styles --}}
         
         <link href="{{ asset('/css/app2.css') }}" rel="stylesheet">
-        {{-- <link rel="stylesheet" href="{{ asset('sass/app.scss') }}" /> --}}
 
         {{-- js link --}}
 
@@ -20,8 +19,7 @@
 
     </head>
 
-    <body>
-        
+    <body>    
         <header>
             @include("partials/header")
         </header>

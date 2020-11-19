@@ -23,9 +23,6 @@ button:active, button:hover {
     margin-left: 3.5rem;
 }
 
-#button-heavy {
-    margin-left: 30%;
-}
 
 @media only screen and (min-width: 500px) {
     
@@ -36,4 +33,6 @@ button:active, button:hover {
         padding-right:3rem;
         margin:2rem;
     };
+
+
 }
