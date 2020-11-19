@@ -491,20 +491,20 @@ a.link:hover {
 
 .navbar-home {
   font-family: var(--font-primary);
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 
 .navbar-home:active,
 .navbar-home:hover {
+  color: var(--background-secondary);
   display: inline;
-  font-size: 200%;
   list-style: none;
   text-align: center;
 }
 
 @media only screen and (min-width: 500px) {
   .navbar-home {
-    font-size: 250%;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
   }
 }
