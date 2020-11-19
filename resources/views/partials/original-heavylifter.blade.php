@@ -39,21 +39,22 @@
         <h3>Did you...<h3>
 
         {{-- I am using fieldset for group of related elements in the form  --}}
-        <fieldset class="card-body">
-        {{-- Cross-Site Request Forgery Token --}}
-            @csrf
+        <fieldset class="card-body">            
+            {{-- Cross-Site Request Forgery Token --}}
+
+             @csrf
             <div class='column'>
-                <label class="container"><sup>done some self care?</sup>
+                <label class="container">done some self care?
                     <input type="checkbox" name="action1" value="1"/>
                     <span class="checkmark"></span>
                 </label>
 
-                <label class="container"><sup>helped others?</sup>
+                <label class="container">helped others?
                     <input type="checkbox" name="action2" value="1"/>
                     <span class="checkmark"></span>
                 </label> 
             
-                <label class="container"><sup>eaten healthier?</sup>
+                <label class="container">eaten healthier?
                     <input type="checkbox" name="action3" value="1"/>
                     <span class="checkmark"></span>
                 </label>
@@ -61,24 +62,23 @@
 
             <div class='column'>
 
-                <label class="container"><sup>had a decent sleep?</sup>
+                <label class="container">had a decent sleep?
                     <input type="checkbox" name="action4" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container"><sup>stayed sober?</sup>
+                <label class="container">stayed sober?
                     <input type="checkbox" name="action5" value="1"/>
                     <span class="checkmark"></span>
                 </label>
-                <label class="container"><sup>exercised?</sup>
+                <label class="container">exercised?
                     <input type="checkbox" name="action6" value="1"/>
                     <span class="checkmark"></span>
                 </label>
             </div>
-            
-                <button id="subtitle1 button-heavy" style="display: block" 
-                type="submit" name="formSubmit" value="Submit">Submit!</button>
-        </fieldset>
-    </form>
+        
+            <button type="submit" style="margin-right:25%" name="formSubmit" value="Submit">Submit!</button>
+             </fieldset>
+        </form>        
 </section>
 
 <section>
