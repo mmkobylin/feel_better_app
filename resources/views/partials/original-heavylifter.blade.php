@@ -76,7 +76,7 @@
                 </label>
             </div>
         
-            <button type="submit" style="margin-right:25%" name="formSubmit" value="Submit">Submit!</button>
+            <button type="submit" id="subtitle1" style="margin-right:25%" name="formSubmit" value="Submit">Submit!</button>
              </fieldset>
         </form>        
 </section>
