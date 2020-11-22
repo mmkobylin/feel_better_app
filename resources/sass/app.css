@@ -113,7 +113,7 @@ button:active, button:hover {
   left: 0;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: var(--font-color-link);
+  background-color: var(--font-color-secondary);
   margin: 0.9rem;
   margin-top: 0;
 }
@@ -175,7 +175,7 @@ label.container {
     margin-top: 3rem;
   }
   .checkmark {
-    margin-top: .8rem;
+    margin-top: 0.6rem;
   }
 }
 
@@ -346,6 +346,7 @@ figure {
 }
 
 label {
+  color: var(--font-color-secondary);
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -532,7 +533,7 @@ ul li {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 1111px) {
   .header-titles {
     color: var(--background-primary);
     display: inline-block;
@@ -544,7 +545,7 @@ ul li {
   }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1301px) {
+@media only screen and (min-width: 700px) and (max-width: 1110px) {
   .header-titles {
     display: inline-block;
     font-size: 1.3rem;
