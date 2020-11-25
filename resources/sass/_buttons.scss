@@ -13,9 +13,9 @@ button {
 };
 
 button:active, button:hover {
-        background-color: var(--font-color-link);
+        background-color: var(--font-color-secondary);
         border: 10px solid var(--font-color-primary);
-        color: var(--font-color-secondary);
+        color: var(--background-secondary);
         font-weight: bolder;
     };
 
