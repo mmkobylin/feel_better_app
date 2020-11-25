@@ -1,13 +1,13 @@
 :root {
-  --background-primary: #eadedaff;
-  --background-secondary: rgb(250, 209, 194);
-  --font-color-primary: #d90368ff;
-  --font-color-link: #4dccbdff;
-  --font-color-secondary: rgb(90, 0, 90);
+  --background-primary: #F9DBBD;
+  --background-secondary: #FFD6D9;
+  --font-color-primary: #A53860;
+  --font-color-link: #00CECB;
+  --font-color-secondary: #450920;
   --font-primary: "Salsa", cursive;
   --font-secondary: "Rokkitt", serif;
   --font-tetrary: "Amatic SC", cursive;
-  --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-primary));
+  --gradient-primary: linear-gradient(to right, var(--font-color-link), var(--background-secondary));
 }
 
 *,
@@ -112,10 +112,6 @@ button:hover {
     padding-right: 3rem;
     margin: 2rem;
   }
-
-  .button-heavy {
-    margin-left: 51%;
-  }
 }
 
 .card-body {
@@ -124,7 +120,7 @@ button:hover {
 
 @media only screen and (min-width: 500px) {
   .card-body {
-    padding-left: 15rem;
+    max-width: 50rem;
   }
 }
 
@@ -153,7 +149,7 @@ button:hover {
   left: 0;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: var(--font-color-link);
+  background-color: var(--font-color-secondary);
   margin: 0.9rem;
   margin-top: 0;
 }
@@ -167,7 +163,7 @@ button:hover {
 /* When the checkbox is checked, add a blue background */
 
 .container input:checked ~ .checkmark {
-  background-color: var(--font-color-primary);
+  background-color: var(--font-color-secondary);
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -220,7 +216,7 @@ label.container {
   }
 
   .checkmark {
-    margin-top: 0.8rem;
+    margin-top: 0.6rem;
   }
 }
 
@@ -272,6 +268,7 @@ div#total:hover {
 fieldset {
   border: none;
   color: var(--font-color-secondary);
+  max-width: 30rem;
 }
 
 footer {
@@ -400,6 +397,7 @@ figure {
 }
 
 label {
+  color: var(--font-color-secondary);
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -601,7 +599,38 @@ ul li {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 600px) and (max-width: 970px) {
+  .header-titles:active,
+  .header-titles:hover {
+    color: var(--background-primary);
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 971px) and (max-width: 1110px) {
+  .header-titles {
+    color: var(--background-primary);
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+
+  .header-titles:active {
+    font-size: 1.5rem;
+  }
+
+  li {
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  ul#nav {
+    max-height: 7.5rem;
+  }
+}
+
+@media only screen and (min-width: 1111px) and (max-width: 1310px) {
   .header-titles {
     color: var(--background-primary);
     display: inline-block;
@@ -612,28 +641,6 @@ ul li {
   .header-titles:hover {
     color: var(--background-secondary);
     font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 700px) and (max-width: 1301px) {
-  .header-titles {
-    display: inline-block;
-    font-size: 1.3rem;
-  }
-
-  .header-titles:active {
-    font-size: 1.5rem;
-  }
-
-  li {
-    color: var(--background-secondary);
-    padding: 2rem;
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  ul#nav {
-    max-height: 7.5rem;
   }
 }
 
@@ -720,7 +727,7 @@ section {
 
 h1 {
   color: var(--font-color-primary);
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: 2.5rem;
   line-height: 4rem;
   padding: 2rem;
