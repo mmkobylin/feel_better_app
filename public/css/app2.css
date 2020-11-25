@@ -42,7 +42,7 @@ p {
 }
 
 aside {
-  background: var(--background-secondary);
+  background: var(--background-primary);
   border: solid 1rem var(--font-color-secondary);
   border-radius: 1rem;
   color: var(--font-color-secondary);
@@ -120,7 +120,12 @@ button:hover {
 
 @media only screen and (min-width: 500px) {
   .card-body {
-    max-width: 50rem;
+    padding-left: 20%;
+  }
+
+  .card-body2 {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -149,7 +154,7 @@ button:hover {
   left: 0;
   height: 1.5rem;
   width: 1.5rem;
-  background-color: var(--font-color-secondary);
+  background-color: var(--font-color-primary);
   margin: 0.9rem;
   margin-top: 0;
 }
@@ -157,7 +162,7 @@ button:hover {
 /* On mouse-over, add a grey background color */
 
 .container:hover input ~ .checkmark {
-  background-color: var(--font-color-primary);
+  background-color: var(--font-color-link);
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -216,7 +221,7 @@ label.container {
   }
 
   .checkmark {
-    margin-top: 0.6rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -230,7 +235,7 @@ label.container {
   line-height: 0.1;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
   .column {
     float: left;
     width: 50%;
@@ -268,7 +273,6 @@ div#total:hover {
 fieldset {
   border: none;
   color: var(--font-color-secondary);
-  max-width: 30rem;
 }
 
 footer {
@@ -426,7 +430,7 @@ a:hover {
 
 .link-image:active,
 .link-image:hover {
-  color: var(--background-secondary);
+  color: var(--background-primary);
   font-weight: bolder;
   text-decoration: underline;
   cursor: pointer;
@@ -440,7 +444,7 @@ a:hover {
 
 .link:active,
 .link:hover {
-  color: var(--font-color-link);
+  color: var(--font-color-secondary);
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
@@ -608,15 +612,17 @@ ul li {
   }
 }
 
-@media only screen and (min-width: 971px) and (max-width: 1110px) {
+@media only screen and (min-width: 971px) and (max-width: 1299px) {
   .header-titles {
     color: var(--background-primary);
     display: inline-block;
     font-size: 1.3rem;
   }
 
-  .header-titles:active {
-    font-size: 1.5rem;
+  .header-titles:active,
+  .header-titles:hover {
+    color: var(--background-secondary);
+    font-size: 1.6rem;
   }
 
   li {
@@ -630,7 +636,7 @@ ul li {
   }
 }
 
-@media only screen and (min-width: 1111px) and (max-width: 1310px) {
+@media only screen and (min-width: 1300px) {
   .header-titles {
     color: var(--background-primary);
     display: inline-block;
@@ -726,8 +732,8 @@ section {
 }
 
 h1 {
-  color: var(--font-color-primary);
-  font-family: var(--font-secondary);
+  color: var(--font-color-secondary);
+  font-family: var(--font-primary);
   font-size: 2.5rem;
   line-height: 4rem;
   padding: 2rem;
@@ -735,6 +741,7 @@ h1 {
 }
 
 h2 {
+  color: var(--font-color-secondary);
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
@@ -743,6 +750,7 @@ h2 {
 }
 
 h3 {
+  color: var(--font-color-primary);
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.7;
@@ -755,6 +763,11 @@ h4 {
   line-height: 1.2;
   margin: 0;
   padding: 0;
+}
+
+h5 {
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
 }
 
 #subtitle1,

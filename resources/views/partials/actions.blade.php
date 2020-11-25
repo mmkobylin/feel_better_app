@@ -14,7 +14,7 @@
                 @foreach (App\Models\Action::randomiser() AS $action)
                     <label class="container"><sup>{{ $action->action }}</sup>
                         <input type="checkbox" name="action[]" value="{{ $action->point }}">
-                        <span class="checkmark"></span>
+                        <span class="checkmark action"></span>
                     </label>
                 @endforeach
                     

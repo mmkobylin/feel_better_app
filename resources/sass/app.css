@@ -226,7 +226,7 @@ div#total:active, div#total:hover {
 fieldset {
   border: none;
   color: var(--font-color-secondary);
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
 @media only screen and (min-width: 500px) {

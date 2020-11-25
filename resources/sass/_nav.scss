@@ -64,7 +64,7 @@ ul li{
     }
 }
 
-@media only screen and (min-width: 971px) and (max-width: 1110px){
+@media only screen and (min-width: 971px) and (max-width: 1299px){
 
    .header-titles {
         color: var(--background-primary);
@@ -72,8 +72,9 @@ ul li{
         font-size: 1.3rem;
     }
 
-    .header-titles:active {
-        font-size: 1.5rem;
+    .header-titles:active, .header-titles:hover{
+        color: var(--background-secondary);
+        font-size: 1.6rem;
     }
 
     li {
@@ -88,7 +89,7 @@ ul li{
 
 };
 
-@media only screen and (min-width: 1111px)  and (max-width: 1310px) {
+@media only screen and (min-width: 1300px) {
 
     .header-titles {
         color: var(--background-primary);
