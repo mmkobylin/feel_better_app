@@ -326,7 +326,7 @@ input[type=text] {
   font-family: var(--font-secondary);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
   input {
     font-size: 2rem;
     margin: 2rem;
@@ -406,7 +406,7 @@ label {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
   label {
     font-size: 2rem;
   }
@@ -782,7 +782,7 @@ h5 {
   padding-top: 2.5rem;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 660px) {
   h1 {
     background-color: var(--background-secondary);
     font-size: 4rem;
@@ -792,8 +792,8 @@ h5 {
   }
 
   h2 {
-    font-size: 4rem;
-    line-height: 3;
+    font-size: 3rem;
+    line-height: 2.5;
   }
 
   h3 {
